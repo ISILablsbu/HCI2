@@ -4,7 +4,13 @@
 &lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href="https://docs.hugoblox.com/writing-markdown-latex/" target="_blank" rel="noopener"&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Further event details, including page elements such as image galleries, can be added to the body of this page.&lt;/p&gt;</description></item><item><title>Gest-SAR: A Gesture-Controlled Spatial AR System for Interactive Manual Assembly Guidance with Real-Time Operational Feedback</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/publication/journal-article/journal1/</link><pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/publication/journal-article/journal1/</guid><description>&lt;div class="alert alert-note"&gt;
+&lt;p&gt;Further event details, including page elements such as image galleries, can be added to the body of this page.&lt;/p&gt;</description></item><item><title>Spatial Augmented Reality in Manual Assembly: An Empirical Investigation of Its Effects on Assembly Performance and Cognitive Ergonomics</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/publication/preprint/preprint2/</link><pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/publication/preprint/preprint2/</guid><description>&lt;!--
+&lt;div class="alert alert-note"&gt;
+&lt;div&gt;
+Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
+&lt;/div&gt;
+&lt;/div&gt;
+Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --&gt;</description></item><item><title>Gest-SAR: A Gesture-Controlled Spatial AR System for Interactive Manual Assembly Guidance with Real-Time Operational Feedback</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/publication/journal-article/journal1/</link><pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/publication/journal-article/journal1/</guid><description>&lt;div class="alert alert-note"&gt;
 &lt;div&gt;
 Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
 &lt;/div&gt;

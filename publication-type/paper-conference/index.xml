@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Paper-Conference | ISI Research Lab</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/publication-type/paper-conference/</link><atom:link href="https://isilablsbu.github.io/IndustrialSystemIntelligence/publication-type/paper-conference/index.xml" rel="self" type="application/rss+xml"/><description>Paper-Conference</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jul 2013 00:00:00 +0000</lastBuildDate><image><url>https://isilablsbu.github.io/IndustrialSystemIntelligence/media/logo_hu_798f4e8111288bc6.png</url><title>Paper-Conference</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/publication-type/paper-conference/</link></image><item><title>An example conference paper</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/publication/conference-paper/conference1/</link><pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/publication/conference-paper/conference1/</guid><description>&lt;div class="alert alert-note"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Paper-Conference | ISI Research Lab</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/publication-type/paper-conference/</link><atom:link href="https://isilablsbu.github.io/IndustrialSystemIntelligence/publication-type/paper-conference/index.xml" rel="self" type="application/rss+xml"/><description>Paper-Conference</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 12 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://isilablsbu.github.io/IndustrialSystemIntelligence/media/logo_hu_798f4e8111288bc6.png</url><title>Paper-Conference</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/publication-type/paper-conference/</link></image><item><title>A Comparative Study of Attention-Augmented YOLO Architectures for Defect Detection in Fused Deposition Modelling</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/publication/conference-paper/conference2/</link><pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/publication/conference-paper/conference2/</guid><description>&lt;!--
+&lt;div class="alert alert-note"&gt;
 &lt;div&gt;
 Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
 &lt;/div&gt;
@@ -8,4 +9,15 @@ Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable v
 Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;Add the publication&amp;rsquo;s &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; here. You can use rich formatting such as including &lt;a href="https://docs.hugoblox.com/content/writing-markdown-latex/" target="_blank" rel="noopener"&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>
+Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --&gt;</description></item><item><title>Dynamic Trust Management for Secure Federated Learning in Critical Industrial and IoT Networks</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/publication/conference-paper/conference1/</link><pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/publication/conference-paper/conference1/</guid><description>&lt;!--
+&lt;div class="alert alert-note"&gt;
+&lt;div&gt;
+Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="alert alert-note"&gt;
+&lt;div&gt;
+Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
+&lt;/div&gt;
+&lt;/div&gt;
+Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --&gt;</description></item></channel></rss>
