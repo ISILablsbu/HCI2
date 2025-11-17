@@ -5,13 +5,20 @@
 
 # Appearance
 
+# appearance:
+#   theme_day: minimal
+#   theme_night: minimal
+#   font: native
+#   font_size: L
+#   mode: light
+#   color: red
+
 appearance:
-  theme_day: minimal
-  theme_night: minimal
+  theme_day: my-red
+  theme_night: my-red
   font: native
   font_size: L
-  mode: light
-  color: red
+  mode: auto
 
 # SEO
 

@@ -2,6 +2,8 @@
 title: "A Novel Adaptive AMR Fleet Management System Leveraging AI-enabled Digital Twin for Agile Incident Response and Improved Shop-floor Efficiency"
 authors:
 - Louie
+- Osman M. Tokhi
+- Bugra
 date: "2025-10-06"
 doi: "https://dx.doi.org/10.2139/ssrn.5517139"
 

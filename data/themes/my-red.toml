@@ -1,0 +1,44 @@
+# Theme pack metadata
+name = "My Red"
+
+#################################
+# Light style (day theme)
+#################################
+[light]
+# Brand accent
+primary = "#C8102E"             # red
+
+# Navbar
+menu_primary     = "#FFFFFF"    # white background
+menu_text        = "#000000"    # black text
+menu_text_active = "#C8102E"    # red active item
+menu_title       = "#000000"    # site title
+
+# Sections
+home_section_odd  = "#FFFFFF"             # white
+home_section_even = "rgb(245, 245, 245)"  # very light grey
+
+# Links
+link       = "#C8102E"
+link_hover = "#99001F"
+
+#################################
+# Dark style (night theme)
+#################################
+[dark]
+# Brand accent
+primary = "#C8102E"
+
+# Navbar
+menu_primary     = "#000000"    # black background
+menu_text        = "#FFFFFF"    # white text
+menu_text_active = "#C8102E"    # red active item
+menu_title       = "#FFFFFF"
+
+# Sections
+home_section_odd  = "#000000"            # black
+home_section_even = "rgb(20, 20, 20)"    # almost black
+
+# Links
+link       = "#C8102E"
+link_hover = "#FF3355"

@@ -1,14 +1,15 @@
 ---
-title: 'Dynamic Trust Management for Secure Federated Learning in Critical Industrial and IoT Networks'
+title: 'A Comparative Study of Attention-Augmented YOLO Architectures for Defect Detection in Fused Deposition Modelling'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - Shepherd, Paul
-  - Tasos Dagiuklas
+  - Hasan Cezayirli
+  - Halil Tetik
+  - Mehmet İsmet Can Dede
+  - Wai Lwin Phone
   - Bugra
-  - Jonathan Rodriguez
 
 # Author notes (optional)
 author_notes:
@@ -16,7 +17,7 @@ author_notes:
   # - 'Equal contribution'
 
 date: '2025-06-12T00:00:00Z'
-doi: 'https://doi.org/10.1109/iccworkshops67674.2025.11162455'
+doi: 'https://ieeexplore.ieee.org/document/11205693'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2025-11-17T00:00:00Z'
@@ -27,13 +28,13 @@ publishDate: '2025-11-17T00:00:00Z'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: 2025 IEEE International Conference on Communications Workshops (pp. 371-376).
-publication_short: ICC Workshops 2025
+publication: 2025 IEEE 30th International Conference on Emerging Technologies and Factory Automation (ETFA)
+publication_short: ETFA 2025
 
-abstract: Federated Learning (FL) has evolved privacy-preserving machine learning by enabling decentralized devices, such as Multi-access Edge Computing (MEC) nodes, to collaboratively train models without sharing raw data. This integration leverages edge computation and storage resources for real-time decision-making, reducing latency and enhancing scalability in critical industrial networks, including domains like healthcare, finance, and IoT. However, FL's decentralized architecture makes it vulnerable to adversarial attacks, such as label flipping, which undermine its sustainability and resilience. These vulnerabilities emphasize the need for adaptive trust management mechanisms.To address these challenges, this paper proposes sensitivity and adaptive mechanisms for trust thresholds and smoothing parameters, enabling real-time adjustments based on client performance, behaviour, and variability. Comparative analyses demonstrate that these adaptive methods significantly enhance robustness, fairness, and scalability, ensuring reliable model aggregation and mitigating the impact of malicious clients. This contribution transitions FL from static to more adaptive frameworks, establishing a benchmark for secure, sustainable, and efficient FL in real-world adversarial environments.
+abstract: Additive manufacturing (AM), particularly fused deposition modelling (FDM), facilitates the fabrication of complex geometries with increasing flexibility and efficiency. Ensuring consistent print quality in FDM processes necessitates the development of accurate defect detection mechanisms. Attention-augmented YOLO (You Only Look Once) models have emerged as a promising solution for addressing this challenge. In this study, we systematically benchmark and evaluate the performance of YOLO architectures enhanced with attention mechanisms within the context of FDM 3D printing applications. The models were trained and evaluated using representative defect datasets. The attention-augmented models demonstrate improved detection performance.
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+# summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
 tags: []
 
@@ -45,7 +46,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-# url_pdf: ''
+url_pdf: 'files/conference-paper2.pdf'
 # url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_poster: ''

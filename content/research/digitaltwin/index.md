@@ -13,7 +13,7 @@ title: Digital Twin-Enabled Adaptive Fleet Management
 #   postcode: '94305'
 #   country: United States
 
-summary: An example event.
+summary: Digital Twin-Enabled Adaptive Fleet Management.
 Project Title: "Digital Twin-Enabled Adaptive Fleet Management: Multi-Fidelity Optimisation and Human-in-the-Loop Incident Response for Autonomous Mobile Robots in Smart Manufacturing."
 abstract: "This research presents a Digital Twin (DT)-enabled adaptive fleet management framework for Autonomous Mobile Robots (AMRs) in discrete manufacturing. The proposed multi-fidelity DT framework integrates high-fidelity simulation and surrogate optimisation models to enable real-time, incident-aware decision-making. It also introduces operator-in-the-loop interaction to support Industry 5.0’s human-centric principles, enhancing adaptability and resilience on the shop floor."
 
