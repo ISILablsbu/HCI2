@@ -24,16 +24,17 @@ abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: '2025-11-08T00:00:00Z'
+# publishDate: '2025-11-08T00:00:00Z'
+# publishDate:
 
-authors: [Naimul]
-tags: []
+authors: [Naimul,Louie,Malar,Bugra]
+tags: [Industry 5.0, Operator 5.0, Human-in-the-loop]
 
 # Is this a featured talk? (true/false)
 featured: false
 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
+  caption: 'SAR Setup Overview'
   focal_point: Right
 
 url_code: ''
@@ -53,13 +54,9 @@ slides:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects:
+projects: ["sar"]
 ---
 
-Slides can be added in a few ways:
+{{< project-pubs project="sar" >}}
 
-- **Create** slides using Wowchemy's [_Slides_](https://docs.hugoblox.com/managing-content/#create-slides) feature and link using `slides` parameter in the front matter of the talk file
-- **Upload** an existing slide deck to `static/` and link using `url_slides` parameter in the front matter of the talk file
-- **Embed** your slides (e.g. Google Slides) or presentation video on this page using [shortcodes](https://docs.hugoblox.com/writing-markdown-latex/).
 
-Further event details, including page elements such as image galleries, can be added to the body of this page.

@@ -8,7 +8,7 @@ date: "2025-10-06"
 doi: "https://dx.doi.org/10.2139/ssrn.5517139"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+# publishDate: "2017-01-01T00:00:00Z"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -61,7 +61,7 @@ image:
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects:
-- internal-project
+- digitaltwin
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.

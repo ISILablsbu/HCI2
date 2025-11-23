@@ -9,7 +9,7 @@ date: "2025-10-15"
 doi: "https://dx.doi.org/10.2139/ssrn.5517139"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2025-11-17T00:00:00Z"
+# publishDate: "2025-11-17T00:00:00Z"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -62,6 +62,7 @@ image:
 #   Otherwise, set `projects: []`.
 projects:
 - internal-project
+- sar
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.

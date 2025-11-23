@@ -1,0 +1,49 @@
+{{/* Shortcode: project-pubs
+   Usage: {{< project-pubs project="sar" >}}  OR simply {{< project-pubs >}} when used on a project page
+   Lists publications whose front-matter `projects` includes the given slug.
+   If `project` parameter is omitted, the shortcode will attempt to derive the project
+   slug from the current page directory (e.g. content/research/sar -> "sar").
+*/}}
+
+{{ $project := .Get "project" }}
+
+{{ if not $project }}
+  {{ with .Page }}
+    {{ $dir := .File.Dir }}
+    {{ $parts := split $dir "/" }}
+    {{ $last := index $parts (sub (len $parts) 1) }}
+    {{ $project = $last }}
+  {{ end }}
+{{ end }}
+
+{{ if not $project }}
+  <p><em>No project specified for project-pubs shortcode.</em></p>
+{{ else }}
+  {{ $project = lower $project }}
+  {{ $candidates := where site.RegularPages "Section" "publication" }}
+  {{ $matches := slice }}
+  {{ range $p := $candidates }}
+    {{ $projs := $p.Params.projects }}
+    {{ if $projs }}
+      {{ range $pr := $projs }}
+        {{ if eq (lower $pr) $project }}
+          {{ $matches = $matches | append $p }}
+          {{ break }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $pubs := sort $matches "Date" "desc" }}
+  {{ if gt (len $pubs) 0 }}
+    <div class="project-publications">
+      <h3>Related Publications</h3>
+      <ul>
+      {{ range $pubs }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.authors }} — {{ delimit . ", " }}{{ end }}</li>
+      {{ end }}
+      </ul>
+    </div>
+  {{ else }}
+    <p>No publications listed yet for <strong>{{ $project }}</strong>.</p>
+  {{ end }}
+{{ end }}

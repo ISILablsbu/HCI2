@@ -1,69 +1,44 @@
 ---
-title: Contact
+title: Teaching
+type: landing
 date: 2022-10-24
 
-type: landing
-
 sections:
-  - block: contact
+  - block: features
     content:
-      title: Contact
-      text: |-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.
-      email: test@example.org
-      phone: 888 888 88 88
-      address:
-        street: 450 Serra Mall
-        city: Stanford
-        region: CA
-        postcode: '94305'
-        country: United States
-        country_code: US
-      coordinates:
-        latitude: '37.4275'
-        longitude: '-122.1697'
-      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-      office_hours:
-        - 'Monday 10:00 to 13:00'
-        - 'Wednesday 09:00 to 10:00'
-      appointment_url: 'https://calendly.com'
-      #contact_links:
-      #  - icon: comments
-      #    icon_pack: fas
-      #    name: Discuss on Forum
-      #    link: 'https://discourse.gohugo.io'
-    
-      # Automatically link email and phone or display as text?
-      autolink: true
-    
-      # Email form provider
-      form:
-        provider: netlify
-        formspree:
-          id:
-        netlify:
-          # Enable CAPTCHA challenge to reduce spam?
-          captcha: false
-    design:
-      columns: '1'
+      title: Teaching
+      text: Courses taught by Dr. Bugra Alkan at the London South Bank University.
+      items:
+        - name: <a href="./ai/">Artificial Intelligence </a>
+          description: >
+            Examines computational and statistical methods for the design of complex
+            engineered systems, including design of experiments, surrogate modeling,
+            surrogate-based optimization, sensitivity analysis, and mixed-variable
+            design space exploration. Aerospace examples highlight advanced aircraft
+            and propulsion system concepts, including methods for co-optimization of
+            aircraft, propulsion, and energy/power management.
+            <br>
+            <a href="./ai/"> Click here for more info... </a>
+          icon: book-open
+          icon_pack: fas
+          cta: "Click here for more info"
+          cta_url: "./teaching/ai/"
 
-  - block: markdown
-    content:
-      title:
-      subtitle: ''
-      text:
+        - name: <a href="./icps/"> Industrial Cyber Physical Systems </a>
+          description: >
+            Multidisciplinary integration of aerodynamics, performance, stability and
+            control, propulsion, structures, and aeroelasticity in a system approach
+            aimed at designing an aircraft to a set of specifications. Team-based
+            projects are overseen and graded by faculty and may include mentoring
+            from external organizations.
+            <br>
+            <a href="./icps/"> Click here for more info... </a>
+          icon: graduation-cap
+          icon_pack: fas
+          cta: "Click here for more info"
+          cta_url: "./teaching/icps/"
+
     design:
-      columns: '1'
-      background:
-        image: 
-          filename: contact.jpg
-          filters:
-            brightness: 1
-          parallax: false
-          position: center
-          size: cover
-          text_color_light: true
-      spacing:
-        padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
+      # 2 cards per row for the teaching modules
+      columns: "2"
 ---

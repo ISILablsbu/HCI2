@@ -11,7 +11,7 @@ date: "2024-08-21"
 doi: "https://doi.org/10.1080/0951192X.2024.2387775"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2024-08-21"
+# publishDate: "2024-08-21"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -47,7 +47,7 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
+  caption: ''
   focal_point: ""
   preview_only: false
 
@@ -56,7 +56,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects: []
+projects: ["digitaltwin"]
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.

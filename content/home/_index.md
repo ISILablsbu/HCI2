@@ -77,4 +77,41 @@ sections:
         {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
     design:
       columns: '1'
+  # Contact section
+  - block: features
+    content:
+      title: Contact Us
+      text: Get in touch with our research team.
+      items:
+        - name: "Visit Our Lab"
+          description: >
+            Smith Laboratory
+            Department of Computer Science
+            University of Excellence
+            123 Science Drive
+            Excellence City, EC 12345
+            United States
+            
+            Office Hours
+            Monday – Friday: 9:00 AM – 5:00 PM
+            Lab Meetings: Fridays 2:00 PM
+          icon: map-marker-alt
+          icon_pack: fas
+          cta: "View on Map"
+          cta_url: "/map/"
+
+        - name: "Connect With Us"
+          description: >
+            Email: lab@example.edu
+            Phone: +1 (555) 123-4567
+            
+            Follow us on X, LinkedIn, and GitHub for updates.
+            Interested in joining our lab? We're always looking for motivated researchers.
+          icon: comments
+          icon_pack: fas
+          cta: "View Open Positions"
+          cta_url: "/join/"
+
+    design:
+      columns: "2"
 ---

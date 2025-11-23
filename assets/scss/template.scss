@@ -1,4 +1,10 @@
 @import "themes/red.scss";
+
+:root {
+  --research-img-height: 300px;
+  --research-img-height-sm: 160px;
+  --research-aspect: 16/9;
+}
 // Make page header alignment consistent with widget page header alignment
 .universal-wrapper h1 {
   text-align: center;
@@ -8,5 +14,367 @@
 .cta-group {
   justify-content: center;
 }
+
+/* Teaching modules: rounded rectangular cards */
+#section-features .featurette .col-12.col-sm-4 {
+  background: #ffffff;
+  border: 1px solid rgba(34, 34, 34, 0.06);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 6px 18px rgba(20, 20, 20, 0.04);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+#section-features .featurette .col-12.col-sm-4:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(20, 20, 20, 0.07);
+}
+
+#section-features .featurette .featurette-icon {
+  margin-bottom: 0.5rem;
+}
+
+#section-features .featurette .section-subheading {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Add padding around the features section and increase spacing between cards */
+#section-features .container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#section-features .featurette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+/* Responsive: full width on small screens, equal halves on large screens */
+#section-features .featurette .col-12.col-sm-4 {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  #section-features .featurette .col-12.col-sm-4 {
+    flex: 1 1 calc(50% - 0.625rem);
+    max-width: calc(50% - 0.625rem);
+  }
+}
+
+/* Ensure cards (teaching, contact, research) have equal heights and padding */
+/* Utility: make card containers stretch and use column layout */
+#section-features .featurette .col-12.col-sm-4,
+.universal-wrapper .media.stream-item.view-compact {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+}
+
+/* Make the inner content area grow so cards equalize height */
+#section-features .featurette .col-12.col-sm-4 > .section-subheading,
+#section-features .featurette .col-12.col-sm-4 > p,
+.universal-wrapper .media.stream-item.view-compact .media-body {
+  flex: 1 1 auto;
+}
+
+/* Add consistent left/right padding to main wrappers so cards have breathing room */
+#section-features .container,
+.universal-wrapper {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+/* Apply equal width grid behavior for research stream items (uses same widths as teaching) */
+@media (min-width: 992px) {
+  .universal-wrapper .media.stream-item.view-compact {
+    flex: 1 1 calc(50% - 0.75rem);
+    max-width: calc(50% - 0.75rem);
+  }
+}
+
+@media (max-width: 991px) {
+  .universal-wrapper .media.stream-item.view-compact {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* Ensure the image sits at the top and card body fills the rest */
+.universal-wrapper .media.stream-item.view-compact img {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+  width: 100%;
+  aspect-ratio: var(--research-aspect);
+  object-fit: cover;
+  height: auto;
+}
+
+
+
+
+/* Research two-column cards: make project list render as card grid */
+.universal-wrapper .media.stream-item.view-compact {
+  background: #ffffff;
+  border: 1px solid rgba(34, 34, 34, 0.06);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(20, 20, 20, 0.06);
+  margin-bottom: 1.25rem;
+}
+
+.universal-wrapper .media.stream-item.view-compact .ml-3 {
+  order: -1; /* move image above content */
+}
+
+.universal-wrapper .media.stream-item.view-compact img {
+  width: 100%;
+  aspect-ratio: var(--research-aspect);
+  object-fit: cover;
+  display: block;
+  height: auto;
+}
+
+/* Force image container and image to span full card width (override width/height attributes) */
+.universal-wrapper .media.stream-item.view-compact .ml-3 {
+  display: block;
+  width: 100%;
+}
+.universal-wrapper .media.stream-item.view-compact .ml-3 a {
+  display: block;
+  width: 100%;
+}
+.universal-wrapper .media.stream-item.view-compact .ml-3 img {
+  width: 100% !important;
+  aspect-ratio: var(--research-aspect) !important;
+  object-fit: cover !important;
+  display: block !important;
+  height: auto !important;
+}
+
+/* Stronger overrides to counter generated .media.stream-item img rules which set a small max-width */
+.media.stream-item.view-compact .ml-3,
+.media.stream-item.view-compact .ml-3 a {
+  width: 100% !important;
+  display: block !important;
+  float: none !important;
+}
+.media.stream-item.view-compact img,
+.media.stream-item.view-compact .ml-3 img,
+.universal-wrapper .media.stream-item.view-compact img {
+  max-width: none !important;
+  width: 100% !important;
+  aspect-ratio: var(--research-aspect) !important;
+  object-fit: cover !important;
+  display: block !important;
+  height: auto !important;
+}
+
+/* Ensure the stream item lays out vertically so image sits above content */
+.media.stream-item.view-compact,
+.universal-wrapper .media.stream-item.view-compact {
+  display: block !important;
+}
+
+.universal-wrapper .media.stream-item.view-compact .media-body {
+  padding: 1.25rem;
+}
+
+@media (min-width: 992px) {
+  .universal-wrapper .media.stream-item.view-compact {
+    float: left;
+    width: calc(50% - 0.75rem);
+    margin-right: 1.5rem;
+  }
+  .universal-wrapper .media.stream-item.view-compact:nth-of-type(2n) {
+    margin-right: 0;
+  }
+  .universal-wrapper {
+    /* ensure floats clear inside wrapper */
+    zoom: 1;
+  }
+}
+
+/* Small screens: ensure stacked full-width */
+@media (max-width: 991px) {
+  .universal-wrapper .media.stream-item.view-compact {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+}
+  /* Ensure feature rows stretch their children to equal height */
+  #section-features .featurette {
+    align-items: stretch;
+  }
+
+  /* Make the feature icon into a circular badge and align heading left */
+  #section-features .featurette .col-12.col-sm-4 .featurette-icon {
+    display: inline-flex;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(200,16,46,0.08);
+    color: #C8102E;
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+  }
+
+  /* Left-align the card heading and make room for the floated icon */
+  #section-features .featurette .col-12.col-sm-4 .section-subheading {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 0.5rem;
+  }
+
+  /* Ensure the card body clears the floated icon where needed */
+  #section-features .featurette .col-12.col-sm-4 p,
+  #section-features .featurette .col-12.col-sm-4 .article-style {
+    margin-top: 0.75rem;
+    text-align: left;
+  }
+
+  /* CTA button styles inside feature cards */
+  #section-features .featurette .col-12.col-sm-4 .btn {
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.9rem;
+    box-shadow: 0 6px 18px rgba(20,20,20,0.06);
+  }
+
+  /* Center CTA buttons inside feature cards and use theme red for primary */
+  #section-features .featurette .col-12.col-sm-4 .btn {
+    display: inline-block;
+    margin: 1rem auto 0;
+  }
+
+  #section-features .featurette .col-12.col-sm-4 .btn-primary {
+    background: #C8102E;
+    border-color: #C8102E;
+    color: #ffffff;
+  }
+
+  /* Ensure card container text defaults to left alignment */
+  #section-features .featurette .col-12.col-sm-4 {
+    text-align: left;
+  }
+
+  /* Social icon list in contact cards */
+  #section-features .featurette .col-12.col-sm-4 .social-links {
+    margin: 0.25rem 0 0.75rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: #333;
+  }
+  #section-features .featurette .col-12.col-sm-4 .social-links .social-icon {
+    display: inline-flex;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(200,16,46,0.08);
+    color: #C8102E;
+    text-decoration: none;
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  #section-features .featurette .col-12.col-sm-4 .social-links .social-icon:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(20,20,20,0.08);
+  }
+  #section-features .featurette .col-12.col-sm-4 .social-links .social-icon i {
+    font-size: 0.95rem;
+    line-height: 1;
+  }
+
+  /* Contact card divider */
+  #section-features .featurette .col-12.col-sm-4 .feature-divider {
+    border: 0;
+    height: 1px;
+    margin: 0.1rem 0;
+    background: rgba(200,16,46,0.12);
+  }
+
+  /* Force equal min-height for cards on larger screens so they line up */
+  @media (min-width: 992px) {
+    #section-features .featurette .col-12.col-sm-4,
+    .universal-wrapper .media.stream-item.view-compact {
+      min-height: 420px;
+    }
+  }
+
+  /* Reduce min-height on medium screens */
+  @media (min-width: 768px) and (max-width: 991px) {
+    #section-features .featurette .col-12.col-sm-4,
+    .universal-wrapper .media.stream-item.view-compact {
+      min-height: 360px;
+    }
+  }
+
+  /* Remove fixed min-height on small screens so cards can shrink */
+  @media (max-width: 767px) {
+    #section-features .featurette .col-12.col-sm-4,
+    .universal-wrapper .media.stream-item.view-compact {
+      min-height: auto;
+    }
+  }
+
+/* Adjust research image variable for small screens */
+@media (max-width: 991px) {
+  :root {
+    --research-img-height: var(--research-img-height-sm);
+  }
+}
+
+/* Apply block styling for Opportunities page */
+.apply-block {
+  background: #c9d4ff; /* soft periwinkle */
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(20,20,20,0.06);
+  margin: 1.5rem 0 2rem;
+}
+.apply-block h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #0f1724;
+}
+.apply-block p {
+  max-width: 56rem;
+  margin: 0.5rem auto;
+  color: #222;
+  line-height: 1.6;
+}
+.apply-block .btn-primary {
+  background: #ffffff;
+  color: #0f1724;
+  border: 0;
+  padding: 0.8rem 1.4rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 24px rgba(16,24,40,0.08);
+  margin-top: 1.25rem;
+}
+
+@media (max-width: 767px) {
+  .apply-block {
+    padding: 2rem 1rem;
+  }
+  .apply-block h2 {
+    font-size: 1.75rem;
+  }
+}
+
 
 

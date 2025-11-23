@@ -10,7 +10,7 @@ date: "2025-07-27"
 doi: "https://doi.org/10.3390/machines13080658"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2025-07-27"
+# publishDate: "2025-07-27"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -55,7 +55,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects: []
+projects: ["sar"]
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
