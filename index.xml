@@ -1,62 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ISI Research Lab</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/</link><atom:link href="https://isilablsbu.github.io/IndustrialSystemIntelligence/index.xml" rel="self" type="application/rss+xml"/><description>ISI Research Lab</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 24 Sep 2025 00:00:00 +0000</lastBuildDate><image><url>https://isilablsbu.github.io/IndustrialSystemIntelligence/media/logo_hu_798f4e8111288bc6.png</url><title>ISI Research Lab</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/</link></image><item><title>Example Event</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/event/example1/</link><pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/event/example1/</guid><description>&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Wowchemy&amp;rsquo;s &lt;a href="https://docs.hugoblox.com/managing-content/#create-slides" target="_blank" rel="noopener"&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href="https://docs.hugoblox.com/writing-markdown-latex/" target="_blank" rel="noopener"&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Further event details, including page elements such as image galleries, can be added to the body of this page.&lt;/p&gt;</description></item><item><title>LSBU ISI Lab Presents: The 2025 Kilobot Swarm Intelligence Extra-Curricular Activity</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/event/example2/</link><pubDate>Mon, 15 Dec 2025 13:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/event/example2/</guid><description>&lt;!-- ---
-title: "LSBU ISI Lab Presents: The 2025 Kilobot Swarm Intelligence Extra-Curricular Activity"
-event: Kilobot Swarm Robot ExC
-# event_url: https://example.org
-location: FW-106, Faraday Wing
-address:
-street: Keyworth Street
-city: London
-postcode: 'SE1 6NG'
-country: United Kingdom
-summary: Hand-on training on swarm robots.
-abstract: " LSBU ISI Lab is proud to host the 2025 Kilobot Swarm Intelligence Workshop. This two-day event is designed for undergraduate (BSc) and postgraduate (MSc) students to gain hands-on experience with decentralized, collective artificial intelligence.
-Participants will move from foundational principles to advanced applications, exploring how complex, emergent group behaviors can arise from simple, locally-executed rules. The forum will feature a series of technical workshops culminating in a dynamic swarm robotics challenge, providing a unique opportunity to program, test, and deploy algorithms on a large-scale Kilobot collective."
-# Talk start and end times.
-# End time can optionally be hidden by prefixing the line with `#`.
-date: '2030-06-01T13:00:00Z'
-date_end: '2030-06-01T15:00:00Z'
-all_day: false
-# Schedule page publish date (NOT talk date).
-publishDate: '2017-01-01T00:00:00Z'
-authors: []
-tags: []
-# Is this a featured talk? (true/false)
-featured: false
-image:
-caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
-focal_point: Right
-url_code: ''
-url_pdf: ''
-url_slides: ''
-url_video: ''
-# Markdown Slides (optional).
-# Associate this talk with Markdown slides.
-# Simply enter your slide deck's filename without extension.
-# E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-# Otherwise, set `slides = ""`.
-slides:
-# Projects (optional).
-# Associate this post with one or more of your projects.
-# Simply enter your project's folder or file name without extension.
-# E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-# Otherwise, set `projects = []`.
-projects:
----
-Slides can be added in a few ways:
-- **Create** slides using Wowchemy's [_Slides_](https://docs.hugoblox.com/managing-content/#create-slides) feature and link using `slides` parameter in the front matter of the talk file
-- **Upload** an existing slide deck to `static/` and link using `url_slides` parameter in the front matter of the talk file
-- **Embed** your slides (e.g. Google Slides) or presentation video on this page using [shortcodes](https://docs.hugoblox.com/writing-markdown-latex/).
-Further event details, including page elements such as image galleries, can be added to the body of this page. --&gt;</description></item><item><title>Digital Twin-Enabled Adaptive Fleet Management</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/research/digitaltwin/</link><pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/research/digitaltwin/</guid><description>&lt;!-- Slides can be added in a few ways:
-- **Create** slides using Wowchemy's [_Slides_](https://docs.hugoblox.com/managing-content/#create-slides) feature and link using `slides` parameter in the front matter of the talk file
-- **Upload** an existing slide deck to `static/` and link using `url_slides` parameter in the front matter of the talk file
-- **Embed** your slides (e.g. Google Slides) or presentation video on this page using [shortcodes](https://docs.hugoblox.com/writing-markdown-latex/).
-Further event details, including page elements such as image galleries, can be added to the body of this page. --&gt;</description></item><item><title>Vision-Enabled SAR for Manual Assembly</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/research/sar/</link><pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/research/sar/</guid><description>&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ISI Research Lab</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/</link><atom:link href="https://isilablsbu.github.io/IndustrialSystemIntelligence/index.xml" rel="self" type="application/rss+xml"/><description>ISI Research Lab</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 24 Sep 2025 00:00:00 +0000</lastBuildDate><image><url>https://isilablsbu.github.io/IndustrialSystemIntelligence/media/logo_hu_798f4e8111288bc6.png</url><title>ISI Research Lab</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/</link></image><item><title>LSBU ISI Lab Presents- The 2025 Kilobot Swarm Intelligence Extra-Curricular Activity</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/event/swarmexc/</link><pubDate>Wed, 12 Nov 2025 13:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/event/swarmexc/</guid><description>&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Wowchemy&amp;rsquo;s &lt;a href="https://docs.hugoblox.com/managing-content/#create-slides" target="_blank" rel="noopener"&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
@@ -117,10 +59,24 @@ Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable v
 Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
 &lt;/div&gt;
 &lt;/div&gt;
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --&gt;</description></item><item><title>Contact</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/teaching/</link><pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/teaching/</guid><description/></item><item><title>People</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/people/</link><pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/people/</guid><description/></item><item><title>Jian Yang and Monica Hall Win the Best Paper Award at Wowchemy 2020</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/post/20-12-02-icml-best-paper/</link><pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/post/20-12-02-icml-best-paper/</guid><description>&lt;p&gt;Congratulations to Jian Yang and Monica Hall for winning the Best Paper Award at the 2020 Conference on Wowchemy for their paper “Learning Wowchemy”.&lt;/p&gt;
+Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --&gt;</description></item><item><title>People</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/people/</link><pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/people/</guid><description/></item><item><title>Teaching</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/teaching/</link><pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/teaching/</guid><description/></item><item><title>Jian Yang and Monica Hall Win the Best Paper Award at Wowchemy 2020</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/post/20-12-02-icml-best-paper/</link><pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/post/20-12-02-icml-best-paper/</guid><description>&lt;p&gt;Congratulations to Jian Yang and Monica Hall for winning the Best Paper Award at the 2020 Conference on Wowchemy for their paper “Learning Wowchemy”.&lt;/p&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.&lt;/p&gt;
 &lt;p&gt;Sed eu dui nec ligula bibendum dapibus. Nullam imperdiet auctor tortor, vel cursus mauris malesuada non. Quisque ultrices euismod dapibus. Aenean sed gravida risus. Sed nisi tortor, vulputate nec quam non, placerat porta nisl. Nunc varius lobortis urna, condimentum facilisis ipsum molestie eu. Ut molestie eleifend ligula sed dignissim. Duis ut tellus turpis. Praesent tincidunt, nunc sed congue malesuada, mauris enim maximus massa, eget interdum turpis urna et ante. Morbi sem nisl, cursus quis mollis et, interdum luctus augue. Aliquam laoreet, leo et accumsan tincidunt, libero neque aliquet lectus, a ultricies lorem mi a orci.&lt;/p&gt;
 &lt;p&gt;Mauris dapibus sem vel magna convallis laoreet. Donec in venenatis urna, vitae sodales odio. Praesent tortor diam, varius non luctus nec, bibendum vel est. Quisque id sem enim. Maecenas at est leo. Vestibulum tristique pellentesque ex, blandit placerat nunc eleifend sit amet. Fusce eget lectus bibendum, accumsan mi quis, luctus sem. Etiam vitae nulla scelerisque, eleifend odio in, euismod quam. Etiam porta ullamcorper massa, vitae gravida turpis euismod quis. Mauris sodales sem ac ultrices viverra. In placerat ultrices sapien. Suspendisse eu arcu hendrerit, luctus tortor cursus, maximus dolor. Proin et velit et quam gravida dapibus. Donec blandit justo ut consequat tristique.&lt;/p&gt;</description></item><item><title>Richard Hendricks Wins First Place in the Wowchemy Prize</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/post/20-12-01-wowchemy-prize/</link><pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/post/20-12-01-wowchemy-prize/</guid><description>&lt;p&gt;Congratulations to Richard Hendricks for winning first place in the Wowchemy Prize.&lt;/p&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.&lt;/p&gt;
 &lt;p&gt;Sed eu dui nec ligula bibendum dapibus. Nullam imperdiet auctor tortor, vel cursus mauris malesuada non. Quisque ultrices euismod dapibus. Aenean sed gravida risus. Sed nisi tortor, vulputate nec quam non, placerat porta nisl. Nunc varius lobortis urna, condimentum facilisis ipsum molestie eu. Ut molestie eleifend ligula sed dignissim. Duis ut tellus turpis. Praesent tincidunt, nunc sed congue malesuada, mauris enim maximus massa, eget interdum turpis urna et ante. Morbi sem nisl, cursus quis mollis et, interdum luctus augue. Aliquam laoreet, leo et accumsan tincidunt, libero neque aliquet lectus, a ultricies lorem mi a orci.&lt;/p&gt;
-&lt;p&gt;Mauris dapibus sem vel magna convallis laoreet. Donec in venenatis urna, vitae sodales odio. Praesent tortor diam, varius non luctus nec, bibendum vel est. Quisque id sem enim. Maecenas at est leo. Vestibulum tristique pellentesque ex, blandit placerat nunc eleifend sit amet. Fusce eget lectus bibendum, accumsan mi quis, luctus sem. Etiam vitae nulla scelerisque, eleifend odio in, euismod quam. Etiam porta ullamcorper massa, vitae gravida turpis euismod quis. Mauris sodales sem ac ultrices viverra. In placerat ultrices sapien. Suspendisse eu arcu hendrerit, luctus tortor cursus, maximus dolor. Proin et velit et quam gravida dapibus. Donec blandit justo ut consequat tristique.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Mauris dapibus sem vel magna convallis laoreet. Donec in venenatis urna, vitae sodales odio. Praesent tortor diam, varius non luctus nec, bibendum vel est. Quisque id sem enim. Maecenas at est leo. Vestibulum tristique pellentesque ex, blandit placerat nunc eleifend sit amet. Fusce eget lectus bibendum, accumsan mi quis, luctus sem. Etiam vitae nulla scelerisque, eleifend odio in, euismod quam. Etiam porta ullamcorper massa, vitae gravida turpis euismod quis. Mauris sodales sem ac ultrices viverra. In placerat ultrices sapien. Suspendisse eu arcu hendrerit, luctus tortor cursus, maximus dolor. Proin et velit et quam gravida dapibus. Donec blandit justo ut consequat tristique.&lt;/p&gt;</description></item><item><title>Digital Twin-Enabled Adaptive Fleet Management</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/research/digitaltwin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/research/digitaltwin/</guid><description>
+&lt;div class="project-publications"&gt;
+&lt;h3&gt;Related Publications&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://isilablsbu.github.io/IndustrialSystemIntelligence/publication/preprint/preprint1/"&gt;A Novel Adaptive AMR Fleet Management System Leveraging AI-enabled Digital Twin for Agile Incident Response and Improved Shop-floor Efficiency&lt;/a&gt; — Louie, Osman M. Tokhi, Bugra&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://isilablsbu.github.io/IndustrialSystemIntelligence/publication/journal-article/journal2/"&gt;State of the art and future directions of digital twin-enabled smart assembly automation in discrete manufacturing industries&lt;/a&gt; — Louie, Osman M. Tokhi, Bugra&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</description></item><item><title>Vision-Enabled SAR for Manual Assembly</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/research/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/research/sar/</guid><description>
+&lt;div class="project-publications"&gt;
+&lt;h3&gt;Related Publications&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://isilablsbu.github.io/IndustrialSystemIntelligence/publication/preprint/preprint2/"&gt;Spatial Augmented Reality in Manual Assembly: An Empirical Investigation of Its Effects on Assembly Performance and Cognitive Ergonomics&lt;/a&gt; — Bugra, Naimul, Louie, Malarvizhi Kaniappan Chinnathai&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://isilablsbu.github.io/IndustrialSystemIntelligence/publication/journal-article/journal1/"&gt;Gest-SAR: A Gesture-Controlled Spatial AR System for Interactive Manual Assembly Guidance with Real-Time Operational Feedback&lt;/a&gt; — Naimul, Bugra&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</description></item></channel></rss>
