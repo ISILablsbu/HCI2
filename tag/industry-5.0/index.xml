@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Industry 5.0 | ISI Research Lab</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/tag/industry-5.0/</link><atom:link href="https://isilablsbu.github.io/IndustrialSystemIntelligence/tag/industry-5.0/index.xml" rel="self" type="application/rss+xml"/><description>Industry 5.0</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 15 Oct 2025 00:00:00 +0000</lastBuildDate><image><url>https://isilablsbu.github.io/IndustrialSystemIntelligence/media/logo_hu_798f4e8111288bc6.png</url><title>Industry 5.0</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/tag/industry-5.0/</link></image><item><title>Spatial Augmented Reality in Manual Assembly: An Empirical Investigation of Its Effects on Assembly Performance and Cognitive Ergonomics</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/publication/preprint/preprint2/</link><pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/publication/preprint/preprint2/</guid><description>&lt;!--
-&lt;div class="alert alert-note"&gt;
-&lt;div&gt;
-Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-&lt;/div&gt;
-&lt;/div&gt;
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --&gt;</description></item><item><title>Vision-Enabled SAR for Manual Assembly</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/research/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/research/sar/</guid><description>
-&lt;div class="project-publications"&gt;
-&lt;h3&gt;Related Publications&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://isilablsbu.github.io/IndustrialSystemIntelligence/publication/preprint/preprint2/"&gt;Spatial Augmented Reality in Manual Assembly: An Empirical Investigation of Its Effects on Assembly Performance and Cognitive Ergonomics&lt;/a&gt; — Bugra, Naimul, Louie, Malarvizhi Kaniappan Chinnathai&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://isilablsbu.github.io/IndustrialSystemIntelligence/publication/journal-article/journal1/"&gt;Gest-SAR: A Gesture-Controlled Spatial AR System for Interactive Manual Assembly Guidance with Real-Time Operational Feedback&lt;/a&gt; — Naimul, Bugra&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Industry 5.0 | ISI Research Lab</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/tag/industry-5.0/</link><atom:link href="https://isilablsbu.github.io/IndustrialSystemIntelligence/tag/industry-5.0/index.xml" rel="self" type="application/rss+xml"/><description>Industry 5.0</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 15 Oct 2025 00:00:00 +0000</lastBuildDate><image><url>https://isilablsbu.github.io/IndustrialSystemIntelligence/media/logo_hu10569370438893144951.png</url><title>Industry 5.0</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/tag/industry-5.0/</link></image><item><title>Spatial Augmented Reality in Manual Assembly: An Empirical Investigation of Its Effects on Assembly Performance and Cognitive Ergonomics</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/publication/preprint/preprint2/</link><pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/publication/preprint/preprint2/</guid><description>&lt;!--
+&lt;div class="alert alert-note">
+&lt;div>
+Create your slides in Markdown - click the &lt;em>Slides&lt;/em> button to check out the example.
+&lt;/div>
+&lt;/div>
+Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --></description></item><item><title>Vision-Enabled SAR for Manual Assembly</title><link>https://isilablsbu.github.io/IndustrialSystemIntelligence/research/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://isilablsbu.github.io/IndustrialSystemIntelligence/research/sar/</guid><description>
+&lt;div class="project-publications">
+&lt;h3>Related Publications&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://isilablsbu.github.io/IndustrialSystemIntelligence/IndustrialSystemIntelligence/publication/preprint/preprint2/">Spatial Augmented Reality in Manual Assembly: An Empirical Investigation of Its Effects on Assembly Performance and Cognitive Ergonomics&lt;/a> — Bugra, Naimul, Louie, Malarvizhi Kaniappan Chinnathai&lt;/li>
+&lt;li>&lt;a href="https://isilablsbu.github.io/IndustrialSystemIntelligence/IndustrialSystemIntelligence/publication/journal-article/journal1/">Gest-SAR: A Gesture-Controlled Spatial AR System for Interactive Manual Assembly Guidance with Real-Time Operational Feedback&lt;/a> — Naimul, Bugra&lt;/li>
+&lt;/ul>
+&lt;/div></description></item></channel></rss>
