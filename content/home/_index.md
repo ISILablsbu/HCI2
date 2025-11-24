@@ -121,11 +121,11 @@ sections:
 
             Interested in joining our lab? We're always looking for motivated researchers.
 
-            <p><a class="btn btn-primary" href="./opportunities/"><i class="fas fa-user-plus"></i> View Open Positions</a></p>
+            <p><a class="btn btn-primary" href="../opportunities/"><i class="fas fa-user-plus"></i> View Open Positions</a></p>
           icon: comments
           icon_pack: fas
           cta: "View Open Positions"
-          cta_url: "./opportunities/"
+          cta_url: "../opportunities/"
 
     design:
       columns: "2"
