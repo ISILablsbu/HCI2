@@ -87,15 +87,13 @@ sections:
         - name: "Visit Our Lab"
           description: >
             Industrial Systems Intelligence | Room: FW104
-
+            
             School of Computer Science & Digital Technology |
             London South Bank University |
             Faraday Wing,
             103 Borough Rd, London, SE10AA,
             United Kingdom
-          
             <hr class="feature-divider" />
-            
             Office Hours
             Monday – Friday: 9:00 AM – 5:00 PM |
             Lab Meetings: Wednesday 11:00 AM

@@ -245,6 +245,32 @@
     text-align: left;
   }
 
+  /* Center a single feature card: when a featurette has only one column child,
+     center it and constrain its width for better visual balance (e.g., Visiting Researchers) */
+  #section-features .featurette > .col-12.col-sm-4:only-child {
+    margin-left: auto;
+    margin-right: auto;
+    flex: 0 1 60%;
+    max-width: 60%;
+  }
+
+  /* Fallback: if the theme emits a different column class, center any single child element */
+  #section-features .featurette > *:only-child {
+    margin-left: auto;
+    margin-right: auto;
+    flex: 0 1 60%;
+    max-width: 60%;
+  }
+
+  @media (max-width: 991px) {
+    /* On small screens, single feature should be full width */
+    #section-features .featurette > *:only-child {
+      flex: 1 1 100% !important;
+      max-width: 100% !important;
+    }
+  }
+
+
   /* CTA button styles inside feature cards */
   #section-features .featurette .col-12.col-sm-4 .btn {
     border-radius: 0.5rem;
