@@ -1,7 +1,7 @@
 ---
 title: Teaching
 type: landing
-date: 2022-10-24
+date: 2025-11-23
 
 sections:
   - block: features

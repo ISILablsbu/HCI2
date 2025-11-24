@@ -1,7 +1,7 @@
 ---
 title: Teaching
 type: landing
-# date: 2022-10-24
+date: 2024-11-23
 
 sections:
   - block: features
@@ -12,33 +12,24 @@ sections:
         # - name: <a href="./ai/">Artificial Intelligence </a>
         - name: "Artificial Intelligence"
           description: >
-            Examines computational and statistical methods for the design of complex
-            engineered systems, including design of experiments, surrogate modeling,
-            surrogate-based optimization, sensitivity analysis, and mixed-variable
-            design space exploration. Aerospace examples highlight advanced aircraft
-            and propulsion system concepts, including methods for co-optimization of
-            aircraft, propulsion, and energy/power management.
+            Examines computational and statistical methods for the design of complex engineered systems, including design of experiments, surrogate modeling, surrogate-based optimization, sensitivity analysis, and mixed-variable design space exploration. Aerospace examples highlight advanced aircraft and propulsion system concepts, including methods for co-optimization of
+            aircraft, propulsion, and energy/power management.  [Click here for more info...](ai/)
             <br>
-            <a href="./ai/"> Click here for more info... </a>
             
           icon: book-open
           icon_pack: fas
-          cta: "Click here for more info"
-          cta_url: "./ai/"
+          # cta: "Click here for more info"
+          # cta_url: "ai/"
 
         - name: "Industrial Cyber Physical Systems"
           description: >
-            Multidisciplinary integration of aerodynamics, performance, stability and
-            control, propulsion, structures, and aeroelasticity in a system approach
-            aimed at designing an aircraft to a set of specifications. Team-based
-            projects are overseen and graded by faculty and may include mentoring
-            from external organizations.
+            Multidisciplinary integration of aerodynamics, performance, stability and control, propulsion, structures, and aeroelasticity in a system approach aimed at designing an aircraft to a set of specifications. Team-based projects are overseen and graded by faculty and may include mentoring from external organizations.
             <br>
-            <a href="./icps/"> Click here for more info... </a>
+            [Click here for more info...](icps/)
           icon: graduation-cap
           icon_pack: fas
-          cta: "Click here for more info"
-          cta_url: "./icps/"
+          # cta: "Click here for more info"
+          # cta_url: "icps/"
 
     design:
       # 2 cards per row for the teaching modules
