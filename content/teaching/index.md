@@ -19,12 +19,12 @@ sections:
             and propulsion system concepts, including methods for co-optimization of
             aircraft, propulsion, and energy/power management.
             <br>
-            <a href="../teaching/ai/"> Click here for more info... </a>
+            <a href="./ai/"> Click here for more info... </a>
             
           icon: book-open
           icon_pack: fas
           cta: "Click here for more info"
-          cta_url: "../teaching/ai/"
+          cta_url: "./ai/"
 
         - name: "Industrial Cyber Physical Systems"
           description: >
@@ -34,11 +34,11 @@ sections:
             projects are overseen and graded by faculty and may include mentoring
             from external organizations.
             <br>
-            <a href="../teaching/icps/"> Click here for more info... </a>
+            <a href="./icps/"> Click here for more info... </a>
           icon: graduation-cap
           icon_pack: fas
           cta: "Click here for more info"
-          cta_url: "../teaching/icps/"
+          cta_url: "./icps/"
 
     design:
       # 2 cards per row for the teaching modules
