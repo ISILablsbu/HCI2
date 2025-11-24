@@ -32,45 +32,37 @@ sections:
       items:
         - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
           description: >
-            <h3> Project Description </h3>
+            ### Project Description
             Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
 
-            <h3> Requirements </h3>
-            <ul>
-            <li> option 1 </li>
-            <li> option 2 </li>
-            <li> option 3 </li>
-            </ul>
+            ### Requirements 
+            - option 1
+            - option 2
+            - option 3
 
-            <h3> Application Materials: </h3>
-            <ul>
-            <li> option 1 </li>
-            <li> option 2 </li>
-            <li> option 3 </li>
-            </ul>
+            ### Application Materials:
+            - option 1
+            - option 2
+            - option 3
 
-            <h4> Application Deadline </h4>
+            #### Application Deadline
 
         - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
           description: >
-            <h3> Project Description </h3>
+            ### Project Description
             Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
 
-            <h3> Requirements </h3>
-            <ul>
-            <li> option 1 </li>
-            <li> option 2 </li>
-            <li> option 3 </li>
-            </ul>
+            ### Requirements 
+            - option 1
+            - option 2
+            - option 3
 
-            <h3> Application Materials: </h3>
-            <ul>
-            <li> option 1 </li>
-            <li> option 2 </li>
-            <li> option 3 </li>
-            </ul>
+            ### Application Materials:
+            - option 1
+            - option 2
+            - option 3
 
-            <h4> Application Deadline </h4>
+            #### Application Deadline
 
     design:
       columns: "2"
@@ -83,45 +75,37 @@ sections:
       items:
         - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
           description: >
-            <h3> Project Description </h3>
+            ### Project Description
             Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
 
-            <h3> Requirements </h3>
-            <ul>
-            <li> option 1 </li>
-            <li> option 2 </li>
-            <li> option 3 </li>
-            </ul>
+            ### Requirements 
+            - option 1
+            - option 2
+            - option 3
 
-            <h3> Application Materials: </h3>
-            <ul>
-            <li> option 1 </li>
-            <li> option 2 </li>
-            <li> option 3 </li>
-            </ul>
+            ### Application Materials:
+            - option 1
+            - option 2
+            - option 3
 
-            <h4> Application Deadline </h4>
+            #### Application Deadline
 
         - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
           description: >
-            <h3> Project Description </h3>
+            ### Project Description
             Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
 
-            <h3> Requirements </h3>
-            <ul>
-            <li> option 1 </li>
-            <li> option 2 </li>
-            <li> option 3 </li>
-            </ul>
+            ### Requirements 
+            - option 1
+            - option 2
+            - option 3
 
-            <h3> Application Materials: </h3>
-            <ul>
-            <li> option 1 </li>
-            <li> option 2 </li>
-            <li> option 3 </li>
-            </ul>
+            ### Application Materials:
+            - option 1
+            - option 2
+            - option 3
 
-            <h4> Application Deadline </h4>
+            #### Application Deadline
 
     design:
       columns: "2"
@@ -135,45 +119,37 @@ sections:
       items:
         - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
           description: >
-            <h3> Project Description </h3>
+            ### Project Description
             Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
 
-            <h3> Requirements </h3>
-            <ul>
-            <li> option 1 </li>
-            <li> option 2 </li>
-            <li> option 3 </li>
-            </ul>
+            ### Requirements 
+            - option 1
+            - option 2
+            - option 3
 
-            <h3> Application Materials: </h3>
-            <ul>
-            <li> option 1 </li>
-            <li> option 2 </li>
-            <li> option 3 </li>
-            </ul>
+            ### Application Materials:
+            - option 1
+            - option 2
+            - option 3
 
-            <h4> Application Deadline </h4>
+            #### Application Deadline
 
         - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
           description: >
-            <h3> Project Description </h3>
+            ### Project Description
             Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
 
-            <h3> Requirements </h3>
-            <ul>
-            <li> option 1 </li>
-            <li> option 2 </li>
-            <li> option 3 </li>
-            </ul>
+            ### Requirements 
+            - option 1
+            - option 2
+            - option 3
 
-            <h3> Application Materials: </h3>
-            <ul>
-            <li> option 1 </li>
-            <li> option 2 </li>
-            <li> option 3 </li>
-            </ul>
+            ### Application Materials:
+            - option 1
+            - option 2
+            - option 3
 
-            <h4> Application Deadline </h4>
+            #### Application Deadline
 
     design:
       columns: "2"
@@ -186,45 +162,37 @@ sections:
       items:
         - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
           description: >
-            <h3> Project Description </h3>
+            ### Project Description
             Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
 
-            <h3> Requirements </h3>
-            <ul>
-            <li> option 1 </li>
-            <li> option 2 </li>
-            <li> option 3 </li>
-            </ul>
+            ### Requirements 
+            - option 1
+            - option 2
+            - option 3
 
-            <h3> Application Materials: </h3>
-            <ul>
-            <li> option 1 </li>
-            <li> option 2 </li>
-            <li> option 3 </li>
-            </ul>
+            ### Application Materials:
+            - option 1
+            - option 2
+            - option 3
 
-            <h4> Application Deadline </h4>
+            #### Application Deadline
 
         - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
           description: >
-            <h3> Project Description </h3>
+            ### Project Description
             Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
 
-            <h3> Requirements </h3>
-            <ul>
-            <li> option 1 </li>
-            <li> option 2 </li>
-            <li> option 3 </li>
-            </ul>
+            ### Requirements 
+            - option 1
+            - option 2
+            - option 3
 
-            <h3> Application Materials: </h3>
-            <ul>
-            <li> option 1 </li>
-            <li> option 2 </li>
-            <li> option 3 </li>
-            </ul>
+            ### Application Materials:
+            - option 1
+            - option 2
+            - option 3
 
-            <h4> Application Deadline </h4>
+            #### Application Deadline
 
     design:
       columns: "2"
@@ -238,45 +206,37 @@ sections:
       items:
         - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
           description: >
-            <h3> Project Description </h3>
+            ### Project Description
             Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
 
-            <h3> Requirements </h3>
-            <ul>
-            <li> option 1 </li>
-            <li> option 2 </li>
-            <li> option 3 </li>
-            </ul>
+            ### Requirements 
+            - option 1
+            - option 2
+            - option 3
 
-            <h3> Application Materials: </h3>
-            <ul>
-            <li> option 1 </li>
-            <li> option 2 </li>
-            <li> option 3 </li>
-            </ul>
+            ### Application Materials:
+            - option 1
+            - option 2
+            - option 3
 
-            <h4> Application Deadline </h4>
+            #### Application Deadline
 
         - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
           description: >
-            <h3> Project Description </h3>
+            ### Project Description
             Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
 
-            <h3> Requirements </h3>
-            <ul>
-            <li> option 1 </li>
-            <li> option 2 </li>
-            <li> option 3 </li>
-            </ul>
+            ### Requirements 
+            - option 1
+            - option 2
+            - option 3
 
-            <h3> Application Materials: </h3>
-            <ul>
-            <li> option 1 </li>
-            <li> option 2 </li>
-            <li> option 3 </li>
-            </ul>
+            ### Application Materials:
+            - option 1
+            - option 2
+            - option 3
 
-            <h4> Application Deadline </h4>
+            #### Application Deadline
 
     design:
       columns: "2"
