@@ -27,7 +27,7 @@ sections:
   # 1) Post-Doctoral Position section —
   - block: features
     content:
-      title: Post-Doctoral Position
+      title: Artificial Intelligence
       text: ''
       items:
         - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
@@ -47,48 +47,10 @@ sections:
 
             #### Application Deadline
 
-        - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
-          description: >
-            ### Project Description
-            Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
-
-            ### Requirements 
-            - option 1
-            - option 2
-            - option 3
-
-            ### Application Materials:
-            - option 1
-            - option 2
-            - option 3
-
-            #### Application Deadline
-
-    design:
-      columns: "2"
-
----
-
-<!-- ---
-title: Teaching
-type: landing
-date: 2022-10-24
-
-sections:
-  - block: features
-    content:
-      title: Teaching
-      text: "Artificial Intelligence"
-      semester: "January"
-      instructor: "Bugra Alkan"
-      instructor_title: "Senior Lecturer in AI and Robotics"
-
-    type: "teaching"
-
     design:
       columns: "1"
---- -->
 
+---
 
 Prerequisite:  (20 credits)
 
