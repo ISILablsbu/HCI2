@@ -9,7 +9,8 @@ sections:
       title: Teaching
       text: Courses taught by Dr. Bugra Alkan at the London South Bank University.
       items:
-        - name: <a href="./ai/">Artificial Intelligence </a>
+        # - name: <a href="./ai/">Artificial Intelligence </a>
+        - name: "Artificial Intelligence"
           description: >
             Examines computational and statistical methods for the design of complex
             engineered systems, including design of experiments, surrogate modeling,
@@ -18,13 +19,14 @@ sections:
             and propulsion system concepts, including methods for co-optimization of
             aircraft, propulsion, and energy/power management.
             <br>
-            <a href="./ai/"> Click here for more info... </a>
+            <a href="../teaching/ai/"> Click here for more info... </a>
+            
           icon: book-open
           icon_pack: fas
           cta: "Click here for more info"
-          cta_url: "./ai/"
+          cta_url: "../teaching/ai/"
 
-        - name: <a href="./icps/"> Industrial Cyber Physical Systems </a>
+        - name: "Industrial Cyber Physical Systems"
           description: >
             Multidisciplinary integration of aerodynamics, performance, stability and
             control, propulsion, structures, and aeroelasticity in a system approach
@@ -32,11 +34,11 @@ sections:
             projects are overseen and graded by faculty and may include mentoring
             from external organizations.
             <br>
-            <a href="./icps/"> Click here for more info... </a>
+            <a href="../teaching/icps/"> Click here for more info... </a>
           icon: graduation-cap
           icon_pack: fas
           cta: "Click here for more info"
-          cta_url: "./icps/"
+          cta_url: "../teaching/icps/"
 
     design:
       # 2 cards per row for the teaching modules
