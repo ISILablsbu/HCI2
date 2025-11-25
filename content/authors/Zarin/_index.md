@@ -1,20 +1,20 @@
 ---
 # Display name
-title: Cajetan Emeka Oriekezie
+title: Zarin Shabab
 
 # Full name (for SEO)
-first_name: Cajetan Emeka
-last_name: Oriekezie
+first_name: Zarin
+last_name: Shabab
 
 # Username (this should match the folder name)
 authors:
-  - Cajetan
+  - Zarin
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: PhD Student
+role: Research Intern
 
 # Organizations/Affiliations
 organizations:
@@ -70,7 +70,7 @@ email: ''
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Researchers
+  - Research Interns
   # - Visitors
 ---
 
