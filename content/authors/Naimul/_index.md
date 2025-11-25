@@ -25,9 +25,8 @@ organizations:
 bio: My research interests include smart assembly system, Industry 5.0.
 
 interests:
-  - Industrial Manufacturing
   - Smart Assembly System
-  - Spatial Augemted Reality
+  - Spatial Augmented Reality
   - Human Computer Interaction
   - Computer Vision
   

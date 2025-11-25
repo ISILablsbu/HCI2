@@ -41,7 +41,7 @@ education:
     #   year: Present
     - course: MSc in Artificial Intelligence
       institution: University of Surrey
-      year: 2022
+      year: 2025
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons

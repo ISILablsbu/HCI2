@@ -36,7 +36,7 @@ education:
   courses:
     - course: PhD in Artificial Intelligence
       institution: Stanford University
-      year: 2021-present
+      year: 2022-present
     - course: BEng Computer Engineering
       institution: London South Bank University
       year: 2021
