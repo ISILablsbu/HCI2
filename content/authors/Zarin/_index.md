@@ -1,17 +1,17 @@
 ---
 # Display name
-title: Naimul Hasan
+title: Cajetan Emeka Oriekezie
 
 # Full name (for SEO)
-first_name: Naimul
-last_name: Hasan
+first_name: Cajetan Emeka
+last_name: Oriekezie
 
 # Username (this should match the folder name)
 authors:
-  - Naimul
+  - Cajetan
 
 # Is this the primary user of the site?
-superuser: true
+superuser: false
 
 # Role/position
 role: PhD Student
@@ -19,36 +19,42 @@ role: PhD Student
 # Organizations/Affiliations
 organizations:
   - name: London South Bank University
-    url: 'https://researchportal.lsbu.ac.uk/en/persons/md-naimul-hasan'
+    url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include smart assembly system, Industry 5.0.
+bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-  - Industrial Manufacturing
-  - Smart Assembly System
-  - Spatial Augemted Reality
-  - Human Computer Interaction
-  - Computer Vision
-  
+  - Artificial Intelligence
+  - Computational Linguistics
+  - Information Retrieval
 
 education:
   courses:
-    - course: PhD in Computer Science & Digital Technology
-      institution: London South Bank University
-      year: Present
-    - course: BSc in Computer Science
-      institution: London South Bank University
-      year: 2022
+    - course: PhD in Artificial Intelligence
+      institution: Stanford University
+      year: 2012
+    - course: MEng in Artificial Intelligence
+      institution: Massachusetts Institute of Technology
+      year: 2009
+    - course: BSc in Artificial Intelligence
+      institution: Massachusetts Institute of Technology
+      year: 2008
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
+  - icon: envelope
+    icon_pack: fas
+    link: 'mailto:test@example.org'
+  - icon: twitter
+    icon_pack: fab
+    link: https://twitter.com/GeorgeCushen
   - icon: google-scholar
     icon_pack: ai
-    link: https://scholar.google.com/citations?user=T3ooZkEAAAAJ&hl=en
+    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
   - icon: github
     icon_pack: fab
     link: https://github.com/gcushen
@@ -68,6 +74,6 @@ user_groups:
   # - Visitors
 ---
 
-Naimul Hasan is a PhD student at London South Bank University, UK. His research focuses on intelligent manufacturing systems, distributed robotics, and automation, with particular interest in Industry 5.0 and human-machine interaction. He has worked on projects involving computer vision and deep learning for industrial applications, including assembly error tracking and metal casting defect detection. Naimul has been actively contributing to advancing automation through AI-driven solutions.
+吳恩達 is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
 
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
