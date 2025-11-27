@@ -8,14 +8,27 @@ sections:
   - block: hero
     content:
       title: |
-        HCI²
-        Research Group
+        HCI² – Human-Centred Industrial Intelligence Lab, LSBU
+
       image:
-        filename: welcome.jpg
+        # filename: welcome.jpg
+        filename: 
       text: |
         <br>
+        Welcome to the Human-Centred Industrial Intelligence Lab (HCI²) at London South Bank University. We design and study human-centred, AI-enabled manufacturing and remanufacturing systems that bring together digital twins, collaborative robotics and data-driven decision support.
         
-        The **LSBU HCI² Research Lab** has been a center of excellence for Artificial Intelligence and Robotics research, teaching, and practice since its founding in 2025.
+  - block: hero
+    content:
+      title: |
+        Reserach Area
+
+      # image:
+      #   filename: welcome.jpg
+      text: |
+        <br>
+        Our research focuses on multi-fidelity digital twins for factories and logistics, ergonomics-aware human–robot collaboration, augmented reality for operator support, and AI for disassembly, remanufacturing and circular production. Working at the intersection of computer science, human sciences, robotics and industrial engineering, we develop and validate methods on real industrial use-cases, from adaptive AMR fleet management to ergonomics-aware task allocation in Industry 5.0-aligned production systems.
+
+
   
   # - block: collection
   #   content:
