@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: ISI Research Lab  # Website name
-baseURL: 'https://isilablsbu.github.io/IndustrialSystemIntelligence/' # Website URL
+baseURL: 'https://hci2.uk/' # Website URL
 
 ############################
 ## LANGUAGE
