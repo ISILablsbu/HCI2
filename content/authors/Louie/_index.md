@@ -71,5 +71,5 @@ user_groups:
   # - Visitors
 ---
 
-Louie Webb is a PhD candidate at London South Bank University, working within the Industrial Systems Intelligence Lab in the School of Computer Science and Digital Technologies. His research specialises in Digital Twin-enabled adaptive manufacturing systems, with a focus on simulation, modelling, and incident-responsive Autonomous Mobile Robot (AMR) fleet management. His work explores the convergence of advanced simulation, optimisation, and human-in-the-loop decision support to enhance resilience, agility, and intelligence in manufacturing shopfloors.
+Louie Webb is a PhD candidate at London South Bank University, working within the Human-Centred Industrial Intelligence Lab in the School of Computer Science and Digital Technologies. His research specialises in Digital Twin-enabled adaptive manufacturing systems, with a focus on simulation, modelling, and incident-responsive Autonomous Mobile Robot (AMR) fleet management. His work explores the convergence of advanced simulation, optimisation, and human-in-the-loop decision support to enhance resilience, agility, and intelligence in manufacturing shopfloors.
 

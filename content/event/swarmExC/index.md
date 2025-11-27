@@ -1,5 +1,5 @@
 ---
-title: LSBU ISI Lab Presents- The 2025 Kilobot Swarm Intelligence Extra-Curricular Activity
+title: HCI² Lab Presents- The 2025 Kilobot Swarm Intelligence Extra-Curricular Activity
 
 event: Kilobot Swarm Robot ExC
 # event_url: https://example.org
@@ -12,7 +12,7 @@ address:
   country: United Kingdom
 
 summary: Hands-on training on swarm robots.
-abstract: ' LSBU ISI Lab is proud to host the 2025 Kilobot Swarm Intelligence Workshop. This two-day event is designed for undergraduate (BSc) and postgraduate (MSc) students to gain hands-on experience with decentralized, collective artificial intelligence.
+abstract: ' HCI² Lab is proud to host the 2025 Kilobot Swarm Intelligence Workshop. This two-day event is designed for undergraduate (BSc) and postgraduate (MSc) students to gain hands-on experience with decentralized, collective artificial intelligence.
 
   Participants will move from foundational principles to advanced applications, exploring how complex, emergent group behaviors can arise from simple, locally-executed rules. The forum will feature a series of technical workshops culminating in a dynamic swarm robotics challenge, providing a unique opportunity to program, test, and deploy algorithms on a large-scale Kilobot collective.'
 

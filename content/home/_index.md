@@ -8,14 +8,14 @@ sections:
   - block: hero
     content:
       title: |
-        ISI
+        HCI²
         Research Group
       image:
         filename: welcome.jpg
       text: |
         <br>
         
-        The **LSBU ISI Research Group** has been a center of excellence for Artificial Intelligence and Robotics research, teaching, and practice since its founding in 2025.
+        The **LSBU HCI² Research Group** has been a center of excellence for Artificial Intelligence and Robotics research, teaching, and practice since its founding in 2025.
   
   # - block: collection
   #   content:
@@ -86,7 +86,7 @@ sections:
       items:
         - name: "Visit Our Lab"
           description: >
-            Industrial Systems Intelligence | Room: FW104
+            Human-Centred Industrial Intelligence | Room: FW104
 
             School of Computer Science & Digital Technology |
             London South Bank University |

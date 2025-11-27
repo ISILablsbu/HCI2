@@ -12,7 +12,7 @@ sections:
 
       text: |
         <br>
-        Browse current openings and ways to get involved with the LSBU ISI Research Group.
+        Browse current openings and ways to get involved with the LSBU HCI² Research Group.
 
         ### Why Join Our Lab?
 
