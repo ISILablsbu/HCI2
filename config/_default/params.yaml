@@ -64,7 +64,7 @@ header:
 footer:
   copyright:
     # notice: '© {year} Bugra Alkan. This work is licensed under {license}'
-    notice: '© {year} Bugra Alkan.  This work is licensed under [CC BY NC ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)'
+    notice: '© {year}.  This work is licensed under [CC BY NC ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)'
     license:
       enable: false
       allow_derivatives: false

@@ -25,134 +25,134 @@ sections:
 
 
   # 1) Post-Doctoral Position section —
-  - block: features
-    content:
-      title: Post-Doctoral Position
-      text: ''
-      items:
-        - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
-          description: >
-            ### Project Description
-            Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
+#   - block: features
+#     content:
+#       title: Post-Doctoral Position
+#       text: ''
+#       items:
+#         - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
+#           description: >
+#             ### Project Description
+#             Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
 
-            ### Requirements 
-            - option 1
-            - option 2
-            - option 3
+#             ### Requirements 
+#             - option 1
+#             - option 2
+#             - option 3
 
-            ### Application Materials:
-            - option 1
-            - option 2
-            - option 3
+#             ### Application Materials:
+#             - option 1
+#             - option 2
+#             - option 3
 
-            #### Application Deadline
+#             #### Application Deadline
 
-        - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
-          description: >
-            ### Project Description
-            Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
+#         - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
+#           description: >
+#             ### Project Description
+#             Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
 
-            ### Requirements 
-            - option 1
-            - option 2
-            - option 3
+#             ### Requirements 
+#             - option 1
+#             - option 2
+#             - option 3
 
-            ### Application Materials:
-            - option 1
-            - option 2
-            - option 3
+#             ### Application Materials:
+#             - option 1
+#             - option 2
+#             - option 3
 
-            #### Application Deadline
+#             #### Application Deadline
 
-    design:
-      columns: "2"
+#     design:
+#       columns: "2"
 
-# 2) PhD Position section —
-  - block: features
-    content:
-      title: PhD Student Position
-      text: ''
-      items:
-        - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
-          description: >
-            ### Project Description
-            Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
+# # 2) PhD Position section —
+#   - block: features
+#     content:
+#       title: PhD Student Position
+#       text: ''
+#       items:
+#         - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
+#           description: >
+#             ### Project Description
+#             Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
 
-            ### Requirements 
-            - option 1
-            - option 2
-            - option 3
+#             ### Requirements 
+#             - option 1
+#             - option 2
+#             - option 3
 
-            ### Application Materials:
-            - option 1
-            - option 2
-            - option 3
+#             ### Application Materials:
+#             - option 1
+#             - option 2
+#             - option 3
 
-            #### Application Deadline
+#             #### Application Deadline
 
-        - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
-          description: >
-            ### Project Description
-            Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
+#         - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
+#           description: >
+#             ### Project Description
+#             Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
 
-            ### Requirements 
-            - option 1
-            - option 2
-            - option 3
+#             ### Requirements 
+#             - option 1
+#             - option 2
+#             - option 3
 
-            ### Application Materials:
-            - option 1
-            - option 2
-            - option 3
+#             ### Application Materials:
+#             - option 1
+#             - option 2
+#             - option 3
 
-            #### Application Deadline
+#             #### Application Deadline
 
-    design:
-      columns: "2"
+#     design:
+#       columns: "2"
 
 
-# 3) Undergraduate Research Position section —
-  - block: features
-    content:
-      title: Undergraduate Research Opportunities
-      text: ''
-      items:
-        - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
-          description: >
-            ### Project Description
-            Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
+# # 3) Undergraduate Research Position section —
+#   - block: features
+#     content:
+#       title: Undergraduate Research Opportunities
+#       text: ''
+#       items:
+#         - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
+#           description: >
+#             ### Project Description
+#             Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
 
-            ### Requirements 
-            - option 1
-            - option 2
-            - option 3
+#             ### Requirements 
+#             - option 1
+#             - option 2
+#             - option 3
 
-            ### Application Materials:
-            - option 1
-            - option 2
-            - option 3
+#             ### Application Materials:
+#             - option 1
+#             - option 2
+#             - option 3
 
-            #### Application Deadline
+#             #### Application Deadline
 
-        - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
-          description: >
-            ### Project Description
-            Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
+#         - name: "AI-Driven Digital Twin Framework for Real-Time Defect Detection in FDM Additive Manufacturing"
+#           description: >
+#             ### Project Description
+#             Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
 
-            ### Requirements 
-            - option 1
-            - option 2
-            - option 3
+#             ### Requirements 
+#             - option 1
+#             - option 2
+#             - option 3
 
-            ### Application Materials:
-            - option 1
-            - option 2
-            - option 3
+#             ### Application Materials:
+#             - option 1
+#             - option 2
+#             - option 3
 
-            #### Application Deadline
+#             #### Application Deadline
 
-    design:
-      columns: "2"
+#     design:
+#       columns: "2"
 
 # 4) MSC Dissertation Topics —
   - block: features
