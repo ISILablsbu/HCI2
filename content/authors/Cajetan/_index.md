@@ -74,6 +74,4 @@ user_groups:
   # - Visitors
 ---
 
-吳恩達 is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+ajetan Oriekezie is a PhD Researcher at London South Bank University within the College of Technology and Environment. His research sits at the intersection of Applied Artificial Intelligence and environmental sustainability, specifically focusing on the application of Large Language Models (LLMs) in Life Cycle Assessment (LCA). By integrating machine learning and Explainable AI (XAI) into environmental assessment frameworks, Cajetan aims to accelerate LCA workflows while ensuring they remain transparent, robust, and accessible for practitioners. Prior to his doctoral studies, he obtained an MSc in Computer Science (specializing in Artificial Intelligence) from Nile University of Nigeria.

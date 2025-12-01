@@ -6,7 +6,8 @@ title: Digital Twin-Enabled Adaptive Fleet Management
 
 summary: Digital Twin-Enabled Adaptive Fleet Management.
 Project Title: "Digital Twin-Enabled Adaptive Fleet Management: Multi-Fidelity Optimisation and Human-in-the-Loop Incident Response for Autonomous Mobile Robots in Smart Manufacturing."
-abstract: "This research presents a Digital Twin (DT)-enabled adaptive fleet management framework for Autonomous Mobile Robots (AMRs) in discrete manufacturing. The proposed multi-fidelity DT framework integrates high-fidelity simulation and surrogate optimisation models to enable real-time, incident-aware decision-making. It also introduces operator-in-the-loop interaction to support Industry 5.0’s human-centric principles, enhancing adaptability and resilience on the shop floor."
+abstract: 
+  This research presents a Digital Twin (DT)-enabled adaptive fleet management framework for Autonomous Mobile Robots (AMRs) in discrete manufacturing. The proposed multi-fidelity DT framework integrates high-fidelity simulation and surrogate optimisation models to enable real-time, incident-aware decision-making. It also introduces operator-in-the-loop interaction to support Industry 5.0’s human-centric principles, enhancing adaptability and resilience on the shop floor.
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
@@ -46,5 +47,14 @@ slides:
 #   Otherwise, set `projects = []`.
 projects:
 ---
+
+
+<div>
+<div> 
+<p><b>Abstract:</b>  This research presents a Digital Twin (DT)-enabled adaptive fleet management framework for Autonomous Mobile Robots (AMRs) in discrete manufacturing. The proposed multi-fidelity DT framework integrates high-fidelity simulation and surrogate optimisation models to enable real-time, incident-aware decision-making. It also introduces operator-in-the-loop interaction to support Industry 5.0’s human-centric principles, enhancing adaptability and resilience on the shop floor. </p>
+</div>
+<!-- This project develops an operator-centred Digital Twin framework for resilient Autonomous Mobile Robot (AMR) fleet management in dynamic smart manufacturing environments. Building on a multi-fidelity digital architecture that combines Digital Models, Digital Shadows, surrogate-based multi objective optimisation and high-fidelity simulation, the system detects incidents such as AMR failures, machine breakdowns and demand shocks, then generates incident aware schedules in real time. A lightweight surrogate model provides rapid rescheduling within a few seconds while remaining close to high fidelity reference behaviour, enabling throughput and energy efficiency to be preserved under disruption. In parallel, a human in the loop decision layer exposes Pareto fronts, Gantt chart previews and post simulation metrics to operators, who can select preferred trade-offs, request validation via re simulation or issue policy bound overrides, all under role-based access control. Every decision is captured as a machine-readable artefact with timestamps, reason codes and override rationale, creating a single audited trail that supports governance, cross shift handover and future learning from operator choices. The framework will be instantiated and evaluated on a battery module assembly line, providing benchmark evidence on latency, robustness and operator workload for different policy modes prioritising speed, assurance or governance, and delivering a transferable blueprint for Industry 5.0 ready, human centric AMR coordination. -->
+</div>
+
 
 {{< project-pubs project="digitaltwin" >}}

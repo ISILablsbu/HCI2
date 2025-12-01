@@ -402,5 +402,52 @@
   }
 }
 
+/* Center-align hero sections */
+.wg-hero .container {
+  text-align: center;
+}
+
+.hero-title {
+  text-align: center !important;
+}
+
+.hero-lead {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+}
+
+/* Center-align section block content (text, title, image) */
+.home-section .home-section__content {
+  text-align: center;
+}
+
+.home-section h1,
+.home-section h2,
+.home-section h3 {
+  text-align: center;
+}
+
+.home-section p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+
+/* Center section images within their containers */
+.home-section img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ensure markdown blocks are centered */
+.home-section [class*="markdown"] {
+  text-align: center;
+}
+
+
 
 
