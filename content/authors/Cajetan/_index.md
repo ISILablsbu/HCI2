@@ -25,9 +25,10 @@ organizations:
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Large Language Models (LLMs)
+  - Natural Language Processing (NLP)
+  - Information Retrieval (IR)
+  - LLM Evaluation
 
 education:
   courses:
@@ -48,16 +49,19 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:test@example.org'
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
-  - icon: google-scholar
-    icon_pack: ai
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+    link: 'mailto:s4232877@lsbu.ac.uk'
+  # - icon: twitter
+  #   icon_pack: fab
+  #   link: https://twitter.com/GeorgeCushen
+  # - icon: google-scholar
+  #   icon_pack: ai
+  #   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
   - icon: github
     icon_pack: fab
-    link: https://github.com/gcushen
+    link: https://githu.com/cajetanoriekezie
+  - icon: linkedin
+    icon_pack: fab
+    link: https://www.linkedin.com/in/cajetanemekaoriekezie/
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
