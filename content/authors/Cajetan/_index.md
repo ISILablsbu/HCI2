@@ -55,7 +55,7 @@ social:
   #   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
   - icon: github
     icon_pack: fab
-    link: https://githu.com/cajetanoriekezie
+    link: https://github.com/cajetanoriekezie
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/cajetanemekaoriekezie/
