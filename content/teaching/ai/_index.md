@@ -1,7 +1,7 @@
 ---
-title: teaching
-date: 2025-11-23
+title: Artificial Intelligence
 type: landing
+date: 2025-11-23
 
 sections:
   - block: features
@@ -41,7 +41,7 @@ sections:
             Optimisation problems and objective functions; local search and landscape intuition; hill-climbing algorithms and variants; metaheuristics; simulated annealing; brief overview of genetic algorithms; summary and exercises.
             #### L4 Probability and Uncertainty in AI
 
-            Motivation for probabilistic modelling; probability spaces and basic rules; conditional probability and Bayes’ rule; random variables and common distributions; joint, marginal and conditional distributions; role of probability in machine learning and robotics; notebook integration with a tiny Naive Bayes example.
+            Motivation for probabilistic modelling; probability spaces and basic rules; conditional probability and Bayes' rule; random variables and common distributions; joint, marginal and conditional distributions; role of probability in machine learning and robotics; notebook integration with a tiny Naive Bayes example.
             #### L5 Machine Learning: Model Fitting and Sensitivity Analysis
 
             Supervised learning and loss minimisation; data preprocessing; bias–variance trade-off; correlation and Pearson coefficient; coefficient of determination R2R^2R2; train–test split and cross validation; regression error metrics; sensitivity analysis and feature importance.

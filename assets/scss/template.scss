@@ -56,13 +56,27 @@
 #section-features .featurette .col-12.col-sm-4 {
   flex: 1 1 100%;
   max-width: 100%;
+  width: 100%;
 }
 
 @media (min-width: 992px) {
   #section-features .featurette .col-12.col-sm-4 {
-    flex: 1 1 calc(50% - 0.625rem);
-    max-width: calc(50% - 0.625rem);
+    flex: 1 1 100%;
+    max-width: 100%;
+    width: 100%;
   }
+}
+
+/* Center text in feature cards */
+#section-features .col-12.col-sm-4 {
+  text-align: center;
+}
+
+#section-features .col-12.col-sm-4 .section-subheading,
+#section-features .col-12.col-sm-4 p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Ensure cards (teaching, contact, research) have equal heights and padding */
@@ -446,6 +460,27 @@
 /* Ensure markdown blocks are centered */
 .home-section [class*="markdown"] {
   text-align: center;
+}
+
+/* Center all headings and text in markdown content */
+.home-section h4,
+.home-section h5,
+.home-section h6 {
+  text-align: center;
+}
+
+/* Center lists and list items - left-align text for readability */
+.home-section ul,
+.home-section ol {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  display: inline-block;
+  text-align: left;
+}
+
+.home-section li {
+  text-align: left;
 }
 
 
