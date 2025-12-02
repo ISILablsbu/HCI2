@@ -25,14 +25,17 @@ organizations:
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Human-centric, AI-enabled manufacturing and cyber-physical production systems
+  - Human–robot collaboration for safe, adaptive, high-mix assembly
+  - Industrial AI (ML/DL/RL) for process optimization, fault prediction and automation
+  - Data-driven decision-making and digital twins for zero-defect, sustainable production
+  - AI-based quality inspection and XR tools for operator support and training 
 
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: University of Warwick
+    - course: PhD in Engineering
+      institution: WMG, University of Warwick
+      year: 2019
     # - course: MEng in Artificial Intelligence
     #   institution: Massachusetts Institute of Technology
     #   year: 2009

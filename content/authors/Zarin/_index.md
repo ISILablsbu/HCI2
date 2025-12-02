@@ -25,21 +25,20 @@ organizations:
 # bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-  # - Artificial Intelligence
-  # - Computational Linguistics
-  # - Information Retrieval
+  - AI-Driven Ergonomics
+  - Computer Vision for Human Posture Analysis
 
 education:
-  # courses:
+  courses:
   #   - course: PhD in Artificial Intelligence
   #     institution: Stanford University
   #     year: 2012
   #   - course: MEng in Artificial Intelligence
   #     institution: Massachusetts Institute of Technology
   #     year: 2009
-  #   - course: BSc in Artificial Intelligence
-  #     institution: Massachusetts Institute of Technology
-  #     year: 2008
+    - course: BSc in Computer Science
+      institution: London South Bank University
+      year: 2025
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -70,10 +69,8 @@ email: ''
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Research Interns
+  - Researchers
   # - Visitors
 ---
 
-<!-- 吳恩達 is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. -->
+Zarin Shabab is a Research Intern at London South Bank University, working within the Human-Centred Industrial Intelligence Lab in the School of Computer Science and Digital Technologies. Her research focuses on AI-driven ergonomic risk assessment, combining MediaPipe-based pose estimation, upper-limb joint-angle modelling, and automated RULA scoring to enable real-time, low-cost monitoring of human posture. She has developed and validated an intelligent ergonomic assessment framework in a real-world workstation scenario, contributing to advanced research in computer vision, human–machine interaction, and human-centred safety systems aligned with Industry 4.0/5.0.
