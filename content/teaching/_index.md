@@ -4,32 +4,32 @@ type: landing
 date: 2024-11-23
 
 sections:
-  - block: features
+  - block: markdown
     content:
       title: Teaching
-      text: Courses taught by Dr. Bugra Alkan at the London South Bank University.
+      text: |
+        The HCI² Lab delivers postgraduate and undergraduate teaching in artificial intelligence, data science, and industrial cyber-physical systems. Our modules combine theoretical foundations with practical, hands-on experience using modern tools and real-world industrial datasets.
+
+  - block: features
+    content:
+      title: Our Courses
+      text: Taught by members of the HCI² Lab at London South Bank University.
       items:
-        # - name: <a href="./ai/">Artificial Intelligence </a>
         - name: "Artificial Intelligence"
           description: >
-            Examines computational and statistical methods for the design of complex engineered systems, including design of experiments, surrogate modeling, surrogate-based optimization, sensitivity analysis, and mixed-variable design space exploration. Aerospace examples highlight advanced aircraft and propulsion system concepts, including methods for co-optimization of
-            aircraft, propulsion, and energy/power management.  [Click here for more info...](ai/)
+            Level 6 BSc Computer Science module covering AI fundamentals, search, machine learning, neural networks, and reinforcement learning.
             <br>
-            
+            [Click here for more info...](ai/)
           icon: book-open
           icon_pack: fas
-          # cta: "Click here for more info"
-          # cta_url: "ai/"
 
         - name: "Industrial Cyber Physical Systems"
           description: >
-            Multidisciplinary integration of aerodynamics, performance, stability and control, propulsion, structures, and aeroelasticity in a system approach aimed at designing an aircraft to a set of specifications. Team-based projects are overseen and graded by faculty and may include mentoring from external organizations.
+            Level 7 MSc module covering ICPS and Industrial IoT analytics, data pipelines, time-series forecasting, machine learning, deep learning, and anomaly detection for smart manufacturing.
             <br>
             [Click here for more info...](icps/)
           icon: graduation-cap
           icon_pack: fas
-          # cta: "Click here for more info"
-          # cta_url: "icps/"
 
     design:
       # 2 cards per row for the teaching modules
