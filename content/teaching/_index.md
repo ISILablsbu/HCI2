@@ -6,31 +6,161 @@ date: 2024-11-23
 sections:
   - block: markdown
     content:
-      title: Teaching
+      title: ""
       text: |
-        The HCI² Lab delivers postgraduate and undergraduate teaching in artificial intelligence, data science, and industrial cyber-physical systems. Our modules combine theoretical foundations with practical, hands-on experience using modern tools and real-world industrial datasets.
+        <div class="teaching-hero">
+          <div class="teaching-hero-inner">
+            <p class="eyebrow">Teaching</p>
+            <p class="lead">
+              The HCI² Lab delivers postgraduate and undergraduate teaching in artificial intelligence, data science, and industrial cyber-physical systems. Our modules combine theoretical foundations with practical, hands-on experience using modern tools and real-world industrial datasets.
+            </p>
+          </div>
+        </div>
+        <div class="course-section">
+          <div class="course-section-inner">
+            <h1>Our Courses</h1>
+            <h3>Taught by members of the HCI² Lab at London South Bank University.</h3>
+            <div class="course-grid">
+              {{< course-card
+                  title="Artificial Intelligence (Level 6)"
+                  meta="BSc Computer Science & related programmes"
+                  description="Fundamentals of AI, search and optimisation, machine learning, neural networks, and reinforcement learning with Python-based labs."
+                  link="ai/"
+                  linktext="More about this module →"
+              >}}
+              {{< course-card
+                  title="Industrial Cyber Physical Systems (Level 7)"
+                  meta="MSc / Postgraduate"
+                  description="Industrial IoT, data pipelines, time-series analytics, deep learning and anomaly detection for smart manufacturing using real industrial datasets."
+                  link="icps/"
+                  linktext="More about this module →"
+              >}}
+            </div>
+          </div>
+        </div>
+        <div class="course-section">
+          <div class="course-section-inner">
+            <h1>Extracurricular Project</h1>
+            <h3>Taught by members of the HCI² Lab at London South Bank University.</h3>
+            <div class="course-grid">
+              {{< course-card
+                  title="Artificial Intelligence (Level 6)"
+                  meta="BSc Computer Science & related programmes"
+                  description="Fundamentals of AI, search and optimisation, machine learning, neural networks, and reinforcement learning with Python-based labs."
+                  link="ai/"
+                  linktext="More about this module →"
+              >}}
+              {{< course-card
+                  title="Industrial Cyber Physical Systems (Level 7)"
+                  meta="MSc / Postgraduate"
+                  description="Industrial IoT, data pipelines, time-series analytics, deep learning and anomaly detection for smart manufacturing using real industrial datasets."
+                  link="icps/"
+                  linktext="More about this module →"
+              >}}
+            </div>
+          </div>
+        </div>
+        <style>
+          .home-section:first-of-type {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+          }
+          .eyebrow {
+            font-size: 2rem;
+            text-align: left;
+          }
+          .teaching-hero {
+            position:relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            width: 100vw;              
+            background: #f6f7fb;       
+            padding: 1.2rem 0;
+          }
+          .teaching-hero-inner {
+            max-width: 1200px;         
+            margin: 0 auto;
+            padding: 0 1.5rem;         
+            text-align: left;
+          }
+          .course-section {
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            margin-top: 2vw;
+            width: 100vw;                 
+            background: #f6f7fb;          
+            padding: 3rem 0 2rem 0;       
+          }
+          .course-section-inner {
+              max-width: 1100px;     
+              margin: 1rem auto;   
+              padding: 0 1.5rem;
+            }
 
-  - block: features
-    content:
-      title: Our Courses
-      text: Taught by members of the HCI² Lab at London South Bank University.
-      items:
-        - name: "Artificial Intelligence"
-          description: >
-            Level 6 BSc Computer Science module covering AI fundamentals, search, machine learning, neural networks, and reinforcement learning.
-            <br>
-            [Click here for more info...](ai/)
-          icon: book-open
-          icon_pack: fas
+            .course-grid {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 2rem;
+              margin-top: 2rem;
+            }
 
-        - name: "Industrial Cyber Physical Systems"
-          description: >
-            Level 7 MSc module covering ICPS and Industrial IoT analytics, data pipelines, time-series forecasting, machine learning, deep learning, and anomaly detection for smart manufacturing.
-            <br>
-            [Click here for more info...](icps/)
-          icon: graduation-cap
-          icon_pack: fas
+            .course-card {
+              background: #ffffff;
+              padding: 2rem;
+              border-radius: 16px;
+              border: 1px solid #e5e7eb; 
+              box-shadow: 0 4px 16px rgba(0,0,0,0.06); 
+              transition: all 0.25s ease;
+              margin-top:1vw;
+            }
 
+            .course-card:hover {
+              transform: translateY(-4px);
+              box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+              border-color: #d1d5db;
+            }
+
+            .course-card h3 {
+              margin-top: 0;
+              margin-bottom: 1rem;
+              font-size: 1.4rem;
+              font-weight: 600;
+            }
+
+            .course-meta {
+              font-size: 0.95rem;
+              font-weight: 500;
+              color: #6b7280;
+              margin-bottom: 1rem;
+            }
+
+            .course-link {
+              display: inline-block;
+              margin-top: 1rem;
+              font-weight: 600;
+              color: #b30000; 
+              text-decoration: none;
+              transition: color 0.2s;
+            }
+
+            .course-link:hover {
+              color: #7a0000;
+              text-decoration: underline;
+            }
+
+            @media (max-width: 768px) {
+              .course-grid {
+                grid-template-columns: 1fr;
+              }
+            }
+        </style>
+
+        
     design:
       # 2 cards per row for the teaching modules
       columns: "2"

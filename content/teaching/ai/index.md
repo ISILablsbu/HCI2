@@ -1,5 +1,5 @@
 ---
-title: teaching
+title: "Teaching"
 date: 2025-11-23
 type: landing
 
