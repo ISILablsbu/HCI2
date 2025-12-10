@@ -75,7 +75,7 @@ sections:
             #### L11 Project Presentations: ICPS and IIoT Analytics in Practice
 
             Student presentations of mini-projects using Python/Colab on ICPS/IIoT datasets and/or robotic systems; demonstration of complete pipelines from raw time-series data through pre-processing, forecasting and/or anomaly detection to visualisation and interpretation; peer feedback and reflective discussion on modelling choices, limitations and deployment considerations.
-
+            
             ---
 
             ### Objectives
