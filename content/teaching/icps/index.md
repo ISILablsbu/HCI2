@@ -10,8 +10,7 @@ sections:
       text: ''
       items:
         - name: "Industrial Cyber-Physical Systems"
-          description: >
-
+          description: |
             **Principal lecturer:** Dr Bugra Alkan <br>
             **Taken by:** Level 7 MSc Applied Artificial Intelligence and related programmes <br>
             **Term:** Semester 2 <br>
@@ -75,33 +74,33 @@ sections:
             #### L11 Project Presentations: ICPS and IIoT Analytics in Practice
 
             Student presentations of mini-projects using Python/Colab on ICPS/IIoT datasets and/or robotic systems; demonstration of complete pipelines from raw time-series data through pre-processing, forecasting and/or anomaly detection to visualisation and interpretation; peer feedback and reflective discussion on modelling choices, limitations and deployment considerations.
-            
+
             ---
 
             ### Objectives
             
             At the end of the course students should:
-            
-            - understand the role of ICPS, smart factories and IIoT in modern industrial systems
-            - be able to describe and compare ICPS/IIoT architectures, networking options and M2M protocols
-            - understand the purpose of OPC-UA and its role in industrial communication and analytics
-            - be able to design and implement IIoT analytics pipelines for time-series data in Python
-            - understand and apply key pre-processing techniques for industrial time series (alignment, cleaning, resampling, windowing, scaling)
-            - be familiar with classical time-series forecasting methods (exponential smoothing, ARIMA, SARIMA) and know when to use them
-            - be able to engineer features and train machine-learning models (linear and tree-based) for IIoT forecasting and evaluate them properly
-            - understand the principles behind deep sequential models (RNNs, LSTMs, GRUs, TCNs) and apply them to industrial forecasting problems
-            - be able to implement and compare different approaches to anomaly detection in ICPS/IIoT data
-            - appreciate practical safety, reliability and security considerations in deploying analytics in industrial and robotic systems
+
+            - Understand the role of ICPS, smart factories and IIoT in modern industrial systems.
+            - Be able to describe and compare ICPS/IIoT architectures, networking options and M2M protocols.
+            - Understand the purpose of OPC-UA and its role in industrial communication and analytics.
+            - Be able to design and implement IIoT analytics pipelines for time-series data in Python.
+            - Understand and apply key pre-processing techniques for industrial time series (alignment, cleaning, resampling, windowing, scaling).
+            - Be familiar with classical time-series forecasting methods (exponential smoothing, ARIMA, SARIMA) and know when to use them.
+            - Be able to engineer features and train machine-learning models (linear and tree-based) for IIoT forecasting and evaluate them properly.
+            - Understand the principles behind deep sequential models (RNNs, LSTMs, GRUs, TCNs) and apply them to industrial forecasting problems.
+            - Be able to implement and compare different approaches to anomaly detection in ICPS/IIoT data.
+            - Appreciate practical safety, reliability and security considerations in deploying analytics in industrial and robotic systems.
 
             ---
 
             ### Recommended reading
             
-            - Lee, E. A. Introduction to Embedded Systems: A Cyber-Physical Systems Approach (for CPS foundations).
-            - Hermann, M., Pentek, T. & Otto, B. "Design principles for Industrie 4.0 scenarios" (Industry 4.0 / smart factories).
-            - Hyndman, R. J. & Athanasopoulos, G. Forecasting: Principles and Practice (free online; classical forecasting).
+            - Lee, E. A. *Introduction to Embedded Systems: A Cyber-Physical Systems Approach* (for CPS foundations).
+            - Hermann, M., Pentek, T. & Otto, B. “Design principles for Industrie 4.0 scenarios” (Industry 4.0 / smart factories).
+            - Hyndman, R. J. & Athanasopoulos, G. *Forecasting: Principles and Practice* (free online; classical forecasting).
             - Bagnall, A. et al. selected papers/tutorials on time-series classification and forecasting.
-            - Chollet, F. Deep Learning with Python (selected chapters on sequence models).
+            - Chollet, F. *Deep Learning with Python* (selected chapters on sequence models).
 
     design:
       columns: "1"
