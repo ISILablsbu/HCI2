@@ -1,0 +1,21 @@
+{{ range $.Site.Data.icps.lectures.lectures }}
+  <details style="border-bottom: 1px solid #e5e5e5; padding: 12px 0;">
+    <summary style="
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-size: 1rem;
+    ">
+      <span>
+        <strong style="margin-right: 12px;">{{ .id }}</strong>
+        {{ .title }}
+      </span>
+      <span style="font-size: 1.2rem; color: #555;">›</span>
+    </summary>
+
+    <p style="padding-top: 12px; line-height: 1.6; color: #444;">
+      {{ .desc }}
+    </p>
+  </details>
+{{ end }}

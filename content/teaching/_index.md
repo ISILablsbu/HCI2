@@ -40,26 +40,21 @@ sections:
         </div>
         <div class="course-section">
           <div class="course-section-inner">
-            <h1>Extracurricular Project</h1>
+            <h1>Our Courses</h1>
             <h3>Taught by members of the HCI² Lab at London South Bank University.</h3>
             <div class="course-grid">
-              {{< course-card
-                  title="Artificial Intelligence (Level 6)"
-                  meta="BSc Computer Science & related programmes"
-                  description="Fundamentals of AI, search and optimisation, machine learning, neural networks, and reinforcement learning with Python-based labs."
-                  link="ai/"
-                  linktext="More about this module →"
-              >}}
-              {{< course-card
-                  title="Industrial Cyber Physical Systems (Level 7)"
-                  meta="MSc / Postgraduate"
-                  description="Industrial IoT, data pipelines, time-series analytics, deep learning and anomaly detection for smart manufacturing using real industrial datasets."
-                  link="icps/"
-                  linktext="More about this module →"
-              >}}
+             {{< course-card-expand
+              title="Artificial Intelligence (Level 6)"
+              meta="BSc Computer Science & related programmes"
+              description="Fundamentals of AI, search and optimisation, machine learning, neural networks, and reinforcement learning with Python-based labs."
+              linktext="More about this module ▼"
+            >}}
+                  {{< ai-lecture-list >}}
+            {{< /course-card-expand >}}
             </div>
           </div>
         </div>
+        
         <style>
           .home-section:first-of-type {
             margin-top: 0 !important;
@@ -104,7 +99,7 @@ sections:
 
             .course-grid {
               display: grid;
-              grid-template-columns: 1fr 1fr;
+              grid-template-columns: 1fr;
               gap: 2rem;
               margin-top: 2rem;
             }
@@ -153,11 +148,49 @@ sections:
               text-decoration: underline;
             }
 
+            .extra-course-grid {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              gap: 2.5rem;
+            }
+
             @media (max-width: 768px) {
-              .course-grid {
+              .extra-course-grid{
                 grid-template-columns: 1fr;
               }
             }
+            .course-details {
+              margin-top: 1.25rem;
+            }
+
+            .course-details summary {
+              cursor: pointer;
+              color: #b30000;
+              font-weight: 600;
+              font-size: 1.05rem;
+              list-style: none;
+            }
+
+            .course-details summary::-webkit-details-marker {
+              display: none;
+            }
+            .course-details summary::marker {
+              content: "";
+            }
+
+            .course-details-body {
+              margin-top: 1rem;
+              padding-top: 1rem;
+              border-top: 3px solid #e5e7eb;
+              line-height: 1.6;
+              max-width: 60rem;
+              font-weight: 400;
+              font-size: 1rem;
+            }
+            .course-details[open] {
+              padding-bottom: 0.75rem;
+            }
+
         </style>
 
         

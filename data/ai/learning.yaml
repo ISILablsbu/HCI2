@@ -1,0 +1,9 @@
+outcomes:
+  - Understand the main concepts and paradigms in AI, including search, learning and decision making.
+  - Be able to formalise simple problems as search or optimisation tasks and implement appropriate algorithms.
+  - Understand and apply basic probabilistic reasoning and model evaluation techniques in AI contexts.
+  - Be able to design, train and evaluate core machine learning models (regression, classification, clustering, trees, ensembles).
+  - Understand the principles behind artificial neural networks and simple convolutional architectures and implement them in Python.
+  - Be able to implement a basic reinforcement learning agent (e.g. Q-learning in gridworld-style environments).
+  - Be aware of the opportunities, risks and responsible use of AI in real-world applications.
+            

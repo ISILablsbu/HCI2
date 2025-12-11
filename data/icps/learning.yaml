@@ -1,0 +1,11 @@
+outcomes:
+  - Understand the role of ICPS, smart factories and IIoT in modern industrial systems
+  - Be able to describe and compare ICPS/IIoT architectures, networking options and M2M protocols
+  - Understand the purpose of OPC-UA and its role in industrial communication and analytics
+  - Be able to design and implement IIoT analytics pipelines for time-series data in Python
+  - Understand and apply key pre-processing techniques for industrial time series (alignment, cleaning, resampling, windowing, scaling)
+  - Be familiar with classical time-series forecasting methods (exponential smoothing, ARIMA, SARIMA) and know when to use them
+  - Be able to engineer features and train machine-learning models (linear and tree-based) for IIoT forecasting and evaluate them properly
+  - Understand the principles behind deep sequential models (RNNs, LSTMs, GRUs, TCNs) and apply them to industrial forecasting problems
+  - Be able to implement and compare different approaches to anomaly detection in ICPS/IIoT data
+  - Appreciate practical safety, reliability and security considerations in deploying analytics in industrial and robotic systems

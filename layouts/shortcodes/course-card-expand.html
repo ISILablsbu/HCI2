@@ -1,0 +1,66 @@
+<article class="course-card">
+  <h3>{{ .Get "title" }}</h3>
+
+  {{ with .Get "meta" }}
+    <p class="course-meta">{{ . }}</p>
+  {{ end }}
+
+  {{ with .Get "description" }}
+    <p>{{ . }}</p>
+  {{ end }}
+
+  <details class="course-details">
+    <summary>{{ or (.Get "linktext") "More about this module ↓" }}</summary>
+
+    <div class="course-details-body">
+      {{ .Inner | safeHTML }}
+    </div>
+  </details>
+</article>
+
+   
+ <!-- <article class="course-card">
+  <h3>{{ .Get "title" }}</h3>
+
+  {{ with .Get "meta" }}
+    <p class="course-meta">{{ . }}</p>
+  {{ end }}
+
+  {{ with .Get "description" }}
+    <p>{{ . }}</p>
+  {{ end }}
+
+  <details class="course-details">
+    <summary>{{ or (.Get "linktext") "More about this module ↓" }}</summary>
+
+    <div class="course-details-body">
+      {{ .Inner | markdownify }}
+    </div>
+
+    
+    <div class="course-expand-body">
+      {{ $page := site.GetPage (.Get "page") }}
+
+      {{ if not $page }}
+        <p style="color: red;">⚠ Page not found: {{ .Get "page" }}</p>
+      
+      {{ else }}
+
+        {{/* CASE 1: Landing page (sections[] exists) */}}
+        {{ if $page.Params.sections }}
+          {{ range $page.Params.sections }}
+            {{ if eq .block "markdown" }}
+              {{ .content.text | safeHTML }}
+            {{ end }}
+          {{ end }}
+
+        {{/* CASE 2: Normal page */}}
+        {{ else }}
+          {{ $page.Content }}
+        {{ end }}
+
+      {{ end }}
+    </div>
+  </details>
+</article> -->
+

@@ -1,0 +1,55 @@
+lectures:
+  - id: L1
+    title: Introduction to ICPS and IIoT Analytics
+    desc: >
+      Motivation and module overview; from traditional automation to Industry 4.0; Industrial Cyber-Physical Systems (ICPS) at a glance; data, information and value in smart factories; informal ICPS and IIoT architectures; module structure and learning outcomes; Colab environment check and a first industrial time series; summary and exercises.
+
+  - id: L2
+    title: Cyber-Physical Systems and Smart Factories
+    desc: >
+      Definitions and characteristics of cyber-physical systems; smart factories and cyber-physical production systems; architectural views of ICPS; data flows in CPS and typical time-series characteristics (sampling, delays, noise, multivariate tags); safety, reliability and security considerations in industrial settings; summary and exercises.
+
+  - id: L3
+    title: Internet-of-Things Connectivity and Networking
+    desc: >
+      Networking basics relevant to ICPS (latency, bandwidth, reliability); Quality of Service (QoS) in industrial IoT; wired and wireless connectivity technologies (fieldbuses, Ethernet-based solutions, Wi-Fi, LPWAN, 5G); edge, fog and cloud in industrial networking; positioning computation along the edge–cloud continuum; M2M protocols and their suitability; summary and exercises.
+
+  - id: L4
+    title: Industrial Communication and OPC-UA
+    desc: >
+      Overview of the industrial communication landscape; from OPC Classic to OPC-UA; concepts and design goals; OPC-UA address space & information modelling; services, subscriptions & data access; OPC-UA security model; OPC-UA as a data backbone for IIoT analytics; summary and exercises.
+
+  - id: L5
+    title: Introduction to IIoT Processing and Analytics
+    desc: >
+      Motivation for analytics in IIoT and ICPS; types of data (tags, events, logs); monitoring, forecasting, predictive maintenance, optimisation; IIoT data pipelines and storage (historians, TSDBs, data lakes); time-series viewpoint on industrial tags; summary and exercises.
+
+  - id: L6
+    title: Time Series Pre-processing for IIoT
+    desc: >
+      Irregular sampling, bursts, drifts; aligning & resampling signals; missing data handling; outlier detection; smoothing & denoising; scaling; constructing windows; time-based splits; summary and exercises.
+
+  - id: L7
+    title: Classical Time Series Forecasting Methods
+    desc: >
+      Trend/seasonality decomposition; exponential smoothing; AR/MA/ARMA/ARIMA; SARIMA; comparison with ML/deep learning forecasting; summary and exercises.
+
+  - id: L8
+    title: Feature-based Machine Learning for IIoT Forecasting
+    desc: >
+      Turning time series into supervised learning; feature engineering; linear models & regularisation; tree-based forecasting (RF, GBT); evaluation; Colab workflow; summary and exercises.
+
+  - id: L9
+    title: Deep Sequential Models for IIoT Forecasting
+    desc: >
+      RNNs, LSTMs, GRUs; TCNs and 1D CNNs; sequence model training & regularisation; multi-step forecasting; summary and exercises.
+
+  - id: L10
+    title: Anomaly Detection in ICPS and IIoT Time Series
+    desc: >
+      Point, contextual & collective anomalies; forecasting-residual-based anomaly detection; Isolation Forest; autoencoders; thresholding; evaluation; Colab workflow; summary and exercises.
+
+  - id: L11
+    title: "Project Presentations: ICPS and IIoT Analytics in Practice"
+    desc: >
+      Mini-project presentations using Python/Colab; full pipelines from raw data to forecasting/anomaly detection; visualisation & interpretation; peer feedback & reflection.
