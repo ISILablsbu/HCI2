@@ -1,0 +1,55 @@
+lectures:
+  - id: L1
+    title: "Introduction: What is Artificial Intelligence?"
+    desc: >
+      Motivation and context; narrow vs general AI; AI, machine learning, deep learning and data science; application areas and brief history of AI; four waves of AI; AI architectures and robust AI; types of machine learning algorithms; modern AI computing platforms; opportunities, risks and responsible use.
+
+  - id: L2
+    title: "Search and Adversarial Games"
+    desc: >
+      Single-agent search: formalisation of states, actions, transitions, goals and costs; nodes, frontier and explored set; uninformed search (DFS, BFS); informed search and heuristics; grid pathfinding example; introduction to adversarial search and games; Python implementation of Tic–Tac–Toe and Minimax.
+
+  - id: L3
+    title: "Local Search and Optimisation"
+    desc: >
+      Optimisation problems and objective functions; local search and landscape intuition; hill-climbing algorithms and variants; metaheuristics; simulated annealing; brief overview of genetic algorithms; summary and exercises.
+
+  - id: L4
+    title: "Probability and Uncertainty in AI"
+    desc: >
+      Motivation for probabilistic modelling; probability spaces and basic rules; conditional probability and Bayes’ rule; random variables and common distributions; joint, marginal and conditional distributions; role of probability in machine learning and robotics; integrated notebook example with a tiny Naive Bayes classifier.
+
+  - id: L5
+    title: "Machine Learning: Model Fitting and Sensitivity Analysis"
+    desc: >
+      Supervised learning and loss minimisation; data preprocessing; bias–variance trade-off; correlation and Pearson coefficient; coefficient of determination (R²); train–test split and cross validation; regression error metrics; sensitivity analysis and feature importance.
+
+  - id: L6
+    title: "Regression in Machine Learning"
+    desc: >
+      Simple and multiple linear regression; evaluation metrics for regression; regularisation for linear regression (Ridge, Lasso); logistic regression; classification errors and evaluation metrics; summary and exercises.
+
+  - id: L7
+    title: "Classification and Clustering in Machine Learning"
+    desc: >
+      Classification problem formulation and types; k-Nearest Neighbour (kNN); Support Vector Machines (SVM); unsupervised learning and clustering; basic clustering ideas and evaluation; exercises.
+
+  - id: L8
+    title: "Decision Trees and Random Forests"
+    desc: >
+      Decision tree basics; entropy and information gain; worked examples; Gini impurity; decision tree learning and overfitting; Python implementation of decision trees; random forests and ensemble learning; exercises.
+
+  - id: L9
+    title: "Artificial Neural Networks"
+    desc: >
+      From biological to artificial neurons; activation functions; from single neuron to multilayer networks; learning via loss functions and optimisation; stochastic gradient descent (SGD); backpropagation; Python implementations of feed-forward neural networks; summary and exercises.
+
+  - id: L10
+    title: "Convolutional Neural Networks"
+    desc: >
+      Image representation and notation; convolution operation; ReLU non-linearity; pooling; flattening; fully connected layers and classification; simple CNN architectures; Python snippets for CNN building blocks; exercises and summary.
+
+  - id: L11
+    title: "Robotics and Reinforcement Learning"
+    desc: >
+      Robotics as embodied intelligence; reinforcement learning basics (agent, environment, reward, return); model-free reinforcement learning; Q-learning; worked example of a gridworld robot with Q-learning; exercises and summary.
