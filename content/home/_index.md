@@ -8,7 +8,7 @@ sections:
   - block: markdown
     design:
       columns: "1"
-      css_class: "full-bleed"   # ✅ add this
+      css_class: "full-bleed"   
     content:
       title: ""
       text: |
