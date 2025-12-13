@@ -1,3 +1,6 @@
+/* ===============================
+   LIGHT MODE (default)
+   =============================== */
 :root {
   /* Primary (red) */
   --color-primary: #cc0000;
@@ -7,14 +10,38 @@
   /* Neutral colours */
   --color-background: #ffffff;
   --color-text: #000000;
+  --color-text-muted: #555555;
 
-  /* HugoBlox / Bootstrap button overrides */
+  /* HugoBlox / Bootstrap overrides */
   --bs-primary: #cc0000;
   --bs-primary-rgb: 204, 0, 0;
 
   --bs-btn-bg: #cc0000;
   --bs-btn-border-color: #cc0000;
-
   --bs-btn-hover-bg: #990000;
   --bs-btn-hover-border-color: #990000;
+}
+
+/* ===============================
+     DARK MODE
+     =============================== */
+[data-theme="dark"] {
+  /* Primary stays red, slightly brighter */
+  --color-primary: #ff4d4d;
+  --color-primary-light: #ff6666;
+  --color-primary-dark: #cc0000;
+
+  /* Neutral colours */
+  --color-background: #0e0f12;
+  --color-text: #ffffff;
+  --color-text-muted: #c7c7c7;
+
+  /* Bootstrap */
+  --bs-primary: #ff4d4d;
+  --bs-primary-rgb: 255, 77, 77;
+
+  --bs-btn-bg: #ff4d4d;
+  --bs-btn-border-color: #ff4d4d;
+  --bs-btn-hover-bg: #cc0000;
+  --bs-btn-hover-border-color: #cc0000;
 }

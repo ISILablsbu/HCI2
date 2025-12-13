@@ -1,0 +1,53 @@
+<section class="contact-section">
+  <h2>Contact Us</h2>
+  <div class="contact-container">
+    <!-- LEFT: CONTACT FORM -->
+    <div class="contact-form">
+      <form action="#" method="post">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" placeholder="Your email" required />
+        </label>
+
+        <label>
+          Enquiry type
+          <select name="type" required>
+            <option value="">Select an option</option>
+            <option>Research collaboration</option>
+            <option>PhD / MSc opportunities</option>
+            <option>Undergraduate projects</option>
+            <option>Industry partnership</option>
+            <option>General enquiry</option>
+          </select>
+        </label>
+
+        <label>
+          Message
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Your message"
+            required
+          ></textarea>
+        </label>
+
+        <button type="submit" class="btn-primary">Submit enquiry</button>
+      </form>
+    </div>
+
+    <!-- RIGHT: MAP -->
+    <div class="contact-map">
+      <iframe
+        src="https://www.google.com/maps?q=London%20South%20Bank%20University&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,93 @@
+<section class="hero-carousel">
+  <div class="slides">
+    <div
+      class="slide"
+      style="background-image: url('/media/images/GP1_PosterPresentation.jpeg')"
+    ></div>
+    <div
+      class="slide active"
+      style="background-image: url('/media/images/GP1_Lab.JPG')"
+    ></div>
+    <div
+      class="slide"
+      style="background-image: url('/media/images/GP2_Lab.JPG')"
+    ></div>
+  </div>
+
+  <div class="overlay"></div>
+
+  <div class="carousel-dots">
+    <button data-slide="0" aria-label="Slide 1"></button>
+    <button data-slide="1" aria-label="Slide 2"></button>
+    <button data-slide="2" aria-label="Slide 3"></button>
+  </div>
+</section>
+<section class="hero-intro">
+  <div class="hero-intro__image">
+    <img src="/media/images/GP1_PosterPresentation.jpeg" alt="HCI² Research Group" />
+  </div>
+
+  <div class="hero-intro__content">
+    <h1>We are the HCI² Research Group</h1>
+    <span class="hero-intro__divider"></span>
+
+    <p>
+      Welcome to the Human-Centred AI & Robotics Research Group (HCI²). We bring
+      together researchers, engineers and students working on human-robot
+      collaboration, intelligent systems, perception, and AI.
+    </p>
+
+    <p>
+      Our research spans robotics, machine learning, computer vision, systems
+      engineering, and applied industrial AI.
+    </p>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const root = document.querySelector(".hero-carousel");
+    if (!root) return;
+
+    const slides = root.querySelectorAll(".slide");
+    const dots = root.querySelectorAll(".carousel-dots button");
+
+    let current = 0;
+    const DELAY = 6000;
+    let timer;
+
+    function showSlide(index) {
+      slides.forEach((s) => s.classList.remove("active"));
+      dots.forEach((d) => d.classList.remove("active"));
+
+      slides[index].classList.add("active");
+      dots[index].classList.add("active");
+
+      current = index;
+    }
+
+    function nextSlide() {
+      showSlide((current + 1) % slides.length);
+    }
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener("click", () => {
+        showSlide(i);
+        resetTimer();
+      });
+    });
+
+    function startTimer() {
+      timer = setInterval(nextSlide, DELAY);
+    }
+
+    function resetTimer() {
+      clearInterval(timer);
+      startTimer();
+    }
+
+    // Init
+    showSlide(0);
+    startTimer();
+  });
+</script>
