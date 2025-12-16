@@ -38,22 +38,7 @@ sections:
             </div>
           </div>
         </div>
-        <div class="course-section">
-          <div class="course-section-inner">
-            <h1>Our Courses</h1>
-            <h3>Taught by members of the HCI² Lab at London South Bank University.</h3>
-            <div class="course-grid">
-             {{< course-card-expand
-              title="Artificial Intelligence (Level 6)"
-              meta="BSc Computer Science & related programmes"
-              description="Fundamentals of AI, search and optimisation, machine learning, neural networks, and reinforcement learning with Python-based labs."
-              linktext="More about this module ▼"
-            >}}
-                  {{< ai-lecture-list >}}
-            {{< /course-card-expand >}}
-            </div>
-          </div>
-        </div>
+
         
         <style>
           .home-section:first-of-type {

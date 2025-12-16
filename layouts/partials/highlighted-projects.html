@@ -1,0 +1,23 @@
+<section class="highlighted-projects full-bleed">
+  <div class="highlighted-inner">
+    <h1 class="section-title">{{ site.Data.highlighted_projects.title }}</h1>
+
+    {{ range site.Data.highlighted_projects.projects }}
+    <div class="project-row">
+      <div class="project-image">
+        <img src="{{ .image | relURL }}" alt="{{ .title }}" />
+      </div>
+      <div class="project-content">
+        <p class="Pname">{{ .name }}</p>
+        <p class="Dname">
+          {{ .description }} {{ with .link }}
+          <a href="{{ . }}" class="inline-link" target="_blank">
+            Learn more →
+          </a>
+          {{ end }}
+        </p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>

@@ -23,9 +23,10 @@
 }
 
 /* ===============================
-     DARK MODE
+     DARK MODE (Wowchemy-compatible)
      =============================== */
-[data-theme="dark"] {
+.dark,
+.theme-dark {
   /* Primary stays red, slightly brighter */
   --color-primary: #ff4d4d;
   --color-primary-light: #ff6666;

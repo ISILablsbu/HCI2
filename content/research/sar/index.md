@@ -57,6 +57,4 @@ slides:
 projects: ["sar"]
 ---
 
-{{< project-pubs project="sar" >}}
-
 
