@@ -70,18 +70,4 @@ Add the publication's **full text** or **supplementary notes** here. You can use
 &lt;/div>
 &lt;/div>
 &lt;!-- This project develops an operator-centred Digital Twin framework for resilient Autonomous Mobile Robot (AMR) fleet management in dynamic smart manufacturing environments. Building on a multi-fidelity digital architecture that combines Digital Models, Digital Shadows, surrogate-based multi objective optimisation and high-fidelity simulation, the system detects incidents such as AMR failures, machine breakdowns and demand shocks, then generates incident aware schedules in real time. A lightweight surrogate model provides rapid rescheduling within a few seconds while remaining close to high fidelity reference behaviour, enabling throughput and energy efficiency to be preserved under disruption. In parallel, a human in the loop decision layer exposes Pareto fronts, Gantt chart previews and post simulation metrics to operators, who can select preferred trade-offs, request validation via re simulation or issue policy bound overrides, all under role-based access control. Every decision is captured as a machine-readable artefact with timestamps, reason codes and override rationale, creating a single audited trail that supports governance, cross shift handover and future learning from operator choices. The framework will be instantiated and evaluated on a battery module assembly line, providing benchmark evidence on latency, robustness and operator workload for different policy modes prioritising speed, assurance or governance, and delivering a transferable blueprint for Industry 5.0 ready, human centric AMR coordination. -->
-&lt;/div>
-&lt;div class="project-publications">
-&lt;h3>Related Publications&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://hci2.uk/publication/preprint/preprint1/">A Novel Adaptive AMR Fleet Management System Leveraging AI-enabled Digital Twin for Agile Incident Response and Improved Shop-floor Efficiency&lt;/a> — Louie, Osman M. Tokhi, Bugra&lt;/li>
-&lt;li>&lt;a href="https://hci2.uk/publication/journal-article/journal2/">State of the art and future directions of digital twin-enabled smart assembly automation in discrete manufacturing industries&lt;/a> — Louie, Osman M. Tokhi, Bugra&lt;/li>
-&lt;/ul>
-&lt;/div></description></item><item><title>Vision-Enabled SAR for Manual Assembly</title><link>https://hci2.uk/research/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hci2.uk/research/sar/</guid><description>
-&lt;div class="project-publications">
-&lt;h3>Related Publications&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://hci2.uk/publication/preprint/preprint2/">Spatial Augmented Reality in Manual Assembly: An Empirical Investigation of Its Effects on Assembly Performance and Cognitive Ergonomics&lt;/a> — Bugra, Naimul, Louie, Malarvizhi Kaniappan Chinnathai&lt;/li>
-&lt;li>&lt;a href="https://hci2.uk/publication/journal-article/journal1/">Gest-SAR: A Gesture-Controlled Spatial AR System for Interactive Manual Assembly Guidance with Real-Time Operational Feedback&lt;/a> — Naimul, Bugra&lt;/li>
-&lt;/ul>
-&lt;/div></description></item></channel></rss>
+&lt;/div></description></item><item><title>Vision-Enabled SAR for Manual Assembly</title><link>https://hci2.uk/research/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hci2.uk/research/sar/</guid><description/></item></channel></rss>
