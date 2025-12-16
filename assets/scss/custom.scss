@@ -184,7 +184,7 @@
   }
 
   .hero-carousel .slide {
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -340,7 +340,7 @@
     // align-items: center;
     // text-align: center;
     // gap: 16px;
-    flex-direction: column; align-items: flex-start; gap: 16px;
+    flex-direction: column; align-items: flex-start; gap: 5px;
   }
 }
 
