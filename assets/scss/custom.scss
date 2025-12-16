@@ -174,7 +174,7 @@
   /* ---------- HERO CAROUSEL ---------- */
   .hero-carousel {
     height: 10vh;
-    min-height: 300px;
+    min-height: 250px;
     padding: 0;
     overflow: hidden;
   }
@@ -184,7 +184,7 @@
   }
 
   .hero-carousel .slide {
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
