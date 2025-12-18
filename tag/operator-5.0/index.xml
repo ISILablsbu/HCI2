@@ -1,1 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Operator 5.0 | HCI² Research Lab</title><link>https://hci2.uk/tag/operator-5.0/</link><atom:link href="https://hci2.uk/tag/operator-5.0/index.xml" rel="self" type="application/rss+xml"/><description>Operator 5.0</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://hci2.uk/media/logo_hu15880263399225826474.png</url><title>Operator 5.0</title><link>https://hci2.uk/tag/operator-5.0/</link></image><item><title>Vision-Enabled SAR for Manual Assembly</title><link>https://hci2.uk/research/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hci2.uk/research/sar/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Operator 5.0 | HCI² Research Lab</title><link>https://hci2.uk/tag/operator-5.0/</link><atom:link href="https://hci2.uk/tag/operator-5.0/index.xml" rel="self" type="application/rss+xml"/><description>Operator 5.0</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://hci2.uk/media/logo_hu15880263399225826474.png</url><title>Operator 5.0</title><link>https://hci2.uk/tag/operator-5.0/</link></image><item><title>Vision-Enabled SAR for Manual Assembly</title><link>https://hci2.uk/research/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hci2.uk/research/sar/</guid><description>&lt;p>This project develops a human-centric Spatial Augmented Reality (SAR) system that projects adaptive, light-guided assembly instructions directly onto the workspace and is controlled through AI-based hand gesture recognition. The system delivers real-time guidance and error feedback without requiring handheld or wearable devices. User studies show significant reductions in task time, error rates, and perceived workload compared to conventional instruction methods.&lt;/p>
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">Motivation&lt;/summary>
+&lt;div class="expand-card-body">This project addresses limitations of conventional assembly instructions that rely
+on static manuals or wearable devices. By projecting guidance directly onto the
+workspace, SAR reduces cognitive load and improves task flow.&lt;/div>
+&lt;/details>
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">System Architecture&lt;/summary>
+&lt;div class="expand-card-body">The system integrates computer vision, gesture recognition, and spatial projection
+to deliver adaptive assembly instructions in real time.&lt;/div>
+&lt;/details>
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">Key Components&lt;/summary>
+&lt;div class="expand-card-body">&lt;/div>
+&lt;/details>
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">Evaluation&lt;/summary>
+&lt;div class="expand-card-body">User studies compared SAR guidance with conventional instructions.
+Participants showed reduced completion time and fewer errors.&lt;/div>
+&lt;/details>
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">Key Findings&lt;/summary>
+&lt;div class="expand-card-body">&lt;ul>
+&lt;li>Faster task completion&lt;/li>
+&lt;li>Lower error rate&lt;/li>
+&lt;li>Reduced perceived workload&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/details></description></item></channel></rss>
