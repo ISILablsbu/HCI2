@@ -1,0 +1,215 @@
+.project-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ================= OVERVIEW ================= */
+
+.project-overview {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin-top: 40px;
+  margin-bottom: 72px;
+}
+
+.project-title {
+  font-size: 2rem;
+  font-weight: 550;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.overview-lead {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+/* IMAGE */
+
+.overview-image figure {
+  margin: 0;
+  text-align: center;
+}
+
+.overview-image img {
+  width: 100%;
+  max-width: 70%;
+  margin: 0 auto;
+  border-radius: 10px;
+
+  background: var(--color-background);
+  border: 1px solid color-mix(in srgb, var(--color-text) 14%, transparent);
+
+  box-shadow: 0 14px 36px color-mix(in srgb, var(--color-text) 18%, transparent);
+
+  object-fit: contain;
+}
+
+.overview-image figcaption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+/* ================= DETAILS CARD ================= */
+
+.project-details-card {
+  background: var(--color-background);
+  border-radius: 18px;
+  padding: 60px 56px;
+
+  box-shadow: 0 20px 60px color-mix(in srgb, var(--color-text) 12%, transparent);
+
+  margin-bottom: 30px;
+}
+
+.details-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--color-text);
+}
+
+.details-text {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--color-text-muted);
+  max-width: 900px;
+}
+
+/* ================= FOCUS AREA ================= */
+
+.details-focus {
+  margin-top: -20px;
+  border-radius: 14px;
+  padding: 24px 28px;
+  text-align: center;
+
+  background: var(--color-background);
+  box-shadow: 0 16px 36px color-mix(in srgb, var(--color-text) 22%, transparent);
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+  .project-title {
+    font-size: 1.7rem;
+  }
+
+  .project-details-card {
+    padding: 36px 24px;
+  }
+
+  .overview-image img {
+    max-width: 100%;
+  }
+}
+
+/* ======================
+   Related Publications
+   ====================== */
+.project-related {
+  margin-top: -10px;
+  border-radius: 14px;
+  padding: 24px 28px;
+  // text-align: center;
+  background: var(--color-background);
+  box-shadow: 0 16px 36px color-mix(in srgb, var(--color-text) 22%, transparent);
+  margin-bottom: 20px;
+}
+.project-related h2 {
+  text-align: left;
+}
+.related-publications {
+  max-width: 900px;
+  margin: 0 auto 48px;
+  text-align: left;
+}
+
+.related-publications li {
+  margin-bottom: 14px;
+}
+
+.related-publications a {
+  color: var(--color-primary);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.pub-authors {
+  color: var(--color-text-muted);
+}
+
+/* ======================
+   Author cards (Project page)
+   ====================== */
+
+.project-authors {
+  margin: 0 auto;
+}
+
+/* Each author row */
+.author-card {
+  display: flex;
+  gap: 16px;
+  padding: 24px 0;
+  border-top: 1px solid var(--color-card-border);
+  align-items: flex-start;
+}
+
+/* ----------------------
+     Avatar (clickable)
+     ---------------------- */
+.author-avatar-link {
+  display: block;
+  flex-shrink: 0;
+}
+
+.author-avatar-link img,
+.author-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+/* ----------------------
+     Author text
+   ---------------------- */
+.author-info {
+  margin-top: 0;
+}
+
+.author-name {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.author-name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.author-name a:hover {
+  text-decoration: underline;
+}
+
+.author-role {
+  margin: 4px 0 6px;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.author-bio {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--color-text);
+}

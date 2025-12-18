@@ -1,0 +1,58 @@
+/* =====================================================
+   Expand Card (Wowchemy-compatible)
+   ===================================================== */
+
+.expand-card {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: 16px;
+  padding: 22px 26px;
+  margin-bottom: 24px;
+  box-shadow: var(--color-card-shadow);
+  transition: box-shadow 0.25s ease;
+}
+
+/* ---------- TITLE ---------- */
+.expand-card-title {
+  font-size: 1.35rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  color: var(--color-text);
+
+  &::marker {
+    display: none;
+  }
+
+  &::after {
+    content: "+";
+    font-size: 1.4rem;
+    color: var(--color-text);
+  }
+}
+
+.expand-card[open] .expand-card-title::after {
+  content: "−";
+}
+
+/* ---------- BODY ---------- */
+.expand-card-body {
+  margin-top: 18px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+
+  p,
+  li {
+    color: inherit;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+    border-radius: 12px;
+    margin: 16px 0;
+  }
+}

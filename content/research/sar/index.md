@@ -1,60 +1,67 @@
 ---
-title: Vision-Enabled SAR for Manual Assembly
+title: "Vision-Enabled SAR for Manual Assembly"
 
+summary: >
+  Developing a computer vision-enabled Spatial Augmented Reality framework
+  towards human-centric smart assembly.
 
-# event: Wowchemy Conference
-# event_url: https://example.org
+authors: [Naimul, Louie, Malar, Bugra]
 
-# location: Wowchemy HQ
-# address:
-#   street: 450 Serra Mall
-#   city: Stanford
-#   region: CA
-#   postcode: '94305'
-#   country: United States
+tags:
+  - Industry 5.0
+  - Operator 5.0
+  - Human-in-the-Loop
 
-summary: An example event.
-Project Title: Developing a Computer Vision-Enabled Spatial Augmented Reality Framework towards Human-Centric Smart Assembly
-abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam.'
-
-# Talk start and end times.
-#   End time can optionally be hidden by prefixing the line with `#`.
-# date: '2030-06-01T13:00:00Z'
-# date_end: '2030-06-01T15:00:00Z'
-all_day: false
-
-# Schedule page publish date (NOT talk date).
-# publishDate: '2025-11-08T00:00:00Z'
-# publishDate:
-
-authors: [Naimul,Louie,Malar,Bugra]
-tags: [Industry 5.0, Operator 5.0, Human-in-the-loop]
-
-# Is this a featured talk? (true/false)
-featured: false
+project_style: "sar"
 
 image:
-  caption: 'SAR Setup Overview'
-  focal_point: Right
+  main: "/media/projects/AR.png"
+  caption: "SAR Setup Overview"
 
-url_code: ''
-url_pdf: ''
-url_slides: ''
-url_video: ''
+highlights:
+  - Vision-based assembly monitoring
+  - Spatial AR projection guidance
+  - Human-in-the-loop adaptation
+related_publications:
+  - title: "Spatial Augmented Reality in Manual Assembly: An Empirical Investigation of Its Effects on Assembly Performance and Cognitive Ergonomics"
+    authors: "Bugra, Naimul, Louie, Malarvizhi"
+    url: "/publication/preprint/preprint2/"
 
-# Markdown Slides (optional).
-#   Associate this talk with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides:
+  - title: "Gest-SAR: A Gesture-Controlled Spatial AR System for Interactive Manual Assembly Guidance with Real-Time Operational Feedback"
+    authors: "Naimul, Bugra"
+    url: "/publication/journal-article/journal1/"
 
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: ["sar"]
+related_authors:
+  - id: Naimul
+  - id: Louie
+  - id: Malar
+  - id: Bugra
 ---
 
+This project develops a human-centric Spatial Augmented Reality (SAR) system that projects adaptive, light-guided assembly instructions directly onto the workspace and is controlled through AI-based hand gesture recognition. The system delivers real-time guidance and error feedback without requiring handheld or wearable devices. User studies show significant reductions in task time, error rates, and perceived workload compared to conventional instruction methods.
 
+{{< expand-card title="Motivation" >}}
+This project addresses limitations of conventional assembly instructions that rely
+on static manuals or wearable devices. By projecting guidance directly onto the
+workspace, SAR reduces cognitive load and improves task flow.
+{{< /expand-card >}}
+
+{{< expand-card title="System Architecture" >}}
+The system integrates computer vision, gesture recognition, and spatial projection
+to deliver adaptive assembly instructions in real time.
+{{< /expand-card >}}
+
+{{< expand-card title="Key Components" >}}
+{{< /expand-card >}}
+
+{{< expand-card title="Evaluation" >}}
+User studies compared SAR guidance with conventional instructions.
+Participants showed reduced completion time and fewer errors.
+{{< /expand-card >}}
+
+{{< expand-card title="Key Findings" >}}
+
+- Faster task completion
+- Lower error rate
+- Reduced perceived workload
+  {{< /expand-card >}}

@@ -1,0 +1,7 @@
+{{ $extraClass := .Get "class" }}
+
+<details class="expand-card{{ if $extraClass }} {{ $extraClass }}{{ end }}">
+  <summary class="expand-card-title">{{ .Get "title" }}</summary>
+
+  <div class="expand-card-body">{{ .Inner | markdownify }}</div>
+</details>

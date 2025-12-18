@@ -1,0 +1,90 @@
+<section class="project-page {{ .Params.project_style }}">
+  <section class="project-overview">
+    <div class="overview-text">
+      <h1 class="project-title">{{ .Title }}</h1>
+      {{ with .Params.summary }}
+      <p class="overview-lead">{{ . }}</p>
+      {{ end }}
+    </div>
+
+    {{ with .Params.image.main }}
+    <div class="overview-image">
+      <figure>
+        <img
+          src="{{ . | relURL }}"
+          alt="{{ $.Params.image.caption | default $.Title }}"
+        />
+      </figure>
+    </div>
+    {{ end }}
+  </section>
+  <section class="project-details-card">
+    <div class="details-overview">
+      <h2>Overview</h2>
+      {{ .Content }}
+    </div>
+  </section>
+
+  <!-- {{ with .Params.highlights }}
+  <div class="details-focus">
+    <h3>Focus Areas</h3>
+    <p>{{ delimit . " · " }}</p>
+  </div>
+  {{ end }}  -->
+
+  {{ with .Params.related_publications }}
+  <section class="project-related">
+    <h2>Related Publications</h2>
+
+    <ul class="related-publications">
+      {{ range . }} {{ $pubURL := .url | default "#" }}
+
+      <li>
+        <a href="{{ $pubURL }}" target="_blank" rel="noopener">
+          {{ .title }}
+        </a>
+        <span class="pub-authors"> — {{ .authors }}</span>
+      </li>
+
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
+  <!-- ======================
+     PROJECT AUTHORS
+     ====================== -->
+  {{ with .Params.related_authors }}
+  <section class="project-authors">
+    {{ range . }} {{ $authorPage := site.GetPage (printf "/authors/%s" .id) }}
+    {{ if $authorPage }} {{ $avatar := $authorPage.Resources.GetMatch "*avatar*"
+    }}
+
+    <div class="author-card">
+      <!-- Clickable avatar -->
+      <a href="{{ $authorPage.RelPermalink }}" class="author-avatar-link">
+        <img
+          class="author-avatar"
+          src="{{ $avatar.RelPermalink }}"
+          alt="{{ $authorPage.Title }}"
+        />
+      </a>
+
+      <div class="author-info">
+        <!-- Clickable name ONLY -->
+        <h4 class="author-name">
+          <a href="{{ $authorPage.RelPermalink }}"> {{ $authorPage.Title }} </a>
+        </h4>
+
+        {{ with $authorPage.Params.role }}
+        <p class="author-role">{{ . }}</p>
+        {{ end }} {{ with $authorPage.Params.bio }}
+        <p class="author-bio">{{ . }}</p>
+        {{ end }}
+      </div>
+    </div>
+
+    {{ end }} {{ end }}
+  </section>
+  {{ end }}
+</section>

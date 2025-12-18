@@ -1,4 +1,8 @@
 @import "highlighted-projects";
+@import "project";
+@import "expand-card";
+@import "teaching";
+
 /* =====================================================
    Hero Carousel – Hugo / LibSass SAFE
    ===================================================== */
@@ -65,22 +69,6 @@
     );
   }
 
-  // .hero-content {
-  //   position: absolute;
-  //   bottom: 64px;
-  //   left: 64px;
-  //   max-width: 720px;
-  //   color: #ffffff;
-  //   z-index: 2;
-
-  //   h1 {
-  //     font-size: 3rem;
-  //     font-weight: 600;
-  //     line-height: 1.2;
-  //     margin-bottom: 18px;
-  //   }
-  // }
-
   .hero-tag {
     display: inline-block;
     padding: 10px 18px;
@@ -120,7 +108,6 @@
   margin: 40px 0;
 }
 
-/* LEFT IMAGE */
 .hero-intro__image {
   width: 45%;
 }
@@ -132,38 +119,36 @@
   display: block;
 }
 
-/* RIGHT PANEL */
 .hero-intro__content {
   width: 65%;
-  background: #ffffff;
-  padding: 0px 56px;
+  background: var(--color-card-bg);
+  padding: 0 56px;
 
-  /* overlap effect */
   margin-left: -60px;
   align-self: center;
 
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--color-card-shadow);
 }
 
 .hero-intro__content h1 {
   font-size: 2.4rem;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #e63946;
+  color: var(--color-primary);
 }
 
 .hero-intro__divider {
   display: block;
   width: 40px;
   height: 2px;
-  background: #e63946;
+  background: var(--color-primary);
   margin-bottom: 24px;
 }
 
 .hero-intro__content p {
   font-size: 1.05rem;
   line-height: 1.75;
-  color: #444;
+  color: var(--color-text);
   margin-bottom: 16px;
 }
 
@@ -237,41 +222,49 @@
   }
 }
 
-/* ===========================
-   Publications Section
-   =========================== */
+/* ======================
+   Publications section
+   ====================== */
 
 .publications {
   max-width: 100%;
-  background-color: #ffffff;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  background-color: var(--color-card-bg);
+  box-shadow: var(--color-card-shadow);
   margin-top: -30px;
   padding-bottom: 30px;
 }
+
 .publications-semi {
   max-width: 1100px;
   margin: 40px auto;
   padding: 0 24px;
 }
+
+/* Header */
 .publications__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 40px;
-
-  h2 {
-    font-size: 2.2rem;
-    font-weight: 600;
-    color: #111;
-  }
 }
+
+.publications__header h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+/* Divider */
 .publications__divider {
   border: none;
-  border-top: 2px solid #111;
+  border-top: 2px solid var(--color-text);
   margin-bottom: 10px;
 }
 
-/* Publication item */
+/* ======================
+     Publication item
+     ====================== */
+
 .publication-item {
   position: relative;
   padding: 24px 0 10px;
@@ -279,6 +272,7 @@
 
 .publication-item:not(:last-child) {
   margin-bottom: 10px;
+  border-bottom: 1px solid var(--color-card-border);
 }
 
 /* Title */
@@ -287,20 +281,23 @@
   font-weight: 400;
   line-height: 1.35;
   margin-bottom: 12px;
-  color: #111;
+  color: var(--color-text);
   text-align: left;
 }
 
 /* Authors */
 .authors {
-  color: #666;
+  color: var(--color-text-muted);
   margin-bottom: 10px;
   font-size: 0.95rem;
 }
 
-/* Buttons */
+/* ======================
+     Buttons
+   ====================== */
+
 .btn-primary {
-  background: #e63946;
+  background: var(--color-primary);
   color: #fff;
   padding: 10px 18px;
   border-radius: 999px;
@@ -308,30 +305,28 @@
   font-size: 0.9rem;
   font-weight: 400;
   margin-top: 20px;
+  display: inline-block;
 }
 
+.btn-primary:hover {
+  background: var(--color-primary-dark);
+}
+
+/* Outline button */
 .btn-outline {
   display: inline-block;
   padding: 5px 18px;
-  border: 2px solid #111;
+  border: 2px solid var(--color-text);
   border-radius: 999px;
   text-decoration: none;
-  color: #111;
+  color: var(--color-text);
   font-size: 0.9rem;
   font-weight: 500;
 }
 
-/* Tags */
-.tag {
-  font-weight: 500;
-}
-
-.tag-green {
-  color: #1b8a5a;
-}
-
-.tag-purple {
-  color: #5b3cc4;
+.btn-outline:hover {
+  background: var(--color-text);
+  color: var(--color-card-bg);
 }
 
 /* Mobile */
@@ -341,20 +336,23 @@
     // align-items: center;
     // text-align: center;
     // gap: 16px;
-    flex-direction: column; align-items: flex-start; gap: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
   }
 }
 
+/* ======================
+   Events section
+   ====================== */
 
-/* ===========================
-   Event Section
-   =========================== */
 .events-section {
-  background: #f7f7f7;
+  background: var(--color-background);
   padding: 64px 0;
   margin-top: -30px;
 }
 
+/* Header */
 .events-header {
   max-width: 1100px;
   margin: 0 auto 24px;
@@ -362,20 +360,23 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  h2 {
-    font-size: 2.4rem;
-    font-weight: 600;
-  }
 }
 
+.events-header h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+/* Divider */
 .events-section hr {
   max-width: 1100px;
   margin: 0 auto 40px;
   border: none;
-  border-top: 3px solid #111;
+  border-top: 3px solid var(--color-text);
 }
 
+/* Grid */
 .events-grid {
   max-width: 1200px;
   margin: 0 auto;
@@ -385,56 +386,88 @@
   gap: 32px;
 }
 
+/* ======================
+     Event card
+     ====================== */
+
 .event-card {
-  background: #fff;
+  background: var(--color-card-bg);
   padding: 32px;
   display: flex;
   flex-direction: column;
-
-  h3 {
-    font-size: 1.6rem;
-    margin: 12px 0;
-    line-height: 1.3;
-  }
-
-  hr {
-    margin: 16px 0;
-    border: none;
-    border-top: 1px solid #999;
-  }
-
-  p {
-    color: #444;
-    line-height: 1.6;
-  }
+  box-shadow: var(--color-card-shadow);
 }
+
+/* Title */
+.event-card h3 {
+  font-size: 1.6rem;
+  margin: 12px 0;
+  line-height: 1.3;
+  color: var(--color-text);
+}
+
+/* Divider */
+.event-card hr {
+  margin: 16px 0;
+  border: none;
+  border-top: 1px solid var(--color-card-border);
+}
+
+/* Text */
+.event-card p {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* ======================
+     Event meta
+     ====================== */
 
 .event-meta {
   font-size: 0.9rem;
-  color: #666;
-
-  a {
-    color: #0057ff;
-    text-decoration: none;
-  }
+  color: var(--color-text-muted);
 }
+
+.event-meta a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.event-meta a:hover {
+  text-decoration: underline;
+}
+
+/* ======================
+     Button
+     ====================== */
 
 .btn-outline {
   margin-top: auto;
   align-self: flex-start;
   padding: 10px 20px;
-  border: 2px solid #111;
+  border: 2px solid var(--color-text);
   border-radius: 999px;
   text-decoration: none;
-  color: #111;
+  color: var(--color-text);
   font-weight: 500;
+  background: transparent;
 }
+
+.btn-outline:hover {
+  background: var(--color-text);
+  color: var(--color-card-bg);
+}
+
+/* ======================
+     Responsive
+     ====================== */
 
 @media (max-width: 900px) {
   .events-grid {
     grid-template-columns: 1fr;
   }
 }
+
 /* ===========================
    Event Section
    =========================== */
@@ -452,21 +485,22 @@
 /* RIGHT PANEL */
 .event-intro__content {
   width: 35%;
-  background: #ffffff;
+  background: var(--color-card-bg);
   padding: 40px 50px;
 
   /* overlap effect */
   margin-left: -80px;
   align-self: center;
 
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--color-card-shadow);
 }
 
+/* Section heading */
 .event-intro__content h5 {
   font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: 20px;
-  color: #e63946;
+  color: var(--color-primary);
 }
 
 /* ===========================
@@ -555,7 +589,6 @@
   padding: 12px 16px !important;
   font-size: 1.05rem !important;
   line-height: 1.2 !important;
-
   border-radius: 8px !important;
 }
 .contact-form textarea {
@@ -563,9 +596,9 @@
   padding: 10px 12px;
   font-size: 0.95rem;
 
-  border: 1px solid #ccc;
+  border: 1px solid #333;
   border-radius: 6px;
-
+  background-color: var(--color-background);
   font-family: inherit;
 }
 
