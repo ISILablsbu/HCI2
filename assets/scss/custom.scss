@@ -641,39 +641,3 @@ footer {
   margin-top: 0 !important;
 }
 
-/* =====================================================
-   LARGE DESKTOP FIX (≥1600px)
-   ===================================================== */
-
-   @media (min-width: 1600px) {
-    /* Prevent content from stretching too wide */
-    .container,
-    .container-lg,
-    .container-xl {
-      max-width: 1400px !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-    }
-  
-    /* Reduce overlap effect on large screens */
-    .hero-intro__content {
-      margin-left: -30px;
-    }
-  
-    .event-intro__content {
-      margin-left: -40px;
-    }
-  
-    /* Reduce hero height on very large screens */
-    .hero-carousel {
-      height: 65vh;
-      max-height: 600px;
-    }
-  
-    /* Optional: soften full-bleed edges */
-    .full-bleed {
-      padding-left: 40px !important;
-      padding-right: 40px !important;
-    }
-  }
-  
