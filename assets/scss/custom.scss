@@ -221,6 +221,38 @@
     line-height: 1.6;
   }
 }
+/* =====================================================
+   LARGE DESKTOP FIX (≥1600px)
+   ===================================================== */
+
+   @media (min-width: 1600px) {
+
+    /* Re-limit full-bleed on large screens */
+    .full-bleed .container,
+    .full-bleed .container-lg,
+    .full-bleed .container-xl {
+      max-width: 1400px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  
+    /* Reduce hero height on desktop */
+    .hero-carousel {
+      height: 65vh;
+      max-height: 600px;
+    }
+  
+    /* Reduce aggressive cropping */
+    .hero-carousel .slide {
+      background-position: center top;
+    }
+  
+    /* Slight padding to avoid edge hugging */
+    .full-bleed {
+      padding-left: 40px !important;
+      padding-right: 40px !important;
+    }
+  }  
 
 /* ======================
    Publications section
