@@ -121,3 +121,21 @@
     color: var(--color-primary);
   }
 }
+/* =====================================================
+   LARGE DESKTOP FIX – Research Projects
+   ===================================================== */
+
+@media (min-width: 1600px) {
+  /* Limit overall width */
+  .highlighted-inner {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Prevent text column from becoming too wide */
+  .project-row {
+    grid-template-columns: 420px minmax(0, 1fr);
+    gap: 40px;
+  }
+}
