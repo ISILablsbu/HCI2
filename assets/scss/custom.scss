@@ -43,6 +43,7 @@
   .slides {
     position: absolute;
     inset: 0;
+    margin-top: 30px;
   }
 
   .slide {
@@ -105,7 +106,8 @@
   position: relative;
   display: flex;
   align-items: stretch;
-  margin: 40px 0;
+  margin: 20px 20px;
+  box-shadow: var(--color-card-shadow);
 }
 
 .hero-intro__image {
@@ -113,17 +115,20 @@
 }
 
 .hero-intro__image img {
-  width: 90%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  // border-radius: 20px;
 }
 
 .hero-intro__content {
   width: 65%;
   background: var(--color-card-bg);
   padding: 0 56px;
-
+  // border-top-right-radius: 20px;
+  // border-bottom-right-radius: 20px;
+  // border-right: 1px solid gray;
   margin-left: -60px;
   align-self: center;
 
@@ -160,24 +165,27 @@
   /* ---------- HERO CAROUSEL ---------- */
   .hero-carousel {
     height: 10vh;
-    min-height: 250px;
+    min-height: 350px;
     padding: 0;
     overflow: hidden;
   }
 
   .hero-carousel .slides {
     padding: 0 12px;
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .hero-carousel .slide {
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   /* Pull dots closer to image */
   .carousel-dots {
-    bottom: 12px;
+    bottom: 0px;
   }
 
   /* Slight fade to avoid hard edges */
@@ -192,7 +200,8 @@
   /* ---------- HERO INTRO LAYOUT ---------- */
   .hero-intro {
     flex-direction: column;
-    margin: 0;
+    margin: 0 10px;
+    box-shadow: var(--color-card-shadow);
   }
 
   .hero-intro__image,
@@ -203,13 +212,16 @@
   .hero-intro__image img {
     width: 100%;
     height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   /* Remove overlap effect on mobile */
   .hero-intro__content {
     margin-left: 0;
     padding: 24px 20px;
-    box-shadow: none;
+    box-shadow: var(--color-card-shadow);
   }
 
   .hero-intro__content h1 {
@@ -225,34 +237,33 @@
    LARGE DESKTOP FIX (≥1600px)
    ===================================================== */
 
-   @media (min-width: 1600px) {
+@media (min-width: 1600px) {
+  /* Re-limit full-bleed on large screens */
+  .full-bleed .container,
+  .full-bleed .container-lg,
+  .full-bleed .container-xl {
+    max-width: 1400px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 
-    /* Re-limit full-bleed on large screens */
-    .full-bleed .container,
-    .full-bleed .container-lg,
-    .full-bleed .container-xl {
-      max-width: 1400px !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-    }
-  
-    /* Reduce hero height on desktop */
-    .hero-carousel {
-      height: 65vh;
-      max-height: 600px;
-    }
-  
-    /* Reduce aggressive cropping */
-    .hero-carousel .slide {
-      background-position: center top;
-    }
-  
-    /* Slight padding to avoid edge hugging */
-    .full-bleed {
-      padding-left: 40px !important;
-      padding-right: 40px !important;
-    }
-  }  
+  /* Reduce hero height on desktop */
+  .hero-carousel {
+    height: 65vh;
+    max-height: 600px;
+  }
+
+  /* Reduce aggressive cropping */
+  .hero-carousel .slide {
+    background-position: center top;
+  }
+
+  /* Slight padding to avoid edge hugging */
+  .full-bleed {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+}
 
 /* ======================
    Publications section
@@ -262,8 +273,10 @@
   max-width: 100%;
   background-color: var(--color-card-bg);
   box-shadow: var(--color-card-shadow);
-  margin-top: -30px;
-  padding-bottom: 30px;
+  // margin-top: -40px;
+  margin: 40px 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
 }
 
 .publications-semi {
@@ -363,6 +376,18 @@
 
 /* Mobile */
 @media (max-width: 768px) {
+  .publications {
+    max-width: 100%;
+    box-shadow: var(--color-card-shadow);
+    margin: 0 10px;
+    margin-top: -30px;
+  }
+
+  .publications-semi {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 24px;
+  }
   .publications__header {
     // flex-direction: column;
     // align-items: center;
@@ -380,8 +405,11 @@
 
 .events-section {
   background: var(--color-background);
-  padding: 64px 0;
-  margin-top: -30px;
+  padding-bottom: 64px;
+  // margin-top: -30px;
+  box-shadow: var(--color-card-shadow);
+  margin: 0 20px;
+  border-radius: 20px;
 }
 
 /* Header */
@@ -414,7 +442,7 @@
   margin: 0 auto;
   padding: 0 24px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 32px;
 }
 
@@ -498,11 +526,33 @@
   .events-grid {
     grid-template-columns: 1fr;
   }
+  .events-section {
+    margin: 0 10px;
+    box-shadow: var(--color-card-shadow);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .events-section hr {
+    max-width: 1100px;
+    margin: 0 30px 40px;
+    border: none;
+    border-top: 3px solid var(--color-text);
+  }
 }
 
 /* ===========================
-   Event Section
+   Oppotunities Section
    =========================== */
+.oppo-intro {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  margin: 20px 20px;
+  box-shadow: var(--color-card-shadow);
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .event-intro__image {
   width: 65%;
 }
@@ -540,10 +590,11 @@
    =========================== */
 
 @media (max-width: 900px) {
-  .event-intro {
-    display: flex;
+  
+  .oppo-intro {
     flex-direction: column;
-    margin: 0;
+    margin: 0 10px;
+    box-shadow: var(--color-card-shadow);
   }
 
   .event-intro__image,
@@ -576,6 +627,10 @@
   background: transparent;
   padding: 10px 24px;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  margin: 0 20px;
+  box-shadow: var(--color-card-shadow);
+  border-radius: 20px;
+  margin-bottom: -60px;
 }
 
 .contact-container {
@@ -659,10 +714,14 @@
 @media (max-width: 900px) {
   .contact-container {
     grid-template-columns: 1fr;
+    gap: 1px;
   }
 
   .contact-section {
-    padding: 80px 16px;
+    padding: 20px 16px;
+    box-shadow: var(--color-card-shadow);
+    margin: 0 10px;
+    margin-top: 10px;
   }
 
   .contact-map iframe {
@@ -670,6 +729,5 @@
   }
 }
 footer {
-  margin-top: 0 !important;
+  margin-top: 0px !important;
 }
-
