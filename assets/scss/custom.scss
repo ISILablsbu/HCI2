@@ -165,7 +165,7 @@
   /* ---------- HERO CAROUSEL ---------- */
   .hero-carousel {
     height: 10vh;
-    min-height: 340px;
+    min-height: 350px;
     padding: 0;
     overflow: hidden;
   }
@@ -175,7 +175,7 @@
     margin-top: 40px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: -20px;
+    margin-bottom: -30px;
   }
 
   .hero-carousel .slide {
@@ -186,7 +186,7 @@
 
   /* Pull dots closer to image */
   .carousel-dots {
-    bottom: -20px;
+    bottom: -30px;
   }
 
   /* Slight fade to avoid hard edges */
@@ -292,7 +292,7 @@
 .publications__header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   padding-top: 40px;
 }
 
