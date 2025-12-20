@@ -165,7 +165,7 @@
   /* ---------- HERO CAROUSEL ---------- */
   .hero-carousel {
     height: 10vh;
-    min-height: 350px;
+    min-height: 320px;
     padding: 0;
     overflow: hidden;
   }
@@ -255,15 +255,19 @@
 
   /* Reduce hero height on desktop */
   .hero-carousel {
-    height: 65vh;
-    max-height: 600px;
+    height: 70vh;
+    max-height: 780px;
   }
 
   /* Reduce aggressive cropping */
   .hero-carousel .slide {
     background-position: center top;
   }
-
+  .hero-carousel .slide {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   /* Slight padding to avoid edge hugging */
   .full-bleed {
     padding-left: 40px !important;
@@ -402,6 +406,7 @@
     flex-direction: column;
     align-items: flex-start;
     align-items: left;
+    text-align: left;
     gap: 0px;
   }
 }
