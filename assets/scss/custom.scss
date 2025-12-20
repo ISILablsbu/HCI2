@@ -257,6 +257,10 @@
   .hero-carousel {
     height: 70vh;
     max-height: 780px;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+
   }
 
   /* Reduce aggressive cropping */
@@ -297,10 +301,16 @@
 
 /* Header */
 .publications__header {
+  // display: flex;
+  // justify-content:space-between;
+  // align-items:center;
+  // padding-top: 40px;
+  max-width: 1100px;
+  margin: 0 auto 24px;
+  padding: 0 24px;
   display: flex;
-  justify-content:flex-start;
-  align-items:flex-start;
-  padding-top: 40px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .publications__header h2 {
@@ -398,17 +408,16 @@
     margin: 40px auto;
     padding: 0 24px;
   }
-  .publications__header {
-    // flex-direction: column;
-    // align-items: center;
-    // text-align: center;
-    // gap: 16px;
-    flex-direction: column;
-    align-items: flex-start;
-    align-items:flex-start;
-    text-align: left;
-    gap: 0px;
-  }
+  // .publications__header {
+  //   // flex-direction: column;
+  //   // align-items: center;
+  //   // text-align: center;
+  //   // gap: 16px;
+  //   flex-direction: column;
+  //   align-items: flex-start;
+  //   text-align: left;
+  //   gap: 0px;
+  // }
 }
 
 /* ======================
