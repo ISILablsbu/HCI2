@@ -264,14 +264,14 @@
   }
 
   /* Reduce aggressive cropping */
-  .hero-carousel .slide {
-    background-position: center top;
-  }
   // .hero-carousel .slide {
-  //   background-size: contain;
-  //   background-repeat: no-repeat;
-  //   background-position: center;
+  //   background-position: center top;
   // }
+  .hero-carousel .slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   /* Slight padding to avoid edge hugging */
   .full-bleed {
     padding-left: 40px !important;
