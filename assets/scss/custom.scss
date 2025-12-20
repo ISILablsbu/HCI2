@@ -161,20 +161,21 @@
    MOBILE VERSION – HERO & INTRO
    ===================================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   /* ---------- HERO CAROUSEL ---------- */
   .hero-carousel {
     height: 10vh;
-    min-height: 350px;
+    min-height: 340px;
     padding: 0;
     overflow: hidden;
   }
 
   .hero-carousel .slides {
     padding: 0 12px;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: -20px;
   }
 
   .hero-carousel .slide {
@@ -185,7 +186,7 @@
 
   /* Pull dots closer to image */
   .carousel-dots {
-    bottom: 0px;
+    bottom: -20px;
   }
 
   /* Slight fade to avoid hard edges */
@@ -222,6 +223,8 @@
     margin-left: 0;
     padding: 24px 20px;
     box-shadow: var(--color-card-shadow);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 
   .hero-intro__content h1 {
@@ -375,7 +378,7 @@
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .publications {
     max-width: 100%;
     box-shadow: var(--color-card-shadow);
@@ -395,7 +398,8 @@
     // gap: 16px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 5px;
+    align-items: left;
+    gap: 0px;
   }
 }
 
@@ -612,6 +616,8 @@
     margin-left: 0;
     padding: 24px 20px;
     box-shadow: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 
   .event-intro__content h5 {
@@ -624,7 +630,7 @@
    =========================== */
 
 .contact-section {
-  background: transparent;
+  background: var(--color-background);
   padding: 10px 24px;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
   margin: 0 20px;
