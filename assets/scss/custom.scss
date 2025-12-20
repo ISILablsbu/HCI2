@@ -558,6 +558,12 @@
     border: none;
     border-top: 3px solid var(--color-text);
   }
+  .events-header{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 /* ===========================
