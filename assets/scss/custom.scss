@@ -165,7 +165,7 @@
   /* ---------- HERO CAROUSEL ---------- */
   .hero-carousel {
     height: 10vh;
-    min-height: 340px;
+    min-height: 350px;
     padding: 0;
     overflow: hidden;
   }
@@ -186,7 +186,10 @@
 
   /* Pull dots closer to image */
   .carousel-dots {
+    position: absolute;
     bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   /* Slight fade to avoid hard edges */
@@ -594,7 +597,6 @@
    =========================== */
 
 @media (max-width: 900px) {
-  
   .oppo-intro {
     flex-direction: column;
     margin: 0 10px;
