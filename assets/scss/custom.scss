@@ -408,16 +408,16 @@
     margin: 40px auto;
     padding: 0 24px;
   }
-  // .publications__header {
-  //   // flex-direction: column;
-  //   // align-items: center;
-  //   // text-align: center;
-  //   // gap: 16px;
-  //   flex-direction: column;
-  //   align-items: flex-start;
-  //   text-align: left;
-  //   gap: 0px;
-  // }
+  .publications__header {
+    // flex-direction: column;
+    // align-items: center;
+    // text-align: center;
+    // gap: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0px;
+  }
 }
 
 /* ======================
