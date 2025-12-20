@@ -165,17 +165,17 @@
   /* ---------- HERO CAROUSEL ---------- */
   .hero-carousel {
     height: 10vh;
-    min-height: 350px;
+    min-height: 340px;
     padding: 0;
     overflow: hidden;
   }
 
   .hero-carousel .slides {
     padding: 0 12px;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: -30px;
+    // margin-bottom: -20px;
   }
 
   .hero-carousel .slide {
@@ -186,7 +186,7 @@
 
   /* Pull dots closer to image */
   .carousel-dots {
-    bottom: -30px;
+    bottom: 20px;
   }
 
   /* Slight fade to avoid hard edges */
