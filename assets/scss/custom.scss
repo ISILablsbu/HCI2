@@ -161,7 +161,7 @@
    MOBILE VERSION – HERO & INTRO
    ===================================================== */
 
-@media (max-width: 900px) {
+@media (max-width: 760px) {
   /* ---------- HERO CAROUSEL ---------- */
   .hero-carousel {
     height: 10vh;
@@ -175,7 +175,7 @@
     margin-top: 60px;
     margin-left: 10px;
     margin-right: 10px;
-    // margin-bottom: -20px;
+    margin-bottom: -20px;
   }
 
   .hero-carousel .slide {
@@ -187,7 +187,7 @@
   /* Pull dots closer to image */
   .carousel-dots {
     position: absolute;
-    bottom: 50px;
+    bottom: 65px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -298,8 +298,8 @@
 /* Header */
 .publications__header {
   display: flex;
-  justify-content: space-between;
-  align-items: left;
+  justify-content:flex-start;
+  align-items:flex-start;
   padding-top: 40px;
 }
 
@@ -405,7 +405,7 @@
     // gap: 16px;
     flex-direction: column;
     align-items: flex-start;
-    align-items: left;
+    align-items:flex-start;
     text-align: left;
     gap: 0px;
   }
