@@ -1,33 +1,178 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ongoing Research Projects | HCI² Research Lab</title><link>https://hci2.uk/research/</link><atom:link href="https://hci2.uk/research/index.xml" rel="self" type="application/rss+xml"/><description>Ongoing Research Projects</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://hci2.uk/media/logo_hu15880263399225826474.png</url><title>Ongoing Research Projects</title><link>https://hci2.uk/research/</link></image><item><title>Digital Twin-Enabled Adaptive Fleet Management</title><link>https://hci2.uk/research/digitaltwin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hci2.uk/research/digitaltwin/</guid><description>&lt;p>This project introduces a human-centred Digital Twin framework that integrates multi-fidelity models, surrogate optimisation, and high-fidelity simulation to support resilient AMR fleet management in dynamic smart factories. It detects operational disruptions such as robot failures or machine breakdowns and rapidly generates incident-aware schedules while preserving throughput and energy efficiency. A human-in-the-loop decision layer allows operators to review trade-offs, request re-simulation and apply policy-bound overrides, ensuring transparency, governance and Industry 5.0–ready coordination.&lt;/p>
 &lt;details class="expand-card">
 &lt;summary class="expand-card-title">Motivation&lt;/summary>
-&lt;div class="expand-card-body">This project addresses limitations of conventional assembly instructions that rely
-on static manuals or wearable devices. By projecting guidance directly onto the
-workspace, SAR reduces cognitive load and improves task flow.&lt;/div>
+&lt;div class="expand-card-body">As AMR fleets scale in complexity, even minor disruptions can propagate into congestion, energy inefficiency, and production delays. Existing fleet managers are largely rule-based, offering limited adaptability and minimal transparency during incidents, while optimisation-driven approaches often fail to meet real-time decision constraints.
+This project addresses a critical gap: how to deliver fast, adaptive scheduling decisions while keeping humans meaningfully in the loop. Rather than replacing operators, the framework augments them with prescriptive Digital Twin decision support that is policy-bound, auditable, and latency-aware, ensuring safe and accountable deployment in real manufacturing environments.&lt;/div>
 &lt;/details>
+&lt;div class="project-digitaltwin">
 &lt;details class="expand-card">
 &lt;summary class="expand-card-title">System Architecture&lt;/summary>
-&lt;div class="expand-card-body">The system integrates computer vision, gesture recognition, and spatial projection
-to deliver adaptive assembly instructions in real time.&lt;/div>
+&lt;div class="expand-card-body">&lt;div class="no-quote-line">
+The framework adopts a layered Digital Twin architecture spanning the physical shop floor to human-centred decision support:
+&lt;div>
+&lt;h3 id="physical--communication-layers">&lt;strong>Physical &amp;amp; Communication Layers&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>AMRs, machines, sensors, and enterprise systems stream real-time telemetry via OPC-UA&lt;/li>
+&lt;li>Semantically tagged events enable incident detection&lt;/li>
+&lt;/ul>
+&lt;h3 id="data--digital-shadow-layer">&lt;strong>Data &amp;amp; Digital Shadow Layer&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>Operational data are parsed, stored, and contextualised&lt;/li>
+&lt;li>Maintains a real-time representation of system state&lt;/li>
+&lt;/ul>
+&lt;h3 id="digital-layer-multi-fidelity-dt">&lt;strong>Digital Layer (Multi-Fidelity DT)&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Low-fidelity surrogate models&lt;/strong>
+&lt;ul>
+&lt;li>Seconds-level rescheduling during incidents&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>High-fidelity simulation models&lt;/strong>
+&lt;ul>
+&lt;li>Capture AMR behaviour, energy use, congestion, and safety&lt;/li>
+&lt;li>Support validation and scenario analysis&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="humanmachine-interaction-layer">&lt;strong>Human–Machine Interaction Layer&lt;/strong>&lt;/h3>
+&lt;div class="no-quote-line">
+Interactive dashboards, Pareto visualisation, Gantt charts, and override controls enable operators to review, select, and validate responses with full provenance.
+&lt;div>
+&lt;hr>
+&lt;div class="no-quote-line">
+A rule-based allocator dynamically selects between surrogate optimisation, re-simulation, or manual override based on incident type, severity, and site policy.
+&lt;div>
+&lt;/div>
 &lt;/details>
+&lt;/div>
+&lt;div class="project-digitaltwin">
 &lt;details class="expand-card">
 &lt;summary class="expand-card-title">Key Components&lt;/summary>
-&lt;div class="expand-card-body">&lt;/div>
+&lt;div class="expand-card-body">&lt;div class="no-quote-line">
+&lt;ul>
+&lt;li>&lt;strong>Incident Response Module (IRM)&lt;/strong>&lt;br>
+Detects and classifies disruptions from OPC-UA events and triggers appropriate response modes.&lt;/li>
+&lt;/ul>
+&lt;div>
+&lt;div class="no-quote-line">
+&lt;ul>
+&lt;li>&lt;strong>Surrogate-Based Optimisation&lt;/strong>&lt;br>
+Multi-objective scheduling balances makespan and energy consumption under strict response-time constraints.&lt;/li>
+&lt;/ul>
+&lt;div>
+&lt;div class="no-quote-line">
+&lt;ul>
+&lt;li>&lt;strong>High-Fidelity Digital Twin&lt;/strong>&lt;br>
+Used for behavioural validation, what-if analysis, and post-incident performance assessment.&lt;/li>
+&lt;/ul>
+&lt;div>
+&lt;div class="no-quote-line">
+&lt;ul>
+&lt;li>&lt;strong>Operator Panel (Human-in-the-Loop)&lt;/strong>&lt;br>
+Supports trade-off exploration via Pareto fronts, schedule inspection via Gantt charts, and &lt;strong>audited overrides&lt;/strong> with role-based permissions.&lt;/li>
+&lt;/ul>
+&lt;div>
+&lt;div class="no-quote-line">
+&lt;ul>
+&lt;li>&lt;strong>Governance &amp;amp; Provenance Layer&lt;/strong>&lt;br>
+All decisions, overrides, and outcomes are logged as machine-readable artefacts, enabling traceability, accountability, and cross-shift handover.&lt;/li>
+&lt;/ul>
+&lt;div>
+&lt;/div>
 &lt;/details>
+&lt;/div>
+&lt;div class="project-digitaltwin">
 &lt;details class="expand-card">
 &lt;summary class="expand-card-title">Evaluation&lt;/summary>
-&lt;div class="expand-card-body">User studies compared SAR guidance with conventional instructions.
-Participants showed reduced completion time and fewer errors.&lt;/div>
-&lt;/details>
-&lt;details class="expand-card">
-&lt;summary class="expand-card-title">Key Findings&lt;/summary>
-&lt;div class="expand-card-body">&lt;ul>
-&lt;li>Faster task completion&lt;/li>
-&lt;li>Lower error rate&lt;/li>
-&lt;li>Reduced perceived workload&lt;/li>
+&lt;div class="expand-card-body">&lt;div class="no-quote-line">
+The proposed framework is instantiated on a battery module assembly flowshop with AMR-based material handling and evaluated under representative disruption scenarios, including:
+&lt;/div>
+&lt;br>
+&lt;div class="no-quote-line">
+&lt;ul>
+&lt;li>&lt;strong>AMR Breakdown&lt;/strong>&lt;br>
+Evaluates system resilience to autonomous mobile robot failures and material flow interruptions.&lt;/li>
 &lt;/ul>
 &lt;/div>
-&lt;/details></description></item><item><title>Vision-Enabled SAR for Manual Assembly</title><link>https://hci2.uk/research/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hci2.uk/research/sar/</guid><description>&lt;p>This project develops a human-centric Spatial Augmented Reality (SAR) system that projects adaptive, light-guided assembly instructions directly onto the workspace and is controlled through AI-based hand gesture recognition. The system delivers real-time guidance and error feedback without requiring handheld or wearable devices. User studies show significant reductions in task time, error rates, and perceived workload compared to conventional instruction methods.&lt;/p>
+&lt;div class="no-quote-line">
+&lt;ul>
+&lt;li>&lt;strong>Machine Breakdown&lt;/strong>&lt;br>
+Assesses adaptive rescheduling performance under unexpected workstation failures.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="no-quote-line">
+&lt;ul>
+&lt;li>&lt;strong>Demand Change&lt;/strong>&lt;br>
+Tests responsiveness to sudden order quantity and priority variations.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="no-quote-line">
+Performance is assessed using the following metrics:
+&lt;/div>
+&lt;br>
+&lt;div class="no-quote-line">
+&lt;ul>
+&lt;li>&lt;strong>Decision Latency (Stage-Resolved)&lt;/strong>&lt;br>
+Measures the time required to generate corrective schedules at each decision stage.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="no-quote-line">
+&lt;ul>
+&lt;li>&lt;strong>Makespan and Energy Deviation&lt;/strong>&lt;br>
+Quantifies efficiency and operational cost deviations relative to nominal schedules.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="no-quote-line">
+&lt;ul>
+&lt;li>&lt;strong>Schedule Stability and Utilisation Behaviour&lt;/strong>&lt;br>
+Evaluates robustness by analysing task reassignment frequency and resource usage patterns.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="no-quote-line">
+&lt;ul>
+&lt;li>&lt;strong>Surrogate–Simulation Agreement&lt;/strong>&lt;br>
+Assesses alignment between surrogate-based predictions and high-fidelity digital twin outcomes.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="no-quote-line">
+Results Summary:
+&lt;div>
+&lt;div class="no-quote-line">
+Surrogate-based responses generate deployable schedules within 3–10 seconds, achieving orders-of-magnitude reductions in decision time compared to full high-fidelity simulation, while maintaining close behavioural alignment with the digital twin.
+&lt;/div>
+&lt;/div>
+&lt;/details>
+&lt;/div>
+&lt;div class="project-digitaltwin">
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">Key Findings&lt;/summary>
+&lt;div class="expand-card-body">&lt;div class="no-quote-line">
+&lt;ul>
+&lt;li>&lt;strong>Real-time responsiveness with human oversight&lt;/strong>&lt;br>
+Fast surrogate optimisation enables incident response within seconds while maintaining operator authority and decision accountability.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="no-quote-line">
+&lt;ul>
+&lt;li>&lt;strong>High agreement across fidelities&lt;/strong>&lt;br>
+Surrogate-based decisions closely align with high-fidelity Digital Twin outcomes for both makespan and energy-related performance metrics.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="no-quote-line">
+&lt;ul>
+&lt;li>&lt;strong>Improved resilience over dispatch rules&lt;/strong>&lt;br>
+The Digital Twin–enabled approach consistently outperforms classical dispatching rules (FCFS, SPT, LPT) in terms of throughput stability and energy control under disruption.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="no-quote-line">
+&lt;ul>
+&lt;li>&lt;strong>Governance-ready Digital Twin design&lt;/strong>&lt;br>
+Policy-bound operating modes, audited human overrides, and provenance-by-design mechanisms support safe, transparent, and accountable deployment in industrial settings.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/div>
+&lt;/details>
+&lt;/div></description></item><item><title>Vision-Enabled SAR for Manual Assembly</title><link>https://hci2.uk/research/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hci2.uk/research/sar/</guid><description>&lt;p>This project develops a human-centric Spatial Augmented Reality (SAR) system that projects adaptive, light-guided assembly instructions directly onto the workspace and is controlled through AI-based hand gesture recognition. The system delivers real-time guidance and error feedback without requiring handheld or wearable devices. User studies show significant reductions in task time, error rates, and perceived workload compared to conventional instruction methods.&lt;/p>
 &lt;details class="expand-card">
 &lt;summary class="expand-card-title">Motivation&lt;/summary>
 &lt;div class="expand-card-body">This project addresses limitations of conventional assembly instructions that rely
