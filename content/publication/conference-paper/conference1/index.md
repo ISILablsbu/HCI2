@@ -1,6 +1,6 @@
 ---
 title: 'Dynamic Trust Management for Secure Federated Learning in Critical Industrial and IoT Networks'
-
+external_link: 'https://doi.org/10.1109/iccworkshops67674.2025.11162455'
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
@@ -11,12 +11,12 @@ authors:
   - Jonathan Rodriguez
 
 # Author notes (optional)
-author_notes:
+# author_notes:
   # - 'Equal contribution'
   # - 'Equal contribution'
 
 date: '2025-06-12T00:00:00Z'
-doi: 'https://doi.org/10.1109/iccworkshops67674.2025.11162455'
+# doi: 'https://doi.org/10.1109/iccworkshops67674.2025.11162455'
 
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2025-11-17T00:00:00Z'
@@ -24,21 +24,21 @@ doi: 'https://doi.org/10.1109/iccworkshops67674.2025.11162455'
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ['paper-conference']
+# publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: 2025 IEEE International Conference on Communications Workshops (pp. 371-376).
-publication_short: ICC Workshops 2025
+# publication: 2025 IEEE International Conference on Communications Workshops (pp. 371-376).
+# publication_short: ICC Workshops 2025
 
-abstract: Federated Learning (FL) has evolved privacy-preserving machine learning by enabling decentralized devices, such as Multi-access Edge Computing (MEC) nodes, to collaboratively train models without sharing raw data. This integration leverages edge computation and storage resources for real-time decision-making, reducing latency and enhancing scalability in critical industrial networks, including domains like healthcare, finance, and IoT. However, FL's decentralized architecture makes it vulnerable to adversarial attacks, such as label flipping, which undermine its sustainability and resilience. These vulnerabilities emphasize the need for adaptive trust management mechanisms.To address these challenges, this paper proposes sensitivity and adaptive mechanisms for trust thresholds and smoothing parameters, enabling real-time adjustments based on client performance, behaviour, and variability. Comparative analyses demonstrate that these adaptive methods significantly enhance robustness, fairness, and scalability, ensuring reliable model aggregation and mitigating the impact of malicious clients. This contribution transitions FL from static to more adaptive frameworks, establishing a benchmark for secure, sustainable, and efficient FL in real-world adversarial environments.
+# abstract: Federated Learning (FL) has evolved privacy-preserving machine learning by enabling decentralized devices, such as Multi-access Edge Computing (MEC) nodes, to collaboratively train models without sharing raw data. This integration leverages edge computation and storage resources for real-time decision-making, reducing latency and enhancing scalability in critical industrial networks, including domains like healthcare, finance, and IoT. However, FL's decentralized architecture makes it vulnerable to adversarial attacks, such as label flipping, which undermine its sustainability and resilience. These vulnerabilities emphasize the need for adaptive trust management mechanisms.To address these challenges, this paper proposes sensitivity and adaptive mechanisms for trust thresholds and smoothing parameters, enabling real-time adjustments based on client performance, behaviour, and variability. Comparative analyses demonstrate that these adaptive methods significantly enhance robustness, fairness, and scalability, ensuring reliable model aggregation and mitigating the impact of malicious clients. This contribution transitions FL from static to more adaptive frameworks, establishing a benchmark for secure, sustainable, and efficient FL in real-world adversarial environments.
 
-# Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+# # Summary. An optional shortened abstract.
+# summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
-tags: []
+# tags: []
 
 # Display this page in the Featured widget?
-featured: true
+# featured: true
 
 # Custom links (uncomment lines below)
 # links:
@@ -56,25 +56,25 @@ featured: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
-image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
-  focal_point: ''
-  preview_only: false
+# image:
+#   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+#   focal_point: ''
+#   preview_only: false
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects:
-  - example
+# projects:
+#   - example
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: example
+# slides: example
 ---
 
 <!-- {{% callout note %}}

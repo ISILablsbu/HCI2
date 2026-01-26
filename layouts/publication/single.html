@@ -1,0 +1,26 @@
+{{- if .Params.external_link -}}
+<!doctype html>
+<html lang="{{ .Lang }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="0; url={{ .Params.external_link }}" />
+    <link rel="canonical" href="{{ .Params.external_link }}" />
+    <script>window.location.replace("{{ .Params.external_link }}");</script>
+    <title>{{ .Title }}</title>
+  </head>
+  <body>
+    Redirecting to <a href="{{ .Params.external_link }}" >{{ .Params.external_link }}</a>…
+  </body>
+</html>
+{{- else -}}
+<!doctype html>
+<html lang="{{ .Lang }}">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ .Title }}</title>
+  </head>
+  <body>
+    {{ .Content }}
+  </body>
+</html>
+{{- end -}}

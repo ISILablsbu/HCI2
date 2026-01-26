@@ -75,7 +75,7 @@ email: ''
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Collaborator
+  - Collaborators
 ---
 
 Dr. Malarvizhi Kaniappan Chinnathai is a Lecturer in Modelling of Discrete Event Processes at the University of Exeter. She is a member of the Exeter Digital Enterprise Systems (ExDES) research group. Prior to joining Exeter, she served as a Lecturer in the School of Computer Science and Engineering at the University of Westminster (2022–2025). She previously held the position of Research Fellow at the Brunel Innovation Centre, Brunel University London, following her role as Project Engineer (Digital Manufacturing) in the Automation Systems Group at the Warwick Manufacturing Group (WMG), University of Warwick. Dr. Chinnathai earned her PhD in Engineering (2021) and MSc in Manufacturing Systems Engineering (2015) from the University of Warwick.  
