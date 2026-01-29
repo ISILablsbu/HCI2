@@ -22,7 +22,7 @@ organizations:
     url: 'https://researchportal.lsbu.ac.uk/en/persons/bugra-alkan'
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include human–robot collaboration, industrial AI and cyber-physical production systems.
 
 interests:
   - Human-centric, AI-enabled manufacturing and cyber-physical production systems
