@@ -786,3 +786,71 @@ footer {
   padding-left: 0 !important;
 }
 
+/* ===========================
+   Card extendion Section
+   =========================== */
+
+/* Expand section (opportunities page) */
+.course-card-expandforopp {
+  margin-top: 14px;
+}
+
+.course-card-expandforopp-btn {
+  cursor: pointer;
+  font-weight: 700;
+  color: #b00000;
+  list-style: none;
+  padding: 6px 0;
+}
+
+/* Hide default arrow marker in Safari/Chrome */
+.course-card-expandforopp-btn::-webkit-details-marker {
+  display: none;
+}
+
+.course-card-expandforopp-body {
+  margin-top: 12px;
+  padding-top: 14px;
+  border-top: 1px solid #eee;
+  border-left: none !important;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: var(--color-text);
+}
+
+/* Headings inside expanded body */
+.course-card-expandforopp-body h2,
+.course-card-expandforopp-body h3,
+.course-card-expandforopp-body h4 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.course-card-expandforopp-body p {
+  margin: 0 0 10px;
+}
+
+.course-card-expandforopp-body ul {
+  margin: 8px 0 14px;
+  padding-left: 18px;
+}
+
+.course-card-expandforopp-body li {
+  margin: 6px 0;
+}
+
+.course-card-expandforopp-body blockquote {
+  margin: 12px 0 0;
+  padding: 10px 12px;
+  border-left: 4px solid #b00000;
+  background: rgba(176, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+.course-card-expandforopp-body a {
+  color: #b00000;
+  font-weight: 700;
+  text-decoration: underline;
+}

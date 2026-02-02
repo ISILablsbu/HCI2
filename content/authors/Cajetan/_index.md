@@ -4,7 +4,7 @@ title: Cajetan Emeka Oriekezie
 
 # Full name (for SEO)
 first_name: Cajetan Emeka
-last_name: Oriekezie
+last_name: Oriekezieh
 
 # Username (this should match the folder name)
 authors:

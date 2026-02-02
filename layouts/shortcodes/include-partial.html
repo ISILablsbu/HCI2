@@ -1,0 +1,5 @@
+{{- $path := .Get 0 -}}
+{{- if not $path -}}
+  {{ errorf "include-partial shortcode: missing partial path. Example: {{< include-partial \"opportunities/cards.html\" >}}" }}
+{{- end -}}
+{{ partial $path .Page }}
