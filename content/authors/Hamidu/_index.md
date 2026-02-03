@@ -22,21 +22,12 @@ organizations:
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include Process Mining, Multi-Modal Anomaly Detection and Industry 4/5.0.
 
 interests:
   - Process Mining & Deep Learning Integration
   - Multi-Modal Anomaly Detection (Sensor & Visual Data)
   - Anomaly Detection & Deviation Identification
-  - Root Cause Attribution & Fault Diagnosis
-  - Time-Series Analysis & Pattern Recognition
-  - Computer Vision for Quality Inspection
-  - Collaborative Robotic Systems
-  - Predictive Maintenance
-  - Digital Twins for Industrial Automation
-  - Cyber-Physical Systems
-  - Industry 4.0/5.0 Technologies
-  - Real-Time Intelligent Monitoring
 
 education:
   courses:
