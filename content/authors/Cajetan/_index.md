@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Cajetan Emeka Oriekezie
+title: Cajetan Oriekezie
 
 # Full name (for SEO)
 first_name: Cajetan Emeka
@@ -22,7 +22,7 @@ organizations:
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include Large Language Models, Natural Language Processing and LLM Evaluation.
 
 interests:
   - Large Language Models (LLMs)
