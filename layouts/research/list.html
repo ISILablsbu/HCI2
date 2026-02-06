@@ -1,1 +1,46 @@
-{{ define "main" }} {{ partial "highlighted-projects.html" . }} {{ end }}
+{{ define "main" }}
+  <div class="universal-wrapper">
+
+    {{/* Optional: keep your highlighted strip at the top */}}
+    {{ partial "highlighted-projects.html" . }}
+
+    <h1 class="mt-4">{{ .Title }}</h1>
+
+    <div class="research-grid">
+      {{ range .Pages.ByWeight.ByTitle }}
+        {{ $img := "" }}
+        {{ with .Params.image }}
+          {{ with .main }}{{ $img = . }}{{ end }}
+        {{ end }}
+
+        <a class="research-card" href="{{ .RelPermalink }}">
+          {{ if $img }}
+            <img class="research-thumb" src="{{ $img | relURL }}" alt="{{ .Title }}">
+          {{ end }}
+
+          {{ with .Params.video }}
+            {{ if eq .type "mp4" }}
+              <video class="research-thumb" autoplay muted loop playsinline poster="{{ .poster | relURL }}">
+                <source src="{{ .src | relURL }}" type="video/mp4">
+              </video>
+            {{ end }}
+          {{ end }}
+
+          <div class="research-body">
+            <h3>{{ .Title }}</h3>
+            {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+
+            {{ with .Params.highlights }}
+              <ul class="research-highlights">
+                {{ range first 3 . }}
+                  <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          </div>
+        </a>
+      {{ end }}
+    </div>
+
+  </div>
+{{ end }}
