@@ -1,5 +1,5 @@
 ---
-title: "Digital Twin-Enabled Adaptive Fleet Management"
+title: "Human-in-the-Loop Digital Twin for Resilient AMR Fleet Management"
 
 summary: >
   Building a policy-oriented, human-in-the-loop Digital Twin for incident-aware AMR fleet management, combining OPC-UA event monitoring, time-bounded surrogate optimisation, and high-fidelity simulation for governed, resilient intralogistics.
