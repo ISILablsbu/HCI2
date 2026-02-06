@@ -25,11 +25,10 @@ organizations:
 bio: My research interests include human–robot collaboration, industrial AI and cyber-physical production systems.
 
 interests:
-  - Human-centric, AI-enabled manufacturing and cyber-physical production systems
-  - Human–robot collaboration for safe, adaptive, high-mix assembly
-  - Industrial AI (ML/DL/RL) for process optimization, fault prediction and automation
-  - Data-driven decision-making and digital twins for zero-defect, sustainable production
-  - AI-based quality inspection and XR tools for operator support and training 
+  - Human–robot collaboration
+  - Industrial AI
+  - Digital twins
+  - Smart manufacturing
 
 education:
   courses:
@@ -89,4 +88,4 @@ user_groups:
   # - Researchers
 ---
 
-Dr Bugra Alkan is a Senior Lecturer in Artificial Intelligence and Robotics in the School of Computer Science and Digital Technologies, College of Technology and Environment, at London South Bank University. He received his PhD in Engineering from WMG, University of Warwick, specialising in cyber-physical industrial automation, and previously held a postdoctoral appointment in Computer Science at the University of Bristol. His research spans smart manufacturing, industrial artificial intelligence, industrial robotics, and human-robot collaboration, with complementary expertise in data-driven decision making, cyber-physical systems, and digital twins. He has led and collaborated on projects funded by the Engineering and Physical Sciences Research Council, Innovate UK, the Royal Society, EU Horizon, and industrial partners, serving as Principal Investigator and Co-Investigator. He has published more than 40 peer-reviewed papers, holds an h-index of 16 and an i10-index of 22, and is a regular reviewer for leading venues. His work has received multiple Best Paper Awards, including recognition at the CIRP Conference on Assembly Technologies and Systems in Gothenburg, Sweden. He teaches across undergraduate and postgraduate programmes, leads modules in artificial intelligence and industrial cyber-physical systems, is a Fellow of the Higher Education Academy, and serves as an Associate Editor for Heliyon and Industrial Robot.
+Dr Bugra Alkan is a Senior Lecturer in Artificial Intelligence and Robotics at London South Bank University, School of Computer Science and Digital Technologies, where he directs the Human-Centred Industrial Intelligence (HCI²) Lab. He received a PhD in Engineering from WMG, University of Warwick, and previously worked as a Postdoctoral Research Associate at the University of Bristol and as a Research Fellow at WMG. His research focuses on industrial AI, digital twins, human–robot collaboration, and smart manufacturing, with emphasis on data-driven decision support, in-line quality monitoring, and cyber-physical production systems. He is PI/Co-I on externally funded projects (institutional share £670k+ across funded roles), with support from EU Horizon/UKRI, Innovate UK, EPSRC, RAEng, and industry. As of January 2026, he has 50+ peer-reviewed publications with 997+ citations (h-index 16, i10-index 24), and his work has received awards including a Best Paper Award at CIRP CATS (Gothenburg, Sweden). He leads large-cohort teaching in AI (CSI-6-ARI) and delivers postgraduate teaching in Industrial Cyber-Physical Systems (CSI-7-ICS), supervises doctoral and master’s research, is a Fellow of the Higher Education Academy, and serves as Associate Editor for Industrial Robot, with additional editorial and reviewing roles.
