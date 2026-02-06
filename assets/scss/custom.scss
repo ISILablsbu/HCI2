@@ -855,15 +855,11 @@ footer {
   text-decoration: underline;
 }
 
-/* ===========================
-   People / Team spacing
-   =========================== */
-
-/* Bootstrap 5 gutters (preferred) */
-.wg-people .row,
-#section-people .row,
-#section-team .row,
-#section-researchers .row {
-  --bs-gutter-x: 3rem;  /* horizontal spacing */
-  --bs-gutter-y: 3rem;  /* vertical spacing */
+.wg-people .row > [class*="col-"],
+#section-people .row > [class*="col-"],
+#section-team .row > [class*="col-"],
+#section-researchers .row > [class*="col-"] {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-bottom: 3rem;
 }
