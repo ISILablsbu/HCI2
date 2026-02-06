@@ -9,13 +9,24 @@
       {{ with .Params.image }}{{ with .main }}{{ $img = . }}{{ end }}{{ end }}
 
       <a class="research-card" href="{{ .RelPermalink }}">
+
         {{ if $img }}
           <img class="research-thumb" src="{{ $img | relURL }}" alt="{{ .Title }}">
         {{ end }}
 
         <div class="research-body">
+
+          <div class="research-meta">
+            {{ with .Params.project_style }}
+              <span class="research-pill">{{ . }}</span>
+            {{ end }}
+          </div>
+
           <h3>{{ .Title }}</h3>
-          {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+
+          {{ with .Params.summary }}
+            <p class="research-summary">{{ . }}</p>
+          {{ end }}
 
           {{ with .Params.highlights }}
             <ul class="research-highlights">
@@ -24,6 +35,7 @@
               {{ end }}
             </ul>
           {{ end }}
+
         </div>
       </a>
     {{ end }}
