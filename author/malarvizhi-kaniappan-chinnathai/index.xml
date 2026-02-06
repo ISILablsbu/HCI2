@@ -1,8 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Malarvizhi Kaniappan Chinnathai | HCI² Research Lab</title><link>https://hci2.uk/author/malarvizhi-kaniappan-chinnathai/</link><atom:link href="https://hci2.uk/author/malarvizhi-kaniappan-chinnathai/index.xml" rel="self" type="application/rss+xml"/><description>Malarvizhi Kaniappan Chinnathai</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate><image><url>https://hci2.uk/media/logo_hu15880263399225826474.png</url><title>Malarvizhi Kaniappan Chinnathai</title><link>https://hci2.uk/author/malarvizhi-kaniappan-chinnathai/</link></image><item><title>Spatial Augmented Reality in Manual Assembly: An Empirical Investigation of Its Effects on Assembly Performance and Cognitive Ergonomics</title><link>https://hci2.uk/publication/preprint/preprint1/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><guid>https://hci2.uk/publication/preprint/preprint1/</guid><description>&lt;!--
-&lt;div class="alert alert-note">
-&lt;div>
-&lt;h1 id="create-your-slides-in-markdown---click-the-slides-button-to-check-out-the-example">Create your slides in Markdown - click the &lt;em>Slides&lt;/em> button to check out the example.&lt;/h1>
-&lt;h1 id="heading">&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Malarvizhi Kaniappan Chinnathai | HCI² Research Lab</title><link>https://hci2.uk/author/malarvizhi-kaniappan-chinnathai/</link><atom:link href="https://hci2.uk/author/malarvizhi-kaniappan-chinnathai/index.xml" rel="self" type="application/rss+xml"/><description>Malarvizhi Kaniappan Chinnathai</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://hci2.uk/author/malarvizhi-kaniappan-chinnathai/avatar_hu2394050251781836677.jpg</url><title>Malarvizhi Kaniappan Chinnathai</title><link>https://hci2.uk/author/malarvizhi-kaniappan-chinnathai/</link></image><item><title>Malarvizhi Kaniappan Chinnathai</title><link>https://hci2.uk/author/malarvizhi-kaniappan-chinnathai/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hci2.uk/author/malarvizhi-kaniappan-chinnathai/</guid><description>&lt;p>Dr. Malarvizhi Kaniappan Chinnathai is a Lecturer in Modelling of Discrete Event Processes at the University of Exeter. She is a member of the Exeter Digital Enterprise Systems (ExDES) research group. Prior to joining Exeter, she served as a Lecturer in the School of Computer Science and Engineering at the University of Westminster (2022–2025). She previously held the position of Research Fellow at the Brunel Innovation Centre, Brunel University London, following her role as Project Engineer (Digital Manufacturing) in the Automation Systems Group at the Warwick Manufacturing Group (WMG), University of Warwick. Dr. Chinnathai earned her PhD in Engineering (2021) and MSc in Manufacturing Systems Engineering (2015) from the University of Warwick.&lt;br>
+Her research focuses on the development and application of discrete event simulation for decision support in manufacturing scale-up, operations research, electric vehicle (EV) assembly, process planning, and intelligent logistics for manufacturing systems. She has also conducted extensive research in machine learning and computer vision for non-destructive testing (NDT) to enable zero-defect manufacturing.&lt;/p></description></item><item><title>Vision-Enabled SAR for Manual Assembly</title><link>https://hci2.uk/research/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hci2.uk/research/sar/</guid><description>&lt;p>This project develops a human-centric Spatial Augmented Reality (SAR) system that projects adaptive, light-guided assembly instructions directly onto the workspace and is controlled through AI-based hand gesture recognition. The system delivers real-time guidance and error feedback without requiring handheld or wearable devices. User studies show significant reductions in task time, error rates, and perceived workload compared to conventional instruction methods.&lt;/p>
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">Motivation&lt;/summary>
+&lt;div class="expand-card-body">This project addresses limitations of conventional assembly instructions that rely
+on static manuals or wearable devices. By projecting guidance directly onto the
+workspace, SAR reduces cognitive load and improves task flow.&lt;/div>
+&lt;/details>
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">System Architecture&lt;/summary>
+&lt;div class="expand-card-body">The system integrates computer vision, gesture recognition, and spatial projection
+to deliver adaptive assembly instructions in real time.&lt;/div>
+&lt;/details>
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">Key Components&lt;/summary>
+&lt;div class="expand-card-body">&lt;/div>
+&lt;/details>
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">Evaluation&lt;/summary>
+&lt;div class="expand-card-body">User studies compared SAR guidance with conventional instructions.
+Participants showed reduced completion time and fewer errors.&lt;/div>
+&lt;/details>
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">Key Findings&lt;/summary>
+&lt;div class="expand-card-body">&lt;ul>
+&lt;li>Faster task completion&lt;/li>
+&lt;li>Lower error rate&lt;/li>
+&lt;li>Reduced perceived workload&lt;/li>
+&lt;/ul>
 &lt;/div>
-&lt;/div>
-# Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --></description></item></channel></rss>
+&lt;/details></description></item></channel></rss>
