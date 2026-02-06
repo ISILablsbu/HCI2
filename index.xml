@@ -1,4 +1,136 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HCI² Research Lab</title><link>https://hci2.uk/</link><atom:link href="https://hci2.uk/index.xml" rel="self" type="application/rss+xml"/><description>HCI² Research Lab</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 24 Sep 2025 00:00:00 +0000</lastBuildDate><image><url>https://hci2.uk/media/logo_hu15880263399225826474.png</url><title>HCI² Research Lab</title><link>https://hci2.uk/</link></image><item><title>This could be you</title><link>https://hci2.uk/author/this-could-be-you/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hci2.uk/author/this-could-be-you/</guid><description/></item><item><title>Artificial Intelligence</title><link>https://hci2.uk/teaching/ai/</link><pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate><guid>https://hci2.uk/teaching/ai/</guid><description/></item><item><title>Industrial Cyber-Physical Systems</title><link>https://hci2.uk/teaching/icps/</link><pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate><guid>https://hci2.uk/teaching/icps/</guid><description/></item><item><title>HCI² Lab Presents- The 2025 Kilobot Swarm Intelligence Extra-Curricular Activity</title><link>https://hci2.uk/event/swarmexc/</link><pubDate>Wed, 12 Nov 2025 13:00:00 +0000</pubDate><guid>https://hci2.uk/event/swarmexc/</guid><description>&lt;p>Slides can be added in a few ways:&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HCI² Research Lab</title><link>https://hci2.uk/</link><atom:link href="https://hci2.uk/index.xml" rel="self" type="application/rss+xml"/><description>HCI² Research Lab</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 24 Sep 2025 00:00:00 +0000</lastBuildDate><image><url>https://hci2.uk/media/logo_hu15880263399225826474.png</url><title>HCI² Research Lab</title><link>https://hci2.uk/</link></image><item><title>Digital Twin-Enabled Adaptive Fleet Management</title><link>https://hci2.uk/research/digitaltwin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hci2.uk/research/digitaltwin/</guid><description>&lt;p>This project develops a multi-fidelity, policy-oriented Digital Twin (DT) for resilient Autonomous Mobile Robot (AMR) fleet management under disruption. The system monitors shop-floor telemetry via OPC-UA, classifies incidents (e.g., AMR breakdown, machine unavailability, demand shock), snapshots decision-relevant state, then generates incident-aware recovery schedules under a strict decision-time cap. A surrogate (low-fidelity) optimisation layer produces deployable responses within seconds, while a high-fidelity DT simulation layer provides audit, assurance, and post-decision validation. An operator-in-the-loop panel exposes Pareto trade-offs and schedule previews, enabling transparent selection, re-simulation on demand, and policy-bound overrides, with provenance captured as machine-readable decision artefacts.&lt;/p>
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">Motivation&lt;/summary>
+&lt;div class="expand-card-body">As AMR fleets scale, small disruptions propagate into congestion, energy waste, and missed throughput targets. Rule-based fleet managers are fast but brittle and opaque during incidents, while high-fidelity simulation is informative but too slow for time-critical response. This project addresses the gap with a governed multi-fidelity DT, fast enough for real-time recovery, and structured enough for auditability, human oversight, and Industry 5.0–ready deployment.&lt;/div>
+&lt;/details>
+&lt;div class="project-digitaltwin">
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">System Architecture&lt;/summary>
+&lt;div class="expand-card-body">&lt;h3 id="physical--communication-layer">&lt;strong>Physical &amp;amp; Communication Layer&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>AMRs, stations, sensors, and execution systems stream telemetry and events via &lt;strong>OPC-UA&lt;/strong>&lt;/li>
+&lt;li>Event-driven incident triggers (e.g., fault flags, demand-change flags) initiate response&lt;/li>
+&lt;/ul>
+&lt;h3 id="data--digital-shadow-layer">&lt;strong>Data &amp;amp; Digital Shadow Layer&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>Telemetry is contextualised and stored (time-series + event envelopes)&lt;/li>
+&lt;li>On incident, the system snapshots decision-relevant state, remaining jobs, resource availability, and constraints&lt;/li>
+&lt;/ul>
+&lt;h3 id="digital-layer-multi-fidelity-decision-support">&lt;strong>Digital Layer, Multi-Fidelity Decision Support&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Surrogate optimisation (low-fidelity)&lt;/strong>
+&lt;ul>
+&lt;li>Generates recovery schedules under a strict decision-time budget&lt;/li>
+&lt;li>Targets throughput (makespan) and energy-related objectives&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>High-fidelity DT simulation&lt;/strong>
+&lt;ul>
+&lt;li>Executes candidate schedules to validate behavioural realism (e.g., interactions, congestion effects)&lt;/li>
+&lt;li>Used for audit, assurance, and scenario analysis&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="humanmachine-interaction-layer-operator-panel">&lt;strong>Human–Machine Interaction Layer (Operator Panel)&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>Live incident status and fleet state&lt;/li>
+&lt;li>Pareto front exploration (trade-off selection)&lt;/li>
+&lt;li>Gantt schedule previews and validation&lt;/li>
+&lt;li>Re-simulation requests and policy-bound overrides with rationale&lt;/li>
+&lt;/ul>
+&lt;h3 id="governance--provenance-layer">&lt;strong>Governance &amp;amp; Provenance Layer&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>Every incident and decision step is logged with timestamps, reason codes, response type, and operator actions&lt;/li>
+&lt;li>Artefacts support traceability, cross-shift handover, and post hoc analysis&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/details>
+&lt;/div>
+&lt;div class="project-digitaltwin">
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">Key Components&lt;/summary>
+&lt;div class="expand-card-body">&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Incident Response Module (IRM)&lt;/strong>&lt;br>
+Detects incidents from OPC-UA alerts, classifies event type, snapshots state, and triggers recovery.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Response Selector &amp;amp; Model Allocation&lt;/strong>&lt;br>
+Chooses surrogate-only response vs surrogate + audit vs high-fidelity escalation depending on incident severity, policy, and confidence.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Surrogate-Based Optimisation&lt;/strong>&lt;br>
+Multi-objective rescheduling under time constraints, balancing throughput and energy-related KPIs while enforcing feasibility and safety constraints.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>High-Fidelity DT Audit&lt;/strong>&lt;br>
+Validates surrogate decisions, quantifies surrogate–simulation agreement, and provides assurance evidence under disruption.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Operator Panel (Human-in-the-Loop)&lt;/strong>&lt;br>
+Supports trade-off selection (Pareto), schedule inspection (Gantt), re-simulation, and controlled overrides.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Decision Artefacts &amp;amp; Incident Log&lt;/strong>&lt;br>
+Structured outputs (status JSON, Pareto results, schedule images, metrics, incident log) enabling governance and reproducibility.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/details>
+&lt;/div>
+&lt;div class="project-digitaltwin">
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">Evaluation&lt;/summary>
+&lt;div class="expand-card-body">&lt;p>The framework is instantiated in an intralogistics use case representing a &lt;strong>battery module assembly flowshop&lt;/strong>, where AMRs transport materials between stations. Evaluation introduces controlled disruption classes to stress-test response performance:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>AMR Breakdown (AMRBD)&lt;/strong>&lt;br>
+Transport capacity loss, task reassignment, utilisation shift.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Machine Breakdown (MBD)&lt;/strong>&lt;br>
+Reduced station availability, increased queueing pressure, precedence constraints.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Demand Change (DC)&lt;/strong>&lt;br>
+High-priority job injection, schedule reordering, system-wide stress.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Metrics and evidence&lt;/strong> focus on:&lt;/p>
+&lt;ul>
+&lt;li>Decision latency (stage-resolved, including detection, optimisation, audit/re-simulation, dispatch)&lt;/li>
+&lt;li>Makespan and energy deviation relative to nominal and baseline dispatch rules&lt;/li>
+&lt;li>Schedule stability (reassignments and disturbance propagation)&lt;/li>
+&lt;li>Surrogate–simulation agreement (validity under high-fidelity execution)&lt;/li>
+&lt;li>Governance behaviour (policy modes, fidelity escalation, operator intervention pathways)&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/details>
+&lt;/div>
+&lt;div class="project-digitaltwin">
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">Key Findings&lt;/summary>
+&lt;div class="expand-card-body">&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Seconds-level incident recovery&lt;/strong>&lt;br>
+Surrogate optimisation delivers time-bounded rescheduling appropriate for operational incident response.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Multi-fidelity assurance&lt;/strong>&lt;br>
+High-fidelity DT execution provides an auditable validation layer, enabling confidence-aware escalation rather than blanket simulation.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Human-in-the-loop governance&lt;/strong>&lt;br>
+Operator panel interactions (trade-off selection, validation requests, overrides) support accountable decision-making without sacrificing responsiveness.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Transferable blueprint&lt;/strong>&lt;br>
+A policy-oriented architecture for AMR fleet management that generalises to other disruption-prone discrete manufacturing intralogistics settings.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/details>
+&lt;/div></description></item><item><title>This could be you</title><link>https://hci2.uk/author/this-could-be-you/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hci2.uk/author/this-could-be-you/</guid><description/></item><item><title>Artificial Intelligence</title><link>https://hci2.uk/teaching/ai/</link><pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate><guid>https://hci2.uk/teaching/ai/</guid><description/></item><item><title>Industrial Cyber-Physical Systems</title><link>https://hci2.uk/teaching/icps/</link><pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate><guid>https://hci2.uk/teaching/icps/</guid><description/></item><item><title>HCI² Lab Presents- The 2025 Kilobot Swarm Intelligence Extra-Curricular Activity</title><link>https://hci2.uk/event/swarmexc/</link><pubDate>Wed, 12 Nov 2025 13:00:00 +0000</pubDate><guid>https://hci2.uk/event/swarmexc/</guid><description>&lt;p>Slides can be added in a few ways:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Create&lt;/strong> slides using Wowchemy&amp;rsquo;s &lt;a href="https://docs.hugoblox.com/managing-content/#create-slides" target="_blank" rel="noopener">&lt;em>Slides&lt;/em>&lt;/a> feature and link using &lt;code>slides&lt;/code> parameter in the front matter of the talk file&lt;/li>
 &lt;li>&lt;strong>Upload&lt;/strong> an existing slide deck to &lt;code>static/&lt;/code> and link using &lt;code>url_slides&lt;/code> parameter in the front matter of the talk file&lt;/li>
@@ -64,181 +196,7 @@ Click the &lt;em>Cite&lt;/em> button above to demo the feature to enable visitor
 Create your slides in Markdown - click the &lt;em>Slides&lt;/em> button to check out the example.
 &lt;/div>
 &lt;/div>
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --></description></item><item><title>People</title><link>https://hci2.uk/people/</link><pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate><guid>https://hci2.uk/people/</guid><description/></item><item><title>Digital Twin-Enabled Adaptive Fleet Management</title><link>https://hci2.uk/research/digitaltwin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hci2.uk/research/digitaltwin/</guid><description>&lt;p>This project introduces a human-centred Digital Twin framework that integrates multi-fidelity models, surrogate optimisation, and high-fidelity simulation to support resilient AMR fleet management in dynamic smart factories. It detects operational disruptions such as robot failures or machine breakdowns and rapidly generates incident-aware schedules while preserving throughput and energy efficiency. A human-in-the-loop decision layer allows operators to review trade-offs, request re-simulation and apply policy-bound overrides, ensuring transparency, governance and Industry 5.0–ready coordination.&lt;/p>
-&lt;details class="expand-card">
-&lt;summary class="expand-card-title">Motivation&lt;/summary>
-&lt;div class="expand-card-body">As AMR fleets scale in complexity, even minor disruptions can propagate into congestion, energy inefficiency, and production delays. Existing fleet managers are largely rule-based, offering limited adaptability and minimal transparency during incidents, while optimisation-driven approaches often fail to meet real-time decision constraints.
-This project addresses a critical gap: how to deliver fast, adaptive scheduling decisions while keeping humans meaningfully in the loop. Rather than replacing operators, the framework augments them with prescriptive Digital Twin decision support that is policy-bound, auditable, and latency-aware, ensuring safe and accountable deployment in real manufacturing environments.&lt;/div>
-&lt;/details>
-&lt;div class="project-digitaltwin">
-&lt;details class="expand-card">
-&lt;summary class="expand-card-title">System Architecture&lt;/summary>
-&lt;div class="expand-card-body">&lt;div class="no-quote-line">
-The framework adopts a layered Digital Twin architecture spanning the physical shop floor to human-centred decision support:
-&lt;div>
-&lt;h3 id="physical--communication-layers">&lt;strong>Physical &amp;amp; Communication Layers&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>AMRs, machines, sensors, and enterprise systems stream real-time telemetry via OPC-UA&lt;/li>
-&lt;li>Semantically tagged events enable incident detection&lt;/li>
-&lt;/ul>
-&lt;h3 id="data--digital-shadow-layer">&lt;strong>Data &amp;amp; Digital Shadow Layer&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>Operational data are parsed, stored, and contextualised&lt;/li>
-&lt;li>Maintains a real-time representation of system state&lt;/li>
-&lt;/ul>
-&lt;h3 id="digital-layer-multi-fidelity-dt">&lt;strong>Digital Layer (Multi-Fidelity DT)&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Low-fidelity surrogate models&lt;/strong>
-&lt;ul>
-&lt;li>Seconds-level rescheduling during incidents&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>High-fidelity simulation models&lt;/strong>
-&lt;ul>
-&lt;li>Capture AMR behaviour, energy use, congestion, and safety&lt;/li>
-&lt;li>Support validation and scenario analysis&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="humanmachine-interaction-layer">&lt;strong>Human–Machine Interaction Layer&lt;/strong>&lt;/h3>
-&lt;div class="no-quote-line">
-Interactive dashboards, Pareto visualisation, Gantt charts, and override controls enable operators to review, select, and validate responses with full provenance.
-&lt;div>
-&lt;hr>
-&lt;div class="no-quote-line">
-A rule-based allocator dynamically selects between surrogate optimisation, re-simulation, or manual override based on incident type, severity, and site policy.
-&lt;div>
-&lt;/div>
-&lt;/details>
-&lt;/div>
-&lt;div class="project-digitaltwin">
-&lt;details class="expand-card">
-&lt;summary class="expand-card-title">Key Components&lt;/summary>
-&lt;div class="expand-card-body">&lt;div class="no-quote-line">
-&lt;ul>
-&lt;li>&lt;strong>Incident Response Module (IRM)&lt;/strong>&lt;br>
-Detects and classifies disruptions from OPC-UA events and triggers appropriate response modes.&lt;/li>
-&lt;/ul>
-&lt;div>
-&lt;div class="no-quote-line">
-&lt;ul>
-&lt;li>&lt;strong>Surrogate-Based Optimisation&lt;/strong>&lt;br>
-Multi-objective scheduling balances makespan and energy consumption under strict response-time constraints.&lt;/li>
-&lt;/ul>
-&lt;div>
-&lt;div class="no-quote-line">
-&lt;ul>
-&lt;li>&lt;strong>High-Fidelity Digital Twin&lt;/strong>&lt;br>
-Used for behavioural validation, what-if analysis, and post-incident performance assessment.&lt;/li>
-&lt;/ul>
-&lt;div>
-&lt;div class="no-quote-line">
-&lt;ul>
-&lt;li>&lt;strong>Operator Panel (Human-in-the-Loop)&lt;/strong>&lt;br>
-Supports trade-off exploration via Pareto fronts, schedule inspection via Gantt charts, and &lt;strong>audited overrides&lt;/strong> with role-based permissions.&lt;/li>
-&lt;/ul>
-&lt;div>
-&lt;div class="no-quote-line">
-&lt;ul>
-&lt;li>&lt;strong>Governance &amp;amp; Provenance Layer&lt;/strong>&lt;br>
-All decisions, overrides, and outcomes are logged as machine-readable artefacts, enabling traceability, accountability, and cross-shift handover.&lt;/li>
-&lt;/ul>
-&lt;div>
-&lt;/div>
-&lt;/details>
-&lt;/div>
-&lt;div class="project-digitaltwin">
-&lt;details class="expand-card">
-&lt;summary class="expand-card-title">Evaluation&lt;/summary>
-&lt;div class="expand-card-body">&lt;div class="no-quote-line">
-The proposed framework is instantiated on a battery module assembly flowshop with AMR-based material handling and evaluated under representative disruption scenarios, including:
-&lt;/div>
-&lt;br>
-&lt;div class="no-quote-line">
-&lt;ul>
-&lt;li>&lt;strong>AMR Breakdown&lt;/strong>&lt;br>
-Evaluates system resilience to autonomous mobile robot failures and material flow interruptions.&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;div class="no-quote-line">
-&lt;ul>
-&lt;li>&lt;strong>Machine Breakdown&lt;/strong>&lt;br>
-Assesses adaptive rescheduling performance under unexpected workstation failures.&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;div class="no-quote-line">
-&lt;ul>
-&lt;li>&lt;strong>Demand Change&lt;/strong>&lt;br>
-Tests responsiveness to sudden order quantity and priority variations.&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;div class="no-quote-line">
-Performance is assessed using the following metrics:
-&lt;/div>
-&lt;br>
-&lt;div class="no-quote-line">
-&lt;ul>
-&lt;li>&lt;strong>Decision Latency (Stage-Resolved)&lt;/strong>&lt;br>
-Measures the time required to generate corrective schedules at each decision stage.&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;div class="no-quote-line">
-&lt;ul>
-&lt;li>&lt;strong>Makespan and Energy Deviation&lt;/strong>&lt;br>
-Quantifies efficiency and operational cost deviations relative to nominal schedules.&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;div class="no-quote-line">
-&lt;ul>
-&lt;li>&lt;strong>Schedule Stability and Utilisation Behaviour&lt;/strong>&lt;br>
-Evaluates robustness by analysing task reassignment frequency and resource usage patterns.&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;div class="no-quote-line">
-&lt;ul>
-&lt;li>&lt;strong>Surrogate–Simulation Agreement&lt;/strong>&lt;br>
-Assesses alignment between surrogate-based predictions and high-fidelity digital twin outcomes.&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;div class="no-quote-line">
-Results Summary:
-&lt;div>
-&lt;div class="no-quote-line">
-Surrogate-based responses generate deployable schedules within 3–10 seconds, achieving orders-of-magnitude reductions in decision time compared to full high-fidelity simulation, while maintaining close behavioural alignment with the digital twin.
-&lt;/div>
-&lt;/div>
-&lt;/details>
-&lt;/div>
-&lt;div class="project-digitaltwin">
-&lt;details class="expand-card">
-&lt;summary class="expand-card-title">Key Findings&lt;/summary>
-&lt;div class="expand-card-body">&lt;div class="no-quote-line">
-&lt;ul>
-&lt;li>&lt;strong>Real-time responsiveness with human oversight&lt;/strong>&lt;br>
-Fast surrogate optimisation enables incident response within seconds while maintaining operator authority and decision accountability.&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;div class="no-quote-line">
-&lt;ul>
-&lt;li>&lt;strong>High agreement across fidelities&lt;/strong>&lt;br>
-Surrogate-based decisions closely align with high-fidelity Digital Twin outcomes for both makespan and energy-related performance metrics.&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;div class="no-quote-line">
-&lt;ul>
-&lt;li>&lt;strong>Improved resilience over dispatch rules&lt;/strong>&lt;br>
-The Digital Twin–enabled approach consistently outperforms classical dispatching rules (FCFS, SPT, LPT) in terms of throughput stability and energy control under disruption.&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;div class="no-quote-line">
-&lt;ul>
-&lt;li>&lt;strong>Governance-ready Digital Twin design&lt;/strong>&lt;br>
-Policy-bound operating modes, audited human overrides, and provenance-by-design mechanisms support safe, transparent, and accountable deployment in industrial settings.&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;/div>
-&lt;/details>
-&lt;/div></description></item><item><title>Vision-Enabled SAR for Manual Assembly</title><link>https://hci2.uk/research/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hci2.uk/research/sar/</guid><description>&lt;p>This project develops a human-centric Spatial Augmented Reality (SAR) system that projects adaptive, light-guided assembly instructions directly onto the workspace and is controlled through AI-based hand gesture recognition. The system delivers real-time guidance and error feedback without requiring handheld or wearable devices. User studies show significant reductions in task time, error rates, and perceived workload compared to conventional instruction methods.&lt;/p>
+Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --></description></item><item><title>People</title><link>https://hci2.uk/people/</link><pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate><guid>https://hci2.uk/people/</guid><description/></item><item><title>Vision-Enabled SAR for Manual Assembly</title><link>https://hci2.uk/research/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hci2.uk/research/sar/</guid><description>&lt;p>This project develops a human-centric Spatial Augmented Reality (SAR) system that projects adaptive, light-guided assembly instructions directly onto the workspace and is controlled through AI-based hand gesture recognition. The system delivers real-time guidance and error feedback without requiring handheld or wearable devices. User studies show significant reductions in task time, error rates, and perceived workload compared to conventional instruction methods.&lt;/p>
 &lt;details class="expand-card">
 &lt;summary class="expand-card-title">Motivation&lt;/summary>
 &lt;div class="expand-card-body">This project addresses limitations of conventional assembly instructions that rely
