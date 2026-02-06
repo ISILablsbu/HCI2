@@ -854,3 +854,16 @@ footer {
   font-weight: 700;
   text-decoration: underline;
 }
+
+/* ===========================
+   People / Team spacing
+   =========================== */
+
+/* Bootstrap 5 gutters (preferred) */
+.wg-people .row,
+#section-people .row,
+#section-team .row,
+#section-researchers .row {
+  --bs-gutter-x: 3rem;  /* horizontal spacing */
+  --bs-gutter-y: 3rem;  /* vertical spacing */
+}
