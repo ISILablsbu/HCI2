@@ -22,7 +22,7 @@ highlights:
 related_publications:
   - title: "A Novel Adaptive AMR Fleet Management System Leveraging AI-enabled Digital Twin for Agile Incident Response and Improved Shop-floor Efficiency."
     authors: "Louie, Bugra, Osman M"
-    url: "/publication/preprint/preprint1/"
+    url: "/publication/preprint/preprint2/"
 
   - title: "State of the art and future directions of digital twin-enabled smart assembly automation in discrete manufacturing industries. International Journal of Computer Integrated Manufacturing."
     authors: "Louie, Bugra, Osman M"
