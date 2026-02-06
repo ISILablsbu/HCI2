@@ -2,18 +2,23 @@
 title: "Digital Twin-Enabled Adaptive Fleet Management"
 
 summary: >
-  Developing a human-centred, resilient Digital Twin framework that enables real-time incident-aware scheduling, operator-guided decision making, and robust Autonomous Mobile Robot fleet coordination in smart manufacturing environments.
+  Building a policy-oriented, human-in-the-loop Digital Twin for incident-aware AMR fleet management, combining OPC-UA event monitoring, time-bounded surrogate optimisation, and high-fidelity simulation for governed, resilient intralogistics.
 
 project_style: "digitaltwin"
 
+weight: 10
+
 image:
   main: "/media/projects/digital_twin.png"
-  caption: "SAR Setup Overview"
+  caption: "Multi-fidelity Digital Twin for incident-aware AMR fleet management (surrogate response + simulation audit)."
 
 highlights:
-  - Vision-based assembly monitoring
-  - Spatial AR projection guidance
-  - Human-in-the-loop adaptation
+  - OPC-UA monitoring, incident triggers, and digital shadow state capture
+  - Time-bounded surrogate rescheduling (seconds-level response)
+  - High-fidelity simulation for audit, assurance, and what-if validation
+  - Operator-in-the-loop panel, Pareto trade-offs, Gantt previews, policy-bound overrides
+  - Provenance-by-design, decision artefacts, and incident logs for governance and handover
+
 related_publications:
   - title: "A Novel Adaptive AMR Fleet Management System Leveraging AI-enabled Digital Twin for Agile Incident Response and Improved Shop-floor Efficiency."
     authors: "Louie, Bugra, Osman M"
@@ -29,43 +34,40 @@ related_authors:
   - id: Bugra
 ---
 
-This project introduces a human-centred Digital Twin framework that integrates multi-fidelity models, surrogate optimisation, and high-fidelity simulation to support resilient AMR fleet management in dynamic smart factories. It detects operational disruptions such as robot failures or machine breakdowns and rapidly generates incident-aware schedules while preserving throughput and energy efficiency. A human-in-the-loop decision layer allows operators to review trade-offs, request re-simulation and apply policy-bound overrides, ensuring transparency, governance and Industry 5.0–ready coordination.
+This project develops a multi-fidelity, policy-oriented Digital Twin (DT) for resilient Autonomous Mobile Robot (AMR) fleet management under disruption. The system monitors shop-floor telemetry via OPC-UA, classifies incidents (e.g., AMR breakdown, machine unavailability, demand shock), snapshots decision-relevant state, then generates incident-aware recovery schedules under a strict decision-time cap. A surrogate (low-fidelity) optimisation layer produces deployable responses within seconds, while a high-fidelity DT simulation layer provides audit, assurance, and post-decision validation. An operator-in-the-loop panel exposes Pareto trade-offs and schedule previews, enabling transparent selection, re-simulation on demand, and policy-bound overrides, with provenance captured as machine-readable decision artefacts.
 
 {{< expand-card title="Motivation" >}}
-As AMR fleets scale in complexity, even minor disruptions can propagate into congestion, energy inefficiency, and production delays. Existing fleet managers are largely rule-based, offering limited adaptability and minimal transparency during incidents, while optimisation-driven approaches often fail to meet real-time decision constraints.
-This project addresses a critical gap: how to deliver fast, adaptive scheduling decisions while keeping humans meaningfully in the loop. Rather than replacing operators, the framework augments them with prescriptive Digital Twin decision support that is policy-bound, auditable, and latency-aware, ensuring safe and accountable deployment in real manufacturing environments.
+As AMR fleets scale, small disruptions propagate into congestion, energy waste, and missed throughput targets. Rule-based fleet managers are fast but brittle and opaque during incidents, while high-fidelity simulation is informative but too slow for time-critical response. This project addresses the gap with a governed multi-fidelity DT, fast enough for real-time recovery, and structured enough for auditability, human oversight, and Industry 5.0–ready deployment.
 {{< /expand-card >}}
+
 <div class="project-digitaltwin">
 {{< expand-card title="System Architecture" >}}
-<div class="no-quote-line">
-The framework adopts a layered Digital Twin architecture spanning the physical shop floor to human-centred decision support:
-<div>
 
-### **Physical & Communication Layers**
-- AMRs, machines, sensors, and enterprise systems stream real-time telemetry via OPC-UA
-- Semantically tagged events enable incident detection
+### **Physical & Communication Layer**
+- AMRs, stations, sensors, and execution systems stream telemetry and events via **OPC-UA**
+- Event-driven incident triggers (e.g., fault flags, demand-change flags) initiate response
 
 ### **Data & Digital Shadow Layer**
-- Operational data are parsed, stored, and contextualised
-- Maintains a real-time representation of system state
+- Telemetry is contextualised and stored (time-series + event envelopes)
+- On incident, the system snapshots decision-relevant state, remaining jobs, resource availability, and constraints
 
-### **Digital Layer (Multi-Fidelity DT)**
-- **Low-fidelity surrogate models**
-  - Seconds-level rescheduling during incidents
-- **High-fidelity simulation models**
-  - Capture AMR behaviour, energy use, congestion, and safety
-  - Support validation and scenario analysis
+### **Digital Layer, Multi-Fidelity Decision Support**
+- **Surrogate optimisation (low-fidelity)**
+  - Generates recovery schedules under a strict decision-time budget
+  - Targets throughput (makespan) and energy-related objectives
+- **High-fidelity DT simulation**
+  - Executes candidate schedules to validate behavioural realism (e.g., interactions, congestion effects)
+  - Used for audit, assurance, and scenario analysis
 
-### **Human–Machine Interaction Layer**
-<div class="no-quote-line">
-Interactive dashboards, Pareto visualisation, Gantt charts, and override controls enable operators to review, select, and validate responses with full provenance.
-<div>
+### **Human–Machine Interaction Layer (Operator Panel)**
+- Live incident status and fleet state
+- Pareto front exploration (trade-off selection)
+- Gantt schedule previews and validation
+- Re-simulation requests and policy-bound overrides with rationale
 
----
-
-<div class="no-quote-line">
-A rule-based allocator dynamically selects between surrogate optimisation, re-simulation, or manual override based on incident type, severity, and site policy.
-<div>
+### **Governance & Provenance Layer**
+- Every incident and decision step is logged with timestamps, reason codes, response type, and operator actions
+- Artefacts support traceability, cross-shift handover, and post hoc analysis
 
 {{< /expand-card >}}
 </div>
@@ -73,147 +75,65 @@ A rule-based allocator dynamically selects between surrogate optimisation, re-si
 <div class="project-digitaltwin">
 {{< expand-card title="Key Components" >}}
 
-<div class="no-quote-line">
-
 - **Incident Response Module (IRM)**  
-  Detects and classifies disruptions from OPC-UA events and triggers appropriate response modes.
-  
-<div>
+  Detects incidents from OPC-UA alerts, classifies event type, snapshots state, and triggers recovery.
 
-<div class="no-quote-line">
+- **Response Selector & Model Allocation**  
+  Chooses surrogate-only response vs surrogate + audit vs high-fidelity escalation depending on incident severity, policy, and confidence.
 
 - **Surrogate-Based Optimisation**  
-  Multi-objective scheduling balances makespan and energy consumption under strict response-time constraints.
+  Multi-objective rescheduling under time constraints, balancing throughput and energy-related KPIs while enforcing feasibility and safety constraints.
 
-<div>
-
-<div class="no-quote-line">
-
-- **High-Fidelity Digital Twin**  
-  Used for behavioural validation, what-if analysis, and post-incident performance assessment.
-
-<div>
-
-<div class="no-quote-line">
+- **High-Fidelity DT Audit**  
+  Validates surrogate decisions, quantifies surrogate–simulation agreement, and provides assurance evidence under disruption.
 
 - **Operator Panel (Human-in-the-Loop)**  
-  Supports trade-off exploration via Pareto fronts, schedule inspection via Gantt charts, and **audited overrides** with role-based permissions.
+  Supports trade-off selection (Pareto), schedule inspection (Gantt), re-simulation, and controlled overrides.
 
-<div>
-
-<div class="no-quote-line">
-
-- **Governance & Provenance Layer**  
-  All decisions, overrides, and outcomes are logged as machine-readable artefacts, enabling traceability, accountability, and cross-shift handover.
-
-<div>
+- **Decision Artefacts & Incident Log**  
+  Structured outputs (status JSON, Pareto results, schedule images, metrics, incident log) enabling governance and reproducibility.
 
 {{< /expand-card >}}
 </div>
-
 
 <div class="project-digitaltwin">
 {{< expand-card title="Evaluation" >}}
 
-<div class="no-quote-line">
-The proposed framework is instantiated on a battery module assembly flowshop with AMR-based material handling and evaluated under representative disruption scenarios, including:
-</div>
-<br>
-<div class="no-quote-line">
+The framework is instantiated in an intralogistics use case representing a **battery module assembly flowshop**, where AMRs transport materials between stations. Evaluation introduces controlled disruption classes to stress-test response performance:
 
-- **AMR Breakdown**  
-  Evaluates system resilience to autonomous mobile robot failures and material flow interruptions.
+- **AMR Breakdown (AMRBD)**  
+  Transport capacity loss, task reassignment, utilisation shift.
 
-</div>
+- **Machine Breakdown (MBD)**  
+  Reduced station availability, increased queueing pressure, precedence constraints.
 
-<div class="no-quote-line">
+- **Demand Change (DC)**  
+  High-priority job injection, schedule reordering, system-wide stress.
 
-- **Machine Breakdown**  
-  Assesses adaptive rescheduling performance under unexpected workstation failures.
-
-</div>
-
-<div class="no-quote-line">
-
-- **Demand Change**  
-  Tests responsiveness to sudden order quantity and priority variations.
-
-</div>
-
-<div class="no-quote-line">
-Performance is assessed using the following metrics:
-</div>
-<br>
-
-<div class="no-quote-line">
-
-- **Decision Latency (Stage-Resolved)**  
-  Measures the time required to generate corrective schedules at each decision stage.
-
-</div>
-
-<div class="no-quote-line">
-
-- **Makespan and Energy Deviation**  
-  Quantifies efficiency and operational cost deviations relative to nominal schedules.
-
-</div>
-
-<div class="no-quote-line">
-
-- **Schedule Stability and Utilisation Behaviour**  
-  Evaluates robustness by analysing task reassignment frequency and resource usage patterns.
-
-</div>
-
-<div class="no-quote-line">
-
-- **Surrogate–Simulation Agreement**  
-  Assesses alignment between surrogate-based predictions and high-fidelity digital twin outcomes.
-
-</div>
-
-<div class="no-quote-line">
-Results Summary:
-<div>
-<div class="no-quote-line">
-Surrogate-based responses generate deployable schedules within 3–10 seconds, achieving orders-of-magnitude reductions in decision time compared to full high-fidelity simulation, while maintaining close behavioural alignment with the digital twin.
-</div>
+**Metrics and evidence** focus on:
+- Decision latency (stage-resolved, including detection, optimisation, audit/re-simulation, dispatch)
+- Makespan and energy deviation relative to nominal and baseline dispatch rules
+- Schedule stability (reassignments and disturbance propagation)
+- Surrogate–simulation agreement (validity under high-fidelity execution)
+- Governance behaviour (policy modes, fidelity escalation, operator intervention pathways)
 
 {{< /expand-card >}}
 </div>
 
-
 <div class="project-digitaltwin">
 {{< expand-card title="Key Findings" >}}
 
-<div class="no-quote-line">
+- **Seconds-level incident recovery**  
+  Surrogate optimisation delivers time-bounded rescheduling appropriate for operational incident response.
 
-- **Real-time responsiveness with human oversight**  
-  Fast surrogate optimisation enables incident response within seconds while maintaining operator authority and decision accountability.
+- **Multi-fidelity assurance**  
+  High-fidelity DT execution provides an auditable validation layer, enabling confidence-aware escalation rather than blanket simulation.
 
-</div>
+- **Human-in-the-loop governance**  
+  Operator panel interactions (trade-off selection, validation requests, overrides) support accountable decision-making without sacrificing responsiveness.
 
-<div class="no-quote-line">
-
-- **High agreement across fidelities**  
-  Surrogate-based decisions closely align with high-fidelity Digital Twin outcomes for both makespan and energy-related performance metrics.
-
-</div>
-
-<div class="no-quote-line">
-
-- **Improved resilience over dispatch rules**  
-  The Digital Twin–enabled approach consistently outperforms classical dispatching rules (FCFS, SPT, LPT) in terms of throughput stability and energy control under disruption.
-
-</div>
-
-<div class="no-quote-line">
-
-- **Governance-ready Digital Twin design**  
-  Policy-bound operating modes, audited human overrides, and provenance-by-design mechanisms support safe, transparent, and accountable deployment in industrial settings.
-
-</div>
+- **Transferable blueprint**  
+  A policy-oriented architecture for AMR fleet management that generalises to other disruption-prone discrete manufacturing intralogistics settings.
 
 {{< /expand-card >}}
 </div>
