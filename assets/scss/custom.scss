@@ -1021,8 +1021,8 @@ footer {
   }
 }
 
-/* Research page: add breathing room before footer */
-.page-research .universal-wrapper{
+/* If the research landing section has an id */
+#section-research .universal-wrapper,
+.wg-research .universal-wrapper{
   padding-bottom: 4rem;
 }
-
