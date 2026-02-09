@@ -570,44 +570,72 @@
    Opportunities Section
    =========================== */
 
-/* Opportunities intro: stop the image stretching to match the text */
+/* Container */
 .oppo-intro{
-  align-items: flex-start; /* instead of stretch */
-}
-
-/* Keep the image visually bounded */
-.event-intro__image{
-  width: 65%;
-  max-height: 420px;
-  overflow: hidden;
+  position: relative;
+  display: flex;
+  gap: 0; /* overlay style, no gap */
+  margin: 20px 20px;
   border-radius: 20px;
-  display: block; /* optional */
+  overflow: hidden;                 /* IMPORTANT: clip overlay + image */
+  background: var(--color-card-bg);
+  box-shadow: var(--color-card-shadow);
 }
 
-/* Make image fill the bounded box nicely */
-.event-intro__image img{
+/* LEFT: image panel */
+.oppo-intro .event-intro__image{
+  width: 65%;
+  min-height: 360px;                /* controls visual height */
+  background: #eee;
+}
+
+.oppo-intro .event-intro__image img{
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-/* RIGHT PANEL */
-.event-intro__content{
+/* RIGHT: content overlay panel */
+.oppo-intro .event-intro__content{
   width: 35%;
+  padding: 44px 48px;
   background: var(--color-card-bg);
-  padding: 40px 50px;
-  margin-left: -80px;
-  align-self: center;
   box-shadow: var(--color-card-shadow);
+
+  /* Overlay behaviour */
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 420px;                 /* prevents it becoming huge */
+  border-radius: 18px;
 }
 
-/* Section heading */
-.event-intro__content h5{
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin-bottom: 20px;
+/* Title */
+.oppo-intro .event-intro__content h5{
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0 0 14px;
   color: var(--color-primary);
+}
+
+/* Body text */
+.oppo-intro .event-intro__content p{
+  margin: 0 0 18px;
+  color: var(--color-text);
+  line-height: 1.65;
+}
+
+/* Button spacing */
+.oppo-intro .event-intro__content .btn-primary{
+  margin-top: 8px;
+  display: inline-block;
+}
+
+/* Divider (your existing class) */
+.oppo-intro .hero-intro__divider{
+  margin: 10px 0 18px;
 }
 
 /* ===========================
@@ -617,35 +645,26 @@
   .oppo-intro{
     flex-direction: column;
     margin: 0 10px;
-    box-shadow: var(--color-card-shadow);
+    border-radius: 20px;
   }
 
-  .event-intro__image,
-  .event-intro__content{
+  .oppo-intro .event-intro__image{
     width: 100%;
+    min-height: 240px;
   }
 
-  .event-intro__image{
-    max-height: none; /* IMPORTANT: remove the cap on mobile */
-  }
-
-  .event-intro__image img{
+  /* Turn overlay into normal stacked card */
+  .oppo-intro .event-intro__content{
+    position: static;
+    transform: none;
     width: 100%;
-    height: auto;
-  }
-
-  .event-intro__content{
-    margin-left: 0;
+    max-width: none;
+    border-radius: 0;
     padding: 24px 20px;
     box-shadow: none;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
-
-  .event-intro__content h5{
-    font-size: 1.2rem;
   }
 }
+
 
 /* ===========================
    Contact Section
