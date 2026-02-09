@@ -567,44 +567,43 @@
 }
 
 /* ===========================
-   Oppotunities Section
+   Opportunities Section
    =========================== */
-.oppo-intro {
-  position: relative;
-  display: flex;
-  align-items: stretch;
-  margin: 20px 20px;
-  box-shadow: var(--color-card-shadow);
-  border-radius: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.event-intro__image {
-  width: 65%;
+
+/* Opportunities intro: stop the image stretching to match the text */
+.oppo-intro{
+  align-items: flex-start; /* instead of stretch */
 }
 
-.event-intro__image img {
-  width: 90%;
+/* Keep the image visually bounded */
+.event-intro__image{
+  width: 65%;
+  max-height: 420px;
+  overflow: hidden;
+  border-radius: 20px;
+  display: block; /* optional */
+}
+
+/* Make image fill the bounded box nicely */
+.event-intro__image img{
+  width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
 /* RIGHT PANEL */
-.event-intro__content {
+.event-intro__content{
   width: 35%;
   background: var(--color-card-bg);
   padding: 40px 50px;
-
-  /* overlap effect */
   margin-left: -80px;
   align-self: center;
-
   box-shadow: var(--color-card-shadow);
 }
 
 /* Section heading */
-.event-intro__content h5 {
+.event-intro__content h5{
   font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: 20px;
@@ -612,28 +611,30 @@
 }
 
 /* ===========================
-   Event Intro – MOBILE FIX
+   Mobile
    =========================== */
-
-@media (max-width: 900px) {
-  .oppo-intro {
+@media (max-width: 900px){
+  .oppo-intro{
     flex-direction: column;
     margin: 0 10px;
     box-shadow: var(--color-card-shadow);
   }
 
   .event-intro__image,
-  .event-intro__content {
+  .event-intro__content{
     width: 100%;
   }
 
-  .event-intro__image img {
+  .event-intro__image{
+    max-height: none; /* IMPORTANT: remove the cap on mobile */
+  }
+
+  .event-intro__image img{
     width: 100%;
     height: auto;
   }
 
-  /* Remove overlap effect on mobile */
-  .event-intro__content {
+  .event-intro__content{
     margin-left: 0;
     padding: 24px 20px;
     box-shadow: none;
@@ -641,7 +642,7 @@
     border-bottom-right-radius: 20px;
   }
 
-  .event-intro__content h5 {
+  .event-intro__content h5{
     font-size: 1.2rem;
   }
 }
