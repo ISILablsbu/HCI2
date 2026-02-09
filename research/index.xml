@@ -130,7 +130,7 @@ A policy-oriented architecture for AMR fleet management that generalises to othe
 &lt;/ul>
 &lt;/div>
 &lt;/details>
-&lt;/div></description></item><item><title>Vision-Enabled SAR for Manual Assembly</title><link>https://hci2.uk/research/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hci2.uk/research/sar/</guid><description>&lt;p>This project develops a human-centric Spatial Augmented Reality (SAR) system that projects adaptive, light-guided assembly instructions directly onto the workspace and is controlled through AI-based hand gesture recognition. The system delivers real-time guidance and error feedback without requiring handheld or wearable devices. Beyond guidance, the framework is designed as an intelligent operator assistance system that augments physical and cognitive capabilities, informing users about posture-related physical risk and cognitive state (e.g., workload) while protecting operator identity via privacy-by-design sensing and data handling. User studies show significant reductions in task time, error rates, and perceived workload compared to conventional instruction methods.&lt;/p>
+&lt;/div></description></item><item><title>Human-Centric Spatial Augmented Reality for Interactive (Dis)assembly Operator Assistance</title><link>https://hci2.uk/research/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hci2.uk/research/sar/</guid><description>&lt;p>This project develops a human-centric Spatial Augmented Reality (SAR) system that projects adaptive, light-guided (dis)assembly instructions directly onto the workspace and is controlled through AI-based hand gesture recognition. The system delivers real-time guidance and error feedback without requiring handheld or wearable devices. Beyond guidance, the framework is designed as an intelligent operator assistance system that augments physical and cognitive capabilities, informing users about posture-related physical risk and cognitive state (e.g., workload) while protecting operator identity via privacy-by-design sensing and data handling. User studies show significant reductions in task time, error rates, and perceived workload compared to conventional instruction methods.&lt;/p>
 &lt;details class="expand-card">
 &lt;summary class="expand-card-title">Motivation&lt;/summary>
 &lt;div class="expand-card-body">This project addresses limitations of conventional assembly instructions that rely
@@ -143,7 +143,7 @@ feedback under privacy-preserving constraints suitable for real shop-floor deplo
 &lt;details class="expand-card">
 &lt;summary class="expand-card-title">System Architecture&lt;/summary>
 &lt;div class="expand-card-body">The system integrates computer vision, gesture recognition, and spatial projection
-to deliver adaptive assembly instructions in real time. A closed-loop operator
+to deliver adaptive (dis)assembly instructions in real time. A closed-loop operator
 assistance layer estimates task progress and deviations, then adapts projected
 cues and feedback. Optional operator-state modules provide posture-aware physical
 support and cognitive workload cues, enabling adaptive assistance without exposing
