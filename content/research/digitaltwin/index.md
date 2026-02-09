@@ -6,6 +6,14 @@ summary: >
 
 project_style: "digitaltwin"
 
+tags:
+  - AMR
+  - Intralogistics
+  - Incident-aware
+  - Surrogate Opt
+  - Simulation Audit
+  - Governance
+
 weight: 10
 
 image:
