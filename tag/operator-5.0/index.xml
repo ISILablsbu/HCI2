@@ -1,23 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Operator 5.0 | HCI² Research Lab</title><link>https://hci2.uk/tag/operator-5.0/</link><atom:link href="https://hci2.uk/tag/operator-5.0/index.xml" rel="self" type="application/rss+xml"/><description>Operator 5.0</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://hci2.uk/media/logo_hu15880263399225826474.png</url><title>Operator 5.0</title><link>https://hci2.uk/tag/operator-5.0/</link></image><item><title>Vision-Enabled SAR for Manual Assembly</title><link>https://hci2.uk/research/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hci2.uk/research/sar/</guid><description>&lt;p>This project develops a human-centric Spatial Augmented Reality (SAR) system that projects adaptive, light-guided assembly instructions directly onto the workspace and is controlled through AI-based hand gesture recognition. The system delivers real-time guidance and error feedback without requiring handheld or wearable devices. User studies show significant reductions in task time, error rates, and perceived workload compared to conventional instruction methods.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Operator 5.0 | HCI² Research Lab</title><link>https://hci2.uk/tag/operator-5.0/</link><atom:link href="https://hci2.uk/tag/operator-5.0/index.xml" rel="self" type="application/rss+xml"/><description>Operator 5.0</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://hci2.uk/media/logo_hu15880263399225826474.png</url><title>Operator 5.0</title><link>https://hci2.uk/tag/operator-5.0/</link></image><item><title>Vision-Enabled SAR for Manual Assembly</title><link>https://hci2.uk/research/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hci2.uk/research/sar/</guid><description>&lt;p>This project develops a human-centric Spatial Augmented Reality (SAR) system that projects adaptive, light-guided assembly instructions directly onto the workspace and is controlled through AI-based hand gesture recognition. The system delivers real-time guidance and error feedback without requiring handheld or wearable devices. Beyond guidance, the framework is designed as an intelligent operator assistance system that augments physical and cognitive capabilities, informing users about posture-related physical risk and cognitive state (e.g., workload) while protecting operator identity via privacy-by-design sensing and data handling. User studies show significant reductions in task time, error rates, and perceived workload compared to conventional instruction methods.&lt;/p>
 &lt;details class="expand-card">
 &lt;summary class="expand-card-title">Motivation&lt;/summary>
 &lt;div class="expand-card-body">This project addresses limitations of conventional assembly instructions that rely
 on static manuals or wearable devices. By projecting guidance directly onto the
-workspace, SAR reduces cognitive load and improves task flow.&lt;/div>
+workspace, SAR reduces cognitive load and improves task flow. The project further
+targets Industry 5.0 operator assistance by extending SAR from guidance-only to
+capability augmentation, combining task awareness with posture and cognitive-state
+feedback under privacy-preserving constraints suitable for real shop-floor deployment.&lt;/div>
 &lt;/details>
 &lt;details class="expand-card">
 &lt;summary class="expand-card-title">System Architecture&lt;/summary>
 &lt;div class="expand-card-body">The system integrates computer vision, gesture recognition, and spatial projection
-to deliver adaptive assembly instructions in real time.&lt;/div>
+to deliver adaptive assembly instructions in real time. A closed-loop operator
+assistance layer estimates task progress and deviations, then adapts projected
+cues and feedback. Optional operator-state modules provide posture-aware physical
+support and cognitive workload cues, enabling adaptive assistance without exposing
+operator identity.&lt;/div>
 &lt;/details>
 &lt;details class="expand-card">
 &lt;summary class="expand-card-title">Key Components&lt;/summary>
-&lt;div class="expand-card-body">&lt;/div>
+&lt;div class="expand-card-body">&lt;ul>
+&lt;li>Vision-based workspace perception (parts/steps/progress verification)&lt;/li>
+&lt;li>Gesture-controlled SAR interface for touchless step navigation and confirmations&lt;/li>
+&lt;li>Projection mapping and calibration for spatially registered overlays&lt;/li>
+&lt;li>Error detection and feedback cues (missed step, wrong part/order, misalignment)&lt;/li>
+&lt;li>Operator assistance modules (posture/physical risk cues, cognitive workload inference)&lt;/li>
+&lt;li>Privacy-by-design pipeline (identity suppression, minimal logging, policy-based retention)&lt;/li>
+&lt;/ul>
+&lt;/div>
 &lt;/details>
 &lt;details class="expand-card">
 &lt;summary class="expand-card-title">Evaluation&lt;/summary>
 &lt;div class="expand-card-body">User studies compared SAR guidance with conventional instructions.
-Participants showed reduced completion time and fewer errors.&lt;/div>
+Participants showed reduced completion time and fewer errors. Evaluation also
+considers cognitive ergonomics and operator acceptance, and, where enabled,
+assesses the feasibility of posture- and workload-aware assistance under
+privacy-preserving sensing constraints.&lt;/div>
 &lt;/details>
 &lt;details class="expand-card">
 &lt;summary class="expand-card-title">Key Findings&lt;/summary>
@@ -25,6 +43,8 @@ Participants showed reduced completion time and fewer errors.&lt;/div>
 &lt;li>Faster task completion&lt;/li>
 &lt;li>Lower error rate&lt;/li>
 &lt;li>Reduced perceived workload&lt;/li>
+&lt;li>Improved interaction flow via touchless gesture control&lt;/li>
+&lt;li>Practical pathway to privacy-preserving operator assistance (capability augmentation)&lt;/li>
 &lt;/ul>
 &lt;/div>
 &lt;/details></description></item></channel></rss>
