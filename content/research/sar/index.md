@@ -1,9 +1,9 @@
 ---
-title: "Vision-Enabled SAR for Manual Assembly"
+title: "Human-Centric Spatial Augmented Reality for Interactive (Dis)assembly Operator Assistance"
 
 summary: >
   Developing a computer vision-enabled Spatial Augmented Reality framework
-  for intelligent, privacy-preserving operator assistance in human-centric smart assembly.
+  for intelligent, privacy-preserving operator assistance in human-centric smart (dis)assembly.
 
 authors: [Naimul, Louie, Malar, Bugra]
 
@@ -23,7 +23,7 @@ image:
   caption: "Vision-enabled SAR setup for in-situ guidance and operator assistance."
 
 highlights:
-  - Vision-based assembly monitoring and progress verification
+  - Vision-based (dis)assembly monitoring and progress verification
   - Spatial AR projection guidance with adaptive, in-situ cues
   - Gesture-controlled, touchless interaction for step control
   - Operator physical and cognitive state awareness (posture, workload) for capability augmentation
@@ -45,7 +45,7 @@ related_authors:
   - id: Bugra
 ---
 
-This project develops a human-centric Spatial Augmented Reality (SAR) system that projects adaptive, light-guided assembly instructions directly onto the workspace and is controlled through AI-based hand gesture recognition. The system delivers real-time guidance and error feedback without requiring handheld or wearable devices. Beyond guidance, the framework is designed as an intelligent operator assistance system that augments physical and cognitive capabilities, informing users about posture-related physical risk and cognitive state (e.g., workload) while protecting operator identity via privacy-by-design sensing and data handling. User studies show significant reductions in task time, error rates, and perceived workload compared to conventional instruction methods.
+This project develops a human-centric Spatial Augmented Reality (SAR) system that projects adaptive, light-guided (dis)assembly instructions directly onto the workspace and is controlled through AI-based hand gesture recognition. The system delivers real-time guidance and error feedback without requiring handheld or wearable devices. Beyond guidance, the framework is designed as an intelligent operator assistance system that augments physical and cognitive capabilities, informing users about posture-related physical risk and cognitive state (e.g., workload) while protecting operator identity via privacy-by-design sensing and data handling. User studies show significant reductions in task time, error rates, and perceived workload compared to conventional instruction methods.
 
 {{< expand-card title="Motivation" >}}
 This project addresses limitations of conventional assembly instructions that rely
@@ -58,7 +58,7 @@ feedback under privacy-preserving constraints suitable for real shop-floor deplo
 
 {{< expand-card title="System Architecture" >}}
 The system integrates computer vision, gesture recognition, and spatial projection
-to deliver adaptive assembly instructions in real time. A closed-loop operator
+to deliver adaptive (dis)assembly instructions in real time. A closed-loop operator
 assistance layer estimates task progress and deviations, then adapts projected
 cues and feedback. Optional operator-state modules provide posture-aware physical
 support and cognitive workload cues, enabling adaptive assistance without exposing
