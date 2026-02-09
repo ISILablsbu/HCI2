@@ -17,10 +17,16 @@
         <div class="research-body">
 
           <div class="research-meta">
-            {{ with .Params.project_style }}
-              <span class="research-pill">{{ . }}</span>
-            {{ end }}
-          </div>
+  {{ with .Params.project_style }}
+    <span class="research-pill">{{ . }}</span>
+  {{ end }}
+
+  {{ with .Params.tags }}
+    {{ range . }}
+      <span class="research-pill">{{ . }}</span>
+    {{ end }}
+  {{ end }}
+</div>
 
           <h3>{{ .Title }}</h3>
 
