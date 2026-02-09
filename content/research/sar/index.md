@@ -8,13 +8,13 @@ summary: >
 authors: [Naimul, Louie, Malar, Bugra]
 
 tags:
-  - Industry 5.0
-  - Operator 5.0
+  - Spatial AR
+  - Computer Vision
+  - Gesture Interaction
   - Human-in-the-Loop
-  - Mixed Reality
+  - Operator State
   - Privacy-by-Design
-  - Cognitive Ergonomics
-  - Ergonomics
+
 
 project_style: "sar"
 
