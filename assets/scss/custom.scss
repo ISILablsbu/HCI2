@@ -958,16 +958,18 @@ footer {
 /* Badge row */
 .research-meta{
   display: flex;
+  flex-wrap: wrap;      /* ✅ allow multiple tags */
   gap: .5rem;
   align-items: center;
+  margin-bottom: .25rem;
 }
 
 .research-pill{
   display: inline-flex;
   align-items: center;
-  padding: .22rem .6rem;
+  padding: .22rem .55rem;
   border-radius: 999px;
-  font-size: .78rem;
+  font-size: .74rem;
   font-weight: 600;
   letter-spacing: .01em;
   border: 1px solid rgba(200,16,46,0.18);
