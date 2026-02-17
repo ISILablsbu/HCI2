@@ -4,7 +4,7 @@ title: "Safety-Aware Anomaly Detection and RUL Analytics for Industrial Machiner
 summary: >
   Developing an auditable, safety-aware anomaly detection and Remaining Useful Life (RUL) analytics pipeline for industrial machinery, validated on our bottle inspection and sorting demonstrator, combining multi-sensor time-series learning, uncertainty-aware alarms, and human-in-the-loop verification.
 
-project_style: "industrialai"
+project_style: "Funded"
 
 tags:
   - Anomaly Detection
