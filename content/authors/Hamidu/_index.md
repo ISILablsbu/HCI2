@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Hamidu Midlah Barrie
+title: Hamidu Barrie
 
 # Full name (for SEO)
 first_name: Hamidu
