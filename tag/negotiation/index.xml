@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Negotiation | HCI² Research Lab</title><link>https://hci2.uk/tag/negotiation/</link><atom:link href="https://hci2.uk/tag/negotiation/index.xml" rel="self" type="application/rss+xml"/><description>Negotiation</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://hci2.uk/media/logo_hu15880263399225826474.png</url><title>Negotiation</title><link>https://hci2.uk/tag/negotiation/</link></image><item><title>Human-State Aware Human-Robot Collaborative Disassembly via Adaptive Agent Models, Negotiation, and Predictive Digital Twins</title><link>https://hci2.uk/research/hrc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hci2.uk/research/hrc/</guid><description>&lt;p>This project develops a &lt;strong>human-state aware Human-Robot Collaboration (HRC) framework&lt;/strong> tailored for &lt;strong>end-of-life (EoL) disassembly&lt;/strong> of high-value products, where uncertainty, variability, and safety constraints make static task allocation brittle. The central contribution is an integrated architecture in which &lt;strong>human and robot agent models&lt;/strong> are continuously updated from operational data, including &lt;strong>operator physiological and cognitive state proxies&lt;/strong> (for example fatigue, stress, workload), enabling collaboration policies that respond to human condition and task context rather than assuming a fixed-capacity operator.&lt;/p>
+&lt;p>A key design choice is &lt;strong>negotiated, runtime task allocation&lt;/strong>, not purely centralised optimisation. The human agent can express preferences and constraints in-the-loop, and the system converges to an executable plan through negotiation and conflict resolution. A &lt;strong>predictive digital twin&lt;/strong> provides a validation layer, simulating task-level and agent-level dynamics to anticipate KPI impacts, task duration drift, and fatigue accumulation before committing to allocations.&lt;/p>
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">Motivation&lt;/summary>
+&lt;div class="expand-card-body">Disassembly remains labour-intensive because it is nonlinear, context-dependent, and highly variable. Robots can deliver precision and repeatability, but effective collaboration fails when assistance is insensitive to operator condition and rapidly changing shop-floor realities. Conventional HRC approaches in disassembly often rely on static allocations and do not integrate real-time ergonomics, workload, and trust calibration into the collaboration loop. This project targets adaptive and human-centric HRC where allocation and assistance policies react to operator state to reduce risk, prevent overload, and improve long-term wellbeing while maintaining throughput.&lt;/div>
+&lt;/details>
+&lt;div class="project-industrialai">
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">System Architecture&lt;/summary>
+&lt;div class="expand-card-body">&lt;h3 id="adaptive-agent-modelling-human-and-robot">&lt;strong>Adaptive Agent Modelling (Human and Robot)&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>Capability profiles, tool availability, and skill descriptors&lt;/li>
+&lt;li>Behavioural descriptors, e.g., preferences, workload thresholds, collaboration acceptance&lt;/li>
+&lt;li>Real-time human-state proxies, e.g., fatigue trends, stress indicators, workload and engagement cues&lt;/li>
+&lt;/ul>
+&lt;h3 id="task-decomposition-engine-disassembly-aware">&lt;strong>Task Decomposition Engine (Disassembly-Aware)&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>Converts disassembly objectives into executable task graphs&lt;/li>
+&lt;li>Encodes precedence and dependency logic essential for safe sequencing&lt;/li>
+&lt;li>Supports product structure signals (BoM/CAD where available) plus contextual constraints&lt;/li>
+&lt;/ul>
+&lt;h3 id="negotiation-based-collaboration-and-allocation">&lt;strong>Negotiation-Based Collaboration and Allocation&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>Multi-objective allocation across efficiency, feasibility, and ergonomics&lt;/li>
+&lt;li>Negotiation layer enabling runtime preference updates and constraints&lt;/li>
+&lt;li>Conflict resolution to ensure convergence to an agreed, executable plan&lt;/li>
+&lt;/ul>
+&lt;h3 id="predictive-digital-twin-validation-layer">&lt;strong>Predictive Digital Twin Validation Layer&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>Simulates system-level and agent-level state evolution over candidate plans&lt;/li>
+&lt;li>Forecasts KPIs, e.g., cycle time, workload accumulation, recovery likelihood, stability under uncertainty&lt;/li>
+&lt;li>Feeds predictions back into allocation and negotiation to improve robustness&lt;/li>
+&lt;/ul>
+&lt;h3 id="interface-and-human-in-the-loop-control">&lt;strong>Interface and Human-in-the-Loop Control&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>Visualises operator load, task status, and key safety indicators&lt;/li>
+&lt;li>Supports escalation and override pathways for practical deployment&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/details>
+&lt;/div>
+&lt;div class="project-industrialai">
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">Key Components&lt;/summary>
+&lt;div class="expand-card-body">&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Human State Model&lt;/strong>&lt;br>
+A digital representation of operator condition that updates continuously and is used to prevent unsafe allocations and reduce ergonomic strain.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Disassembly Task Graph Builder&lt;/strong>&lt;br>
+Generates precedence-constrained task graphs so allocation decisions are executable, context-correct, and aligned with disassembly constraints.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Negotiation-Enhanced Task Allocation&lt;/strong>&lt;br>
+Allows the human agent to accept, reject, or modify allocations based on fairness, effort, ergonomics, and situational feasibility, improving autonomy and collaboration quality.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Predictive Digital Twin Forecaster&lt;/strong>&lt;br>
+Anticipates timing drift and workload accumulation, enabling proactive planning rather than reactive recovery.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Risk-Aware Execution Hooks&lt;/strong>&lt;br>
+Safety-aware triggers for slow-down, pause, re-plan, or request confirmation when uncertainty or risk increases.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/details>
+&lt;/div>
+&lt;div class="project-industrialai">
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">Evaluation&lt;/summary>
+&lt;div class="expand-card-body">&lt;p>The framework is designed for validation in an HRC testbed with repeatable EoL disassembly scenarios and controlled variability.&lt;/p>
+&lt;p>&lt;strong>Evaluation focus includes:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Robustness of allocation under changing human state and contextual shifts&lt;/li>
+&lt;li>Ergonomic outcomes (proxy measures) and reduced overload or fatigue accumulation&lt;/li>
+&lt;li>Task performance KPIs (cycle time, recovery frequency, stability under uncertainty)&lt;/li>
+&lt;li>Collaboration quality, including allocation acceptance and perceived usability&lt;/li>
+&lt;li>Traceability of decisions, e.g., why an allocation changed and what state signals triggered it&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/details>
+&lt;/div>
+&lt;div class="project-industrialai">
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">Expected Outcomes&lt;/summary>
+&lt;div class="expand-card-body">&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Safer collaboration under variability&lt;/strong>&lt;br>
+Adaptive policies reduce risk when operator condition deteriorates or the context becomes uncertain.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Better workload balancing&lt;/strong>&lt;br>
+Allocation decisions explicitly consider operator state, not just nominal task times or static capability assumptions.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Disassembly-ready HRC planning&lt;/strong>&lt;br>
+Task graphs and constraints reflect real disassembly dependencies, enabling executable and safer collaboration plans.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Deployable governance posture&lt;/strong>&lt;br>
+Negotiation traces and digital twin forecasts support post hoc analysis, justification, and continuous improvement.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/details>
+&lt;/div></description></item></channel></rss>
