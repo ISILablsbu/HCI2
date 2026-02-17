@@ -892,7 +892,7 @@ footer {
 /* Left thumbnail: stable dimensions */
 .research-row-thumb{
   width: 100%;
-  height: 220px;
+  height: 230px;
   border-radius: 12px;
   overflow: hidden;
   background: rgba(0,0,0,0.04);
@@ -908,7 +908,7 @@ footer {
 
 .research-row-thumb-placeholder{
   width: 100%;
-  height: 220px;
+  height: 230px;
   border-radius: 12px;
   background: rgba(0,0,0,0.05);
 }
@@ -919,7 +919,7 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  min-height: 220px;         /* match image height */
+  min-height: 230px;         /* match image height */
   padding: 0.1rem 0;
 }
 
@@ -946,7 +946,7 @@ footer {
 }
 
 .research-row-tag{
-  font-size: 0.68rem;       /* smaller tags */
+  font-size: 0.62rem;       /* smaller tags */
   line-height: 1;
   padding: 0.22rem 0.48rem; /* tighter pills */
   border-radius: 999px;
@@ -970,7 +970,7 @@ footer {
   margin-top: auto;         /* pushes summary to the bottom of the right column */
   width: 100%;
 
-  font-size: 0.88rem;       /* smaller description */
+  font-size: 0.70rem;       /* smaller description */
   line-height: 1.45;
   color: var(--color-text-muted);
 
