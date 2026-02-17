@@ -865,18 +865,21 @@ footer {
 .research-list{
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
-  margin-top: 1.1rem;
+  gap: 1.1rem;
+  margin-top: 1rem;
 }
 
 /* Row card */
 .research-row{
   display: grid;
-  grid-template-columns: 380px 1fr;
-  gap: 1.3rem;
-  align-items: center;
+  grid-template-columns: 360px 1fr;
+  gap: 1.15rem;
+  align-items: stretch;
 
-  padding: 1.1rem 1.2rem;
+  /* Force uniform card size */
+  min-height: 240px;
+
+  padding: 1rem 1.1rem;
   border: 1px solid rgba(0,0,0,0.12);
   border-radius: 14px;
   text-decoration: none;
@@ -888,15 +891,16 @@ footer {
 }
 
 .research-row:hover{
-  transform: translateY(-3px);
-  border-color: rgba(200,16,46,0.28);
-  box-shadow: 0 18px 45px rgba(20,20,20,0.10);
+  transform: translateY(-2px);
+  border-color: rgba(200,16,46,0.24);
+  box-shadow: 0 16px 40px rgba(20,20,20,0.10);
 }
 
-/* Thumbnail */
+/* Left thumbnail, fixed height, consistent */
 .research-row-thumb{
   width: 100%;
-  height: 220px;              /* “thick rectangle” */
+  height: 100%;
+  min-height: 210px;     /* keeps image area consistent */
   border-radius: 12px;
   overflow: hidden;
   background: rgba(0,0,0,0.04);
@@ -907,40 +911,56 @@ footer {
   height: 100%;
   display: block;
   object-fit: cover;
-  filter: saturate(1.03) contrast(1.02);
+  filter: saturate(1.02) contrast(1.02);
 }
 
 .research-row-thumb-placeholder{
   width: 100%;
   height: 100%;
+  min-height: 210px;
+  border-radius: 12px;
   background: rgba(0,0,0,0.05);
 }
 
-/* Body */
+/* Right body: make it a structured card area */
 .research-row-body{
-  padding: 0.1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.15rem 0;
 }
 
+/* Smaller, cleaner title */
 .research-row-title{
-  font-size: 1.5rem;
-  line-height: 1.2;
+  font-size: 1.22rem;
+  line-height: 1.25;
   font-weight: 750;
-  margin: 0 0 0.7rem 0;
+  margin: 0 0 0.55rem 0;
   color: var(--color-text);
+
+  /* Keep height consistent */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* Tags */
 .research-row-tags{
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 0.75rem;
+  gap: 0.45rem;
+  margin-bottom: 0.65rem;
+
+  /* Prevent tags from expanding card height */
+  max-height: 2.2rem; /* ~2 rows */
+  overflow: hidden;
 }
 
 .research-row-tag{
-  font-size: 0.8rem;
+  font-size: 0.74rem;
   line-height: 1;
-  padding: 0.28rem 0.62rem;
+  padding: 0.26rem 0.58rem;
   border-radius: 999px;
   border: 1px solid rgba(0,0,0,0.10);
   background: rgba(0,0,0,0.04);
@@ -949,7 +969,7 @@ footer {
   font-weight: 650;
 }
 
-/* Coloured pills (cycles by position) */
+/* Coloured pills */
 .research-row-tag:nth-child(6n+1){ background: rgba(200,16,46,0.10); border-color: rgba(200,16,46,0.18); }
 .research-row-tag:nth-child(6n+2){ background: rgba(46,164,79,0.12); border-color: rgba(46,164,79,0.20); }
 .research-row-tag:nth-child(6n+3){ background: rgba(35,99,235,0.10); border-color: rgba(35,99,235,0.18); }
@@ -957,15 +977,21 @@ footer {
 .research-row-tag:nth-child(6n+5){ background: rgba(168,85,247,0.12); border-color: rgba(168,85,247,0.20); }
 .research-row-tag:nth-child(6n+6){ background: rgba(20,184,166,0.12); border-color: rgba(20,184,166,0.20); }
 
-/* Summary (tidy, not too tall) */
+/* Summary “inside a box” */
 .research-row-summary{
-  font-size: 1.02rem;
-  line-height: 1.55;
+  font-size: 0.94rem;
+  line-height: 1.5;
   color: var(--color-text-muted);
   margin: 0;
 
+  padding: 0.65rem 0.75rem;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.035);
+  border: 1px solid rgba(0,0,0,0.06);
+
+  /* Keep all cards same height */
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -974,13 +1000,11 @@ footer {
 @media (max-width: 992px){
   .research-row{
     grid-template-columns: 1fr;
-    padding: 1rem;
+    min-height: auto;
+    padding: 0.95rem;
   }
   .research-row-thumb{
-    height: 240px;
-  }
-  .research-row-title{
-    font-size: 1.3rem;
+    min-height: 230px;
   }
 }
 
