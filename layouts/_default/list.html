@@ -1,4 +1,4 @@
-{{/* Generic section list template that renders cards and makes the whole card clickable */}}
+{{/* Compact 4-column section list (Research landing). Title + tags only, whole card clickable. */}}
 {{ define "main" }}
 <section class="container universal-wrapper">
   <div class="row">
@@ -10,40 +10,19 @@
     </div>
   </div>
 
-  <div class="row">
-    {{ range .Pages.ByDate.Reverse }}
-      <article class="media stream-item view-compact col-md-6">
-        <a class="card-link" href="{{ .RelPermalink }}" style="text-decoration:none;color:inherit;display:block;">
-          {{ $img := .Resources.GetMatch "featured*" }}
-          {{ if $img }}
-            {{ $small := $img.Fill "640x360 q75" }}
-            {{ $medium := $img.Fill "1024x576 q80" }}
-            <div class="card-image">
-              <picture>
-                <source srcset="{{ $medium.RelPermalink }} 1024w, {{ $small.RelPermalink }} 640w" sizes="(min-width: 992px) 45vw, 100vw" />
-                <img src="{{ $medium.RelPermalink }}" alt="{{ .Title }}" loading="lazy" />
-              </picture>
-            </div>
-          {{ end }}
+  <div class="research-grid-4">
+    {{ range .Pages.ByWeight }}
+      <a class="research-card-compact" href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
+        <div class="research-card-title">{{ .Title }}</div>
 
-          <div class="media-body">
-            <h2 class="section-subheading article-title"><span>{{ .Title }}</span></h2>
-            {{ with .Params.summary }}<p class="article-style">{{ . }}</p>{{ end }}
-
-            {{ with .Params.authors }}
-              <div class="article-authors">{{ delimit . ", " }}</div>
-            {{ end }}
-
-            {{ $fmt := "Jan 2, 2006" }}
-            {{ $.Scratch.Set "lm" .Lastmod }}
-            {{ with .GitInfo }}{{ $.Scratch.Set "lm" .AuthorDate }}{{ end }}
-            {{ $lm := $.Scratch.Get "lm" }}
-            {{ if $lm }}
-              <div class="article-date">Last updated: {{ $lm.Format $fmt }}</div>
+        {{ with .Params.tags }}
+          <div class="research-card-tags">
+            {{ range . }}
+              <span class="tag">{{ . }}</span>
             {{ end }}
           </div>
-        </a>
-      </article>
+        {{ end }}
+      </a>
     {{ end }}
   </div>
 </section>
