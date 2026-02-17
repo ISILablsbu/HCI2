@@ -6,25 +6,42 @@
   <div class="research-list">
     {{ range .Pages.ByWeight.ByTitle }}
 
-      {{/* Prefer page-bundle featured* (featured.jpg/png), fall back to front matter image.main */}}
-      {{ $thumb := "" }}
+      {{/* --- Build responsive thumbnails from page-bundle featured* --- */}}
+      {{ $thumbSm := "" }}
+      {{ $thumbLg := "" }}
+
       {{ with .Resources }}
         {{ with .GetMatch "featured*" }}
-          {{ $t := .Fill "560x315 q75" }}
-          {{ $thumb = $t.RelPermalink }}
+          {{ $sm := .Fill "720x405 q85" }}
+          {{ $lg := .Fill "1440x810 q85" }}
+          {{ $thumbSm = $sm.RelPermalink }}
+          {{ $thumbLg = $lg.RelPermalink }}
         {{ end }}
       {{ end }}
-      {{ if not $thumb }}
-        {{ with .Params.image }}{{ with .main }}{{ $thumb = (. | relURL) }}{{ end }}{{ end }}
+
+      {{/* --- Fallback to front matter image.main (no processing) --- */}}
+      {{ $fallback := "" }}
+      {{ if not $thumbLg }}
+        {{ with .Params.image }}{{ with .main }}{{ $fallback = (. | relURL) }}{{ end }}{{ end }}
       {{ end }}
 
       <a class="research-row" href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
 
         <div class="research-row-thumb">
-          {{ if $thumb }}
-            <img src="{{ $thumb }}" alt="{{ .Title }}" loading="lazy">
+          {{ if and $thumbSm $thumbLg }}
+            <img
+              src="{{ $thumbLg }}"
+              srcset="{{ $thumbSm }} 720w, {{ $thumbLg }} 1440w"
+              sizes="(max-width: 992px) 100vw, 360px"
+              alt="{{ .Title }}"
+              loading="lazy">
+          {{ else if $fallback }}
+            <img
+              src="{{ $fallback }}"
+              alt="{{ .Title }}"
+              loading="lazy">
           {{ else }}
-            <div class="research-row-thumb-placeholder"></div>
+            <div class="research-row-thumb-placeholder" aria-hidden="true"></div>
           {{ end }}
         </div>
 
@@ -45,6 +62,7 @@
         </div>
 
       </a>
+
     {{ end }}
   </div>
 
