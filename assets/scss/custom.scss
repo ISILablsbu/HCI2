@@ -858,9 +858,7 @@ footer {
   }
 }
 
-/* =========================
-   Research landing, row list
-   ========================= */
+/* ===== Research list (row layout) ===== */
 
 .research-list{
   display: flex;
@@ -869,15 +867,11 @@ footer {
   margin-top: 1rem;
 }
 
-/* Row card */
 .research-row{
   display: grid;
   grid-template-columns: 360px 1fr;
   gap: 1.15rem;
   align-items: stretch;
-
-  /* Force uniform card size */
-  min-height: 240px;
 
   padding: 1rem 1.1rem;
   border: 1px solid rgba(0,0,0,0.12);
@@ -885,7 +879,6 @@ footer {
   text-decoration: none;
   color: inherit;
   background: var(--color-card-bg);
-
   box-shadow: var(--color-card-shadow);
   transition: transform .14s ease, box-shadow .14s ease, border-color .14s ease;
 }
@@ -896,11 +889,10 @@ footer {
   box-shadow: 0 16px 40px rgba(20,20,20,0.10);
 }
 
-/* Left thumbnail, fixed height, consistent */
+/* Left thumbnail: stable dimensions */
 .research-row-thumb{
   width: 100%;
-  height: 100%;
-  min-height: 210px;     /* keeps image area consistent */
+  height: 220px;
   border-radius: 12px;
   overflow: hidden;
   background: rgba(0,0,0,0.04);
@@ -916,60 +908,56 @@ footer {
 
 .research-row-thumb-placeholder{
   width: 100%;
-  height: 100%;
-  min-height: 210px;
+  height: 220px;
   border-radius: 12px;
   background: rgba(0,0,0,0.05);
 }
 
-/* Right body: make it a structured card area */
+/* Right column: strict vertical stack, no overlap */
 .research-row-body{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 0.15rem 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 220px;         /* match image height */
+  padding: 0.1rem 0;
 }
 
-/* Smaller, cleaner title */
+/* Title: slightly smaller than before, clamp to keep rows tidy */
 .research-row-title{
   font-size: 1.22rem;
   line-height: 1.25;
   font-weight: 750;
-  margin: 0 0 0.55rem 0;
+  margin: 0 0 0.45rem 0;
   color: var(--color-text);
 
-  /* Keep height consistent */
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-/* Tags */
+/* Tags: show ALL, smaller font, allow wrap */
 .research-row-tags{
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem;
-  margin-bottom: 0.65rem;
-
-  /* Prevent tags from expanding card height */
-  max-height: 2.2rem; /* ~2 rows */
-  overflow: hidden;
+  gap: 0.35rem;
+  margin: 0 0 0.6rem 0;     /* space before summary */
 }
 
 .research-row-tag{
-  font-size: 0.74rem;
+  font-size: 0.68rem;       /* smaller tags */
   line-height: 1;
-  padding: 0.26rem 0.58rem;
+  padding: 0.22rem 0.48rem; /* tighter pills */
   border-radius: 999px;
   border: 1px solid rgba(0,0,0,0.10);
-  background: rgba(0,0,0,0.04);
+  background: rgba(0,0,0,0.035);
   color: var(--color-text);
   white-space: nowrap;
   font-weight: 650;
 }
 
-/* Coloured pills */
+/* Coloured pills (cycles by position) */
 .research-row-tag:nth-child(6n+1){ background: rgba(200,16,46,0.10); border-color: rgba(200,16,46,0.18); }
 .research-row-tag:nth-child(6n+2){ background: rgba(46,164,79,0.12); border-color: rgba(46,164,79,0.20); }
 .research-row-tag:nth-child(6n+3){ background: rgba(35,99,235,0.10); border-color: rgba(35,99,235,0.18); }
@@ -977,21 +965,22 @@ footer {
 .research-row-tag:nth-child(6n+5){ background: rgba(168,85,247,0.12); border-color: rgba(168,85,247,0.20); }
 .research-row-tag:nth-child(6n+6){ background: rgba(20,184,166,0.12); border-color: rgba(20,184,166,0.20); }
 
-/* Summary “inside a box” */
+/* Summary: smaller + “contained box”, and it sits at the bottom neatly */
 .research-row-summary{
-  font-size: 0.94rem;
-  line-height: 1.5;
-  color: var(--color-text-muted);
-  margin: 0;
+  margin-top: auto;         /* pushes summary to the bottom of the right column */
+  width: 100%;
 
-  padding: 0.65rem 0.75rem;
+  font-size: 0.88rem;       /* smaller description */
+  line-height: 1.45;
+  color: var(--color-text-muted);
+
+  padding: 0.55rem 0.7rem;
   border-radius: 10px;
-  background: rgba(0,0,0,0.035);
+  background: rgba(0,0,0,0.03);
   border: 1px solid rgba(0,0,0,0.06);
 
-  /* Keep all cards same height */
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 3;    /* keep uniform-ish height */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -1000,11 +989,18 @@ footer {
 @media (max-width: 992px){
   .research-row{
     grid-template-columns: 1fr;
-    min-height: auto;
     padding: 0.95rem;
   }
-  .research-row-thumb{
-    min-height: 230px;
+  .research-row-thumb,
+  .research-row-thumb-placeholder{
+    height: 240px;
+  }
+  .research-row-body{
+    min-height: auto;
+  }
+  .research-row-summary{
+    margin-top: 0.25rem;
   }
 }
+
 
