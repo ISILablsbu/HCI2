@@ -870,12 +870,12 @@ footer {
 /* Bigger card overall, modest image column */
 .research-row{
   display: grid;
-  grid-template-columns: 360px 1fr;    /* keep image reasonable */
+  grid-template-columns: 360px 1fr;
   gap: 1.35rem;
   align-items: stretch;
 
-  padding: 1.35rem 1.45rem;           /* bigger card, not just image */
-  min-height: 320px;                   /* thicker overall */
+  padding: 1.35rem 1.45rem;
+  min-height: 370px;                 /* ↑ was 320px */
   border: 1px solid rgba(0,0,0,0.12);
   border-radius: 16px;
   text-decoration: none;
@@ -896,7 +896,7 @@ footer {
 .research-row-thumb{
   width: 100%;
   height: 100%;
-  min-height: 260px;
+  min-height: 300px;                 /* ↑ was 260px */
   border-radius: 14px;
   overflow: hidden;
   background: rgba(0,0,0,0.04);
@@ -913,7 +913,7 @@ footer {
 .research-row-thumb-placeholder{
   width: 100%;
   height: 100%;
-  min-height: 260px;
+  min-height: 300px;                 /* ↑ was 260px */
   border-radius: 14px;
   background: rgba(0,0,0,0.05);
 }
@@ -924,36 +924,36 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  min-width: 0;                        /* critical for grid text wrapping */
+  min-width: 0;
   width: 100%;
   box-sizing: border-box;
-  overflow: visible;                   /* don’t hide title/tags/summary */
+  overflow: visible;
 }
 
-/* Title: readable, wrapped, never out-of-bounds */
+/* Title: allow 3 lines to avoid “cropped” feel */
 .research-row-title{
   width: 100%;
   font-size: 1.10rem;
-  line-height: 1.2;
+  line-height: 1.22;
   font-weight: 800;
   margin: 0 0 0.65rem 0;
   color: var(--color-text);
 
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;             /* ↑ was 2 */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-/* Tags: show ALL, wrap normally, smaller */
+/* Tags: show ALL, wrap normally */
 .research-row-tags{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin: 0 0 0.85rem 0;
+  margin: 0 0 0.9rem 0;              /* slightly more spacing */
   box-sizing: border-box;
-  overflow: visible;                   /* show all */
+  overflow: visible;
 }
 
 .research-row-tag{
@@ -976,23 +976,24 @@ footer {
 .research-row-tag:nth-child(6n+5){ background: rgba(168,85,247,0.12); border-color: rgba(168,85,247,0.20); }
 .research-row-tag:nth-child(6n+6){ background: rgba(20,184,166,0.12); border-color: rgba(20,184,166,0.20); }
 
-/* Summary: contained, readable, still compact */
+/* Summary: make the BOX taller, and clamp content inside it */
 .research-row-summary{
   width: 100%;
   box-sizing: border-box;
   margin: 0;
 
   font-size: 0.78rem;
-  line-height: 1.5;
+  line-height: 1.55;
   color: var(--color-text-muted);
 
-  padding: 0.8rem 0.95rem;
+  padding: 1.0rem 1.05rem;           /* ↑ more padding */
+  min-height: 92px;                  /* ↑ ensures the box looks “taller” */
   border-radius: 12px;
   background: rgba(0,0,0,0.03);
   border: 1px solid rgba(0,0,0,0.06);
 
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;             /* ↑ was 3 */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -1002,19 +1003,22 @@ footer {
   .research-row{
     grid-template-columns: 1fr;
     padding: 1.05rem;
+    min-height: auto;
   }
 
   .research-row-thumb,
   .research-row-thumb-placeholder{
-    min-height: 240px;
+    min-height: 260px;
   }
 
   .research-row-title{
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
 
   .research-row-summary{
-    font-size: 0.92rem;
+    font-size: 0.90rem;
+    min-height: 0;
+    -webkit-line-clamp: 5;
   }
 }
 
