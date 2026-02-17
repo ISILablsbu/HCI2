@@ -1,5 +1,5 @@
 ---
-title: "Human-State Aware Human-Robot Collaborative Disassembly via Adaptive Agent Models, Negotiation, and Predictive Digital Twins"
+title: "Human-State Aware Human-Robot Collaborative Disassembly"
 
 summary: >
   Developing a human-centric HRC framework for high-value end-of-life (EoL) disassembly that adapts task allocation and robot behaviour to real-time operator state, combining cognitive and physiological modelling, negotiation-based collaboration, and a predictive digital twin to improve safety, ergonomics, and execution reliability.
@@ -20,7 +20,7 @@ tags:
 weight: 10
 
 image:
-  main: "/media/projects/hrc_disassembly_human_state.jpg"
+  main: "/media/projects/HRC1.png"
   caption: "Human-state aware HRC for EoL disassembly, integrating operator state estimation, negotiated task allocation, and predictive digital twin validation."
 
 highlights:
