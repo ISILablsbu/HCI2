@@ -17,7 +17,7 @@ tags:
 weight: 40
 
 image:
-  main: "/content/research/Anomaly/ned_demonstrator.jpg"
+  main: "/research/Anomaly/ned_demonstrator.jpg"
   caption: "NED demonstrator, bottle inspection and sorting system, used for anomaly detection and RUL validation."
 
 highlights:
