@@ -5,16 +5,37 @@
 
   <div class="research-grid-4">
     {{ range .Pages.ByWeight.ByTitle }}
-      <a class="research-card-compact" href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
-        <div class="research-card-title">{{ .Title }}</div>
 
-        {{ with .Params.tags }}
-          <div class="research-card-tags">
-            {{ range . }}
-              <span class="research-tag">{{ . }}</span>
-            {{ end }}
+      {{/* Prefer page-bundle featured* (featured.jpg/png), fall back to front matter image.main */}}
+      {{ $thumb := "" }}
+      {{ with .Resources.GetMatch "featured*" }}
+        {{ $t := .Fill "640x360 q75" }}
+        {{ $thumb = $t.RelPermalink }}
+      {{ end }}
+      {{ if not $thumb }}
+        {{ with .Params.image }}{{ with .main }}{{ $thumb = (. | relURL) }}{{ end }}{{ end }}
+      {{ end }}
+
+      <a class="research-card" href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
+
+        {{ if $thumb }}
+          <div class="research-thumb">
+            <img src="{{ $thumb }}" alt="{{ .Title }}" loading="lazy">
           </div>
         {{ end }}
+
+        <div class="research-body">
+          <div class="research-title">{{ .Title }}</div>
+
+          {{ with .Params.tags }}
+            <div class="research-tags">
+              {{ range . }}
+                <span class="research-tag">{{ . }}</span>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+
       </a>
     {{ end }}
   </div>
