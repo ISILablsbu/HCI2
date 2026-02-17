@@ -874,6 +874,7 @@ footer {
   align-items: stretch;
 
   padding: 1rem 1.1rem;
+  min-height: 250px;                 /* uniform card height */
   border: 1px solid rgba(0,0,0,0.12);
   border-radius: 14px;
   text-decoration: none;
@@ -889,7 +890,7 @@ footer {
   box-shadow: 0 16px 40px rgba(20,20,20,0.10);
 }
 
-/* Left thumbnail: stable dimensions */
+/* Left thumbnail */
 .research-row-thumb{
   width: 100%;
   height: 230px;
@@ -913,21 +914,25 @@ footer {
   background: rgba(0,0,0,0.05);
 }
 
-/* Right column: strict vertical stack, no overlap */
+/* Right column: stable stack */
 .research-row-body{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  min-height: 230px;         /* match image height */
+  min-height: 230px;
   padding: 0.1rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;                  /* prevents odd spills */
 }
 
-/* Title: slightly smaller than before, clamp to keep rows tidy */
+/* Title: hard clamp + max-height */
 .research-row-title{
-  font-size: 1.22rem;
-  line-height: 1.25;
-  font-weight: 750;
+  width: 100%;
+  font-size: 1.15rem;
+  line-height: 1.18;
+  font-weight: 800;
   margin: 0 0 0.45rem 0;
   color: var(--color-text);
 
@@ -935,20 +940,27 @@ footer {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  max-height: calc(2 * 1.18em);
 }
 
-/* Tags: show ALL, smaller font, allow wrap */
+/* Tags: show ALL via internal scroll if too many */
 .research-row-tags{
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 0.35rem;
-  margin: 0 0 0.6rem 0;     /* space before summary */
+  margin: 0 0 0.55rem 0;
+  box-sizing: border-box;
+
+  max-height: 3.2rem;                /* visible rows, rest scroll */
+  overflow: auto;
+  padding-right: 4px;
 }
 
 .research-row-tag{
-  font-size: 0.62rem;       /* smaller tags */
+  font-size: 0.62rem;
   line-height: 1;
-  padding: 0.22rem 0.48rem; /* tighter pills */
+  padding: 0.22rem 0.48rem;
   border-radius: 999px;
   border: 1px solid rgba(0,0,0,0.10);
   background: rgba(0,0,0,0.035);
@@ -965,24 +977,26 @@ footer {
 .research-row-tag:nth-child(6n+5){ background: rgba(168,85,247,0.12); border-color: rgba(168,85,247,0.20); }
 .research-row-tag:nth-child(6n+6){ background: rgba(20,184,166,0.12); border-color: rgba(20,184,166,0.20); }
 
-/* Summary: smaller + “contained box”, and it sits at the bottom neatly */
+/* Summary: contained box, always fits */
 .research-row-summary{
-  margin-top: auto;         /* pushes summary to the bottom of the right column */
+  margin: 0;
+  margin-top: auto;                  /* sits at bottom */
   width: 100%;
+  box-sizing: border-box;
 
-  font-size: 0.7rem;       /* smaller description */
-  line-height: 1.45;
+  font-size: 0.8rem;
+  line-height: 1.35;
   color: var(--color-text-muted);
 
-  padding: 0.55rem 0.7rem;
+  padding: 0.6rem 0.75rem;
   border-radius: 10px;
   background: rgba(0,0,0,0.03);
   border: 1px solid rgba(0,0,0,0.06);
 
-  display: -webkit-box;
-  -webkit-line-clamp: 3;    /* keep uniform-ish height */
-  -webkit-box-orient: vertical;
   overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 /* Responsive */
@@ -990,6 +1004,7 @@ footer {
   .research-row{
     grid-template-columns: 1fr;
     padding: 0.95rem;
+    min-height: auto;
   }
   .research-row-thumb,
   .research-row-thumb-placeholder{
@@ -997,10 +1012,17 @@ footer {
   }
   .research-row-body{
     min-height: auto;
+    overflow: visible;
+  }
+  .research-row-tags{
+    max-height: none;
+    overflow: visible;
+    padding-right: 0;
   }
   .research-row-summary{
     margin-top: 0.25rem;
   }
 }
+
 
 
