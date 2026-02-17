@@ -19,7 +19,7 @@ tags:
 project_style: "Funded"
 
 image:
-  main: "/media/projects/AR.png"
+  main: "/media/projects/Setup.png"
   caption: "Vision-enabled SAR setup for in-situ guidance and operator assistance."
 
 highlights:
