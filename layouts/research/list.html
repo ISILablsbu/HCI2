@@ -3,46 +3,18 @@
 
   <h1>{{ .Title }}</h1>
 
-  <div class="research-grid">
+  <div class="research-grid-4">
     {{ range .Pages.ByWeight.ByTitle }}
-      {{ $img := "" }}
-      {{ with .Params.image }}{{ with .main }}{{ $img = . }}{{ end }}{{ end }}
+      <a class="research-card-compact" href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
+        <div class="research-card-title">{{ .Title }}</div>
 
-      <a class="research-card" href="{{ .RelPermalink }}">
-
-        {{ if $img }}
-          <img class="research-thumb" src="{{ $img | relURL }}" alt="{{ .Title }}">
+        {{ with .Params.tags }}
+          <div class="research-card-tags">
+            {{ range . }}
+              <span class="research-tag">{{ . }}</span>
+            {{ end }}
+          </div>
         {{ end }}
-
-        <div class="research-body">
-
-          <div class="research-meta">
-  {{ with .Params.project_style }}
-    <span class="research-pill">{{ . }}</span>
-  {{ end }}
-
-  {{ with .Params.tags }}
-    {{ range . }}
-      <span class="research-pill">{{ . }}</span>
-    {{ end }}
-  {{ end }}
-</div>
-
-          <h3>{{ .Title }}</h3>
-
-          {{ with .Params.summary }}
-            <p class="research-summary">{{ . }}</p>
-          {{ end }}
-
-          {{ with .Params.highlights }}
-            <ul class="research-highlights">
-              {{ range first 3 . }}
-                <li>{{ . }}</li>
-              {{ end }}
-            </ul>
-          {{ end }}
-
-        </div>
       </a>
     {{ end }}
   </div>
