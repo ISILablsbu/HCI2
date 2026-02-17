@@ -3,43 +3,48 @@
 
   <h1>{{ .Title }}</h1>
 
-  <div class="research-grid-4">
+  <div class="research-list">
     {{ range .Pages.ByWeight.ByTitle }}
 
-      {{/* Try page-bundle featured* first */}}
+      {{/* Prefer page-bundle featured* (featured.jpg/png), fall back to front matter image.main */}}
       {{ $thumb := "" }}
       {{ with .Resources }}
         {{ with .GetMatch "featured*" }}
-          {{ $t := .Fill "640x360 q75" }}
+          {{ $t := .Fill "560x315 q75" }}
           {{ $thumb = $t.RelPermalink }}
         {{ end }}
       {{ end }}
-
-      {{/* Fallback to front matter image.main */}}
       {{ if not $thumb }}
         {{ with .Params.image }}{{ with .main }}{{ $thumb = (. | relURL) }}{{ end }}{{ end }}
       {{ end }}
 
-      <a class="research-card" href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
-        {{ if $thumb }}
-          <div class="research-thumb">
-            <img src="{{ $thumb }}" alt="{{ .Title }}" loading="lazy">
-          </div>
-        {{ end }}
+      <a class="research-row" href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
 
-        <div class="research-body">
-          <div class="research-title">{{ .Title }}</div>
+        <div class="research-row-thumb">
+          {{ if $thumb }}
+            <img src="{{ $thumb }}" alt="{{ .Title }}" loading="lazy">
+          {{ else }}
+            <div class="research-row-thumb-placeholder"></div>
+          {{ end }}
+        </div>
+
+        <div class="research-row-body">
+          <div class="research-row-title">{{ .Title }}</div>
 
           {{ with .Params.tags }}
-            <div class="research-tags">
+            <div class="research-row-tags">
               {{ range . }}
-                <span class="research-tag">{{ . }}</span>
+                <span class="research-row-tag">{{ . }}</span>
               {{ end }}
             </div>
           {{ end }}
-        </div>
-      </a>
 
+          {{ with .Params.summary }}
+            <div class="research-row-summary">{{ . }}</div>
+          {{ end }}
+        </div>
+
+      </a>
     {{ end }}
   </div>
 
