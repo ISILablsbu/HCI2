@@ -130,6 +130,128 @@ A policy-oriented architecture for AMR fleet management that generalises to othe
 &lt;/ul>
 &lt;/div>
 &lt;/details>
+&lt;/div></description></item><item><title>Safety-Aware Anomaly Detection and RUL Analytics for Industrial Machinery</title><link>https://hci2.uk/research/anomaly/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hci2.uk/research/anomaly/</guid><description>&lt;p>This project develops a safety-aware anomaly detection and RUL analytics pipeline for industrial machinery, grounded in demonstrator evidence rather than purely offline datasets. Using the bottle inspection and sorting system, we capture multi-sensor telemetry (signals from actuators, conveyors, inspection modules, and control logic), align it into machine-state segments, then learn normal operational signatures to detect deviation patterns early. Beyond detection, the framework estimates degradation trends and Remaining Useful Life with uncertainty bounds, enabling maintenance planning that is both operationally useful and defensible.&lt;/p>
+&lt;p>A core requirement is auditability, every alert is paired with traceable evidence (when the deviation started, which signals contributed, confidence/uncertainty, and operator validation outcome), enabling post hoc analysis, governance, and cross-shift handover.&lt;/p>
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">Motivation&lt;/summary>
+&lt;div class="expand-card-body">Industrial anomaly detection is often evaluated on static datasets, but deployment fails when alarms are noisy, poorly explained, or misaligned with safety and operational decision-making. In inspection and sorting cells, late fault detection can create cascading issues, mis-sorts, quality escapes, downtime spikes, and unsafe recovery actions. This project focuses on &lt;strong>early and explainable detection&lt;/strong>, &lt;strong>RUL-style forecasting&lt;/strong>, and &lt;strong>human verification&lt;/strong>, so the outputs are usable in real maintenance and operations workflows.&lt;/div>
+&lt;/details>
+&lt;div class="project-industrialai">
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">System Architecture&lt;/summary>
+&lt;div class="expand-card-body">&lt;h3 id="sensing--control-layer">&lt;strong>Sensing &amp;amp; Control Layer&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>Demonstrator telemetry from PLC/control events plus sensor streams (time-series + event logs)&lt;/li>
+&lt;li>Production context signals, e.g., mode, recipe, throughput rate, inspection outcomes&lt;/li>
+&lt;/ul>
+&lt;h3 id="data-layer">&lt;strong>Data Layer&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>Synchronisation, cleaning, and machine-cycle segmentation&lt;/li>
+&lt;li>Feature store for time-domain, frequency-domain, and event-derived features&lt;/li>
+&lt;li>Ground-truth support via fault logs, interventions, and controlled fault injection (where feasible)&lt;/li>
+&lt;/ul>
+&lt;h3 id="learning-layer-detection--prognostics">&lt;strong>Learning Layer (Detection + Prognostics)&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Anomaly Detection&lt;/strong>
+&lt;ul>
+&lt;li>Learns normal operational signatures per mode/recipe&lt;/li>
+&lt;li>Detects deviations using confidence-aware thresholds and persistence logic&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>RUL / Degradation Modelling&lt;/strong>
+&lt;ul>
+&lt;li>Health indicator construction and trend modelling&lt;/li>
+&lt;li>RUL prediction with uncertainty bounds (intervals), not just point estimates&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="human-in-the-loop-layer">&lt;strong>Human-in-the-Loop Layer&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>Alarm triage panel, operator labels, “confirmed / not an issue / needs monitoring”&lt;/li>
+&lt;li>Feedback improves calibration, reduces false positives, and builds trust&lt;/li>
+&lt;/ul>
+&lt;h3 id="governance--audit-layer">&lt;strong>Governance &amp;amp; Audit Layer&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>Alarm evidence packs, timestamps, signal attribution, and decision rationale&lt;/li>
+&lt;li>Machine-readable artefacts enabling traceability and reproducibility&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/details>
+&lt;/div>
+&lt;div class="project-industrialai">
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">Key Components&lt;/summary>
+&lt;div class="expand-card-body">&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Cycle &amp;amp; State Segmenter&lt;/strong>&lt;br>
+Partitions telemetry into meaningful machine phases (conveyor motion, inspection window, sorting actuation), ensuring anomalies are contextual rather than global.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Mode-Aware Normality Model&lt;/strong>&lt;br>
+Separates “expected variation” (different bottle types, throughput levels, lighting changes) from true abnormality.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Anomaly Scoring + Alarm Logic&lt;/strong>&lt;br>
+Combines raw anomaly scores with persistence, cooldown, and confidence gates to avoid alert storms.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>RUL / Degradation Module&lt;/strong>&lt;br>
+Builds interpretable health indicators, estimates trends, and outputs RUL with uncertainty intervals.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Explainability &amp;amp; Evidence Pack Builder&lt;/strong>&lt;br>
+Produces “what changed” summaries, signal contributions, and local time windows around onset.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Operator Panel + Feedback Loop&lt;/strong>&lt;br>
+Lets users validate alarms, attach notes, and trigger targeted re-analysis.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/details>
+&lt;/div>
+&lt;div class="project-industrialai">
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">Evaluation&lt;/summary>
+&lt;div class="expand-card-body">&lt;p>The framework is evaluated on the NED bottle inspection and sorting demonstrator under controlled and naturally occurring variability.&lt;/p>
+&lt;p>&lt;strong>Disruption / anomaly classes include:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Conveyor/drive anomalies&lt;/strong>&lt;br>
+Speed drift, intermittent stalls, rising vibration signatures, abnormal cycle-time variance.&lt;/li>
+&lt;li>&lt;strong>Inspection degradation&lt;/strong>&lt;br>
+Sensor noise increase, lighting drift, mis-detection patterns, inspection latency spikes.&lt;/li>
+&lt;li>&lt;strong>Sorting/actuation issues&lt;/strong>&lt;br>
+Delay or misfire behaviours, increasing rejection errors, timing misalignment with conveyor state.&lt;/li>
+&lt;li>&lt;strong>Process/context shifts&lt;/strong>&lt;br>
+Recipe changes, throughput changes, environmental shifts, which must not be misclassified as faults.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Metrics and evidence focus on:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Detection lead time before failure or intervention&lt;/li>
+&lt;li>False alarm rate, missed detection rate, and alert stability&lt;/li>
+&lt;li>RUL calibration (interval coverage, not only point error)&lt;/li>
+&lt;li>Robustness across operating modes/recipes&lt;/li>
+&lt;li>Operator agreement and triage effectiveness&lt;/li>
+&lt;li>Audit completeness (can we reconstruct why an alert fired)&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/details>
+&lt;/div>
+&lt;div class="project-industrialai">
+&lt;details class="expand-card">
+&lt;summary class="expand-card-title">Key Findings&lt;/summary>
+&lt;div class="expand-card-body">&lt;ul>
+&lt;li>&lt;strong>Earlier fault visibility&lt;/strong>&lt;br>
+Mode-aware baselines reduce nuisance alarms while preserving sensitivity to true degradation.&lt;/li>
+&lt;li>&lt;strong>Operationally usable RUL&lt;/strong>&lt;br>
+Uncertainty-bounded outputs support planning decisions rather than overconfident predictions.&lt;/li>
+&lt;li>&lt;strong>Trust via auditability&lt;/strong>&lt;br>
+Evidence packs and operator validation pathways make alarms defensible and easier to adopt.&lt;/li>
+&lt;li>&lt;strong>Demonstrator-first realism&lt;/strong>&lt;br>
+Demonstrator evaluation exposes deployment issues (context shifts, phase alignment, alert storms) that static datasets often hide.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/details>
 &lt;/div></description></item><item><title>Human-Centric Spatial Augmented Reality for Interactive (Dis)assembly Operator Assistance</title><link>https://hci2.uk/research/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hci2.uk/research/sar/</guid><description>&lt;p>This project develops a human-centric Spatial Augmented Reality (SAR) system that projects adaptive, light-guided (dis)assembly instructions directly onto the workspace and is controlled through AI-based hand gesture recognition. The system delivers real-time guidance and error feedback without requiring handheld or wearable devices. Beyond guidance, the framework is designed as an intelligent operator assistance system that augments physical and cognitive capabilities, informing users about posture-related physical risk and cognitive state (e.g., workload) while protecting operator identity via privacy-by-design sensing and data handling. User studies show significant reductions in task time, error rates, and perceived workload compared to conventional instruction methods.&lt;/p>
 &lt;details class="expand-card">
 &lt;summary class="expand-card-title">Motivation&lt;/summary>
