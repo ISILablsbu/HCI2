@@ -6,18 +6,21 @@
   <div class="research-grid-4">
     {{ range .Pages.ByWeight.ByTitle }}
 
-      {{/* Prefer page-bundle featured* (featured.jpg/png), fall back to front matter image.main */}}
+      {{/* Try page-bundle featured* first */}}
       {{ $thumb := "" }}
-      {{ with .Resources.GetMatch "featured*" }}
-        {{ $t := .Fill "640x360 q75" }}
-        {{ $thumb = $t.RelPermalink }}
+      {{ with .Resources }}
+        {{ with .GetMatch "featured*" }}
+          {{ $t := .Fill "640x360 q75" }}
+          {{ $thumb = $t.RelPermalink }}
+        {{ end }}
       {{ end }}
+
+      {{/* Fallback to front matter image.main */}}
       {{ if not $thumb }}
         {{ with .Params.image }}{{ with .main }}{{ $thumb = (. | relURL) }}{{ end }}{{ end }}
       {{ end }}
 
       <a class="research-card" href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
-
         {{ if $thumb }}
           <div class="research-thumb">
             <img src="{{ $thumb }}" alt="{{ .Title }}" loading="lazy">
@@ -35,8 +38,8 @@
             </div>
           {{ end }}
         </div>
-
       </a>
+
     {{ end }}
   </div>
 
