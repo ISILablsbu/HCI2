@@ -858,31 +858,25 @@ footer {
   }
 }
 
-/* =====================================================
-   Research landing page (SINGLE CLEAN VERSION)
-   Works with template:
-   <div class="research-thumb"><img ...></div>
-   ===================================================== */
-
-.universal-wrapper > h1{
-  margin-bottom: 1rem;
-}
+/* =========================
+   Research landing, row list
+   ========================= */
 
 .research-list{
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;               /* more breathing room */
+  gap: 1.25rem;
   margin-top: 1.1rem;
 }
 
-/* Card row */
+/* Row card */
 .research-row{
   display: grid;
-  grid-template-columns: 360px 1fr; /* slightly wider image column */
-  gap: 1.25rem;
+  grid-template-columns: 380px 1fr;
+  gap: 1.3rem;
   align-items: center;
 
-  padding: 1.05rem 1.15rem;
+  padding: 1.1rem 1.2rem;
   border: 1px solid rgba(0,0,0,0.12);
   border-radius: 14px;
   text-decoration: none;
@@ -902,7 +896,7 @@ footer {
 /* Thumbnail */
 .research-row-thumb{
   width: 100%;
-  height: 210px;              /* consistent “thick rectangle” */
+  height: 220px;              /* “thick rectangle” */
   border-radius: 12px;
   overflow: hidden;
   background: rgba(0,0,0,0.04);
@@ -918,21 +912,20 @@ footer {
 
 .research-row-thumb-placeholder{
   width: 100%;
-  height: 210px;
-  border-radius: 12px;
-  background: rgba(0,0,0,0.04);
+  height: 100%;
+  background: rgba(0,0,0,0.05);
 }
 
 /* Body */
 .research-row-body{
-  padding: 0.15rem 0;
+  padding: 0.1rem 0;
 }
 
 .research-row-title{
-  font-size: 1.45rem;         /* bigger, clearer hierarchy */
+  font-size: 1.5rem;
   line-height: 1.2;
-  font-weight: 700;
-  margin: 0 0 0.65rem 0;
+  font-weight: 750;
+  margin: 0 0 0.7rem 0;
   color: var(--color-text);
 }
 
@@ -941,55 +934,36 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.75rem;
 }
 
 .research-row-tag{
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   line-height: 1;
-  padding: 0.28rem 0.6rem;
+  padding: 0.28rem 0.62rem;
   border-radius: 999px;
   border: 1px solid rgba(0,0,0,0.10);
   background: rgba(0,0,0,0.04);
   color: var(--color-text);
   white-space: nowrap;
-  font-weight: 600;
+  font-weight: 650;
 }
 
-/* Simple coloured tag variants (cycles by position) */
-.research-row-tag:nth-child(6n+1){
-  background: rgba(200,16,46,0.10);
-  border-color: rgba(200,16,46,0.18);
-}
-.research-row-tag:nth-child(6n+2){
-  background: rgba(46,164,79,0.12);
-  border-color: rgba(46,164,79,0.20);
-}
-.research-row-tag:nth-child(6n+3){
-  background: rgba(35,99,235,0.10);
-  border-color: rgba(35,99,235,0.18);
-}
-.research-row-tag:nth-child(6n+4){
-  background: rgba(245,158,11,0.14);
-  border-color: rgba(245,158,11,0.22);
-}
-.research-row-tag:nth-child(6n+5){
-  background: rgba(168,85,247,0.12);
-  border-color: rgba(168,85,247,0.20);
-}
-.research-row-tag:nth-child(6n+6){
-  background: rgba(20,184,166,0.12);
-  border-color: rgba(20,184,166,0.20);
-}
+/* Coloured pills (cycles by position) */
+.research-row-tag:nth-child(6n+1){ background: rgba(200,16,46,0.10); border-color: rgba(200,16,46,0.18); }
+.research-row-tag:nth-child(6n+2){ background: rgba(46,164,79,0.12); border-color: rgba(46,164,79,0.20); }
+.research-row-tag:nth-child(6n+3){ background: rgba(35,99,235,0.10); border-color: rgba(35,99,235,0.18); }
+.research-row-tag:nth-child(6n+4){ background: rgba(245,158,11,0.14); border-color: rgba(245,158,11,0.22); }
+.research-row-tag:nth-child(6n+5){ background: rgba(168,85,247,0.12); border-color: rgba(168,85,247,0.20); }
+.research-row-tag:nth-child(6n+6){ background: rgba(20,184,166,0.12); border-color: rgba(20,184,166,0.20); }
 
-/* Summary */
+/* Summary (tidy, not too tall) */
 .research-row-summary{
   font-size: 1.02rem;
   line-height: 1.55;
   color: var(--color-text-muted);
   margin: 0;
 
-  /* keep rows tidy */
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -1002,12 +976,11 @@ footer {
     grid-template-columns: 1fr;
     padding: 1rem;
   }
-  .research-row-thumb,
-  .research-row-thumb-placeholder{
-    height: 220px;
+  .research-row-thumb{
+    height: 240px;
   }
   .research-row-title{
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 }
 
