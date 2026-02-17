@@ -874,7 +874,7 @@ footer {
   align-items: stretch;
 
   padding: 1rem 1.1rem;
-  min-height: 250px;                 /* uniform card height */
+  height: 250px;                      /* force identical card size */
   border: 1px solid rgba(0,0,0,0.12);
   border-radius: 14px;
   text-decoration: none;
@@ -882,6 +882,7 @@ footer {
   background: var(--color-card-bg);
   box-shadow: var(--color-card-shadow);
   transition: transform .14s ease, box-shadow .14s ease, border-color .14s ease;
+  box-sizing: border-box;
 }
 
 .research-row:hover{
@@ -893,7 +894,7 @@ footer {
 /* Left thumbnail */
 .research-row-thumb{
   width: 100%;
-  height: 230px;
+  height: 100%;
   border-radius: 12px;
   overflow: hidden;
   background: rgba(0,0,0,0.04);
@@ -909,31 +910,31 @@ footer {
 
 .research-row-thumb-placeholder{
   width: 100%;
-  height: 230px;
+  height: 100%;
   border-radius: 12px;
   background: rgba(0,0,0,0.05);
 }
 
-/* Right column: stable stack */
+/* Right column: define a strict layout so nothing “pushes up” */
 .research-row-body{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  min-height: 230px;
+  height: 100%;
   padding: 0.1rem 0;
   width: 100%;
   box-sizing: border-box;
-  overflow: hidden;                  /* prevents odd spills */
+  overflow: hidden;
 }
 
-/* Title: hard clamp + max-height */
+/* Title: hard clamp + smaller size so it never dominates */
 .research-row-title{
   width: 100%;
-  font-size: 1.15rem;
+  font-size: 1.12rem;                 /* slightly smaller */
   line-height: 1.18;
   font-weight: 800;
-  margin: 0 0 0.45rem 0;
+  margin: 0 0 0.40rem 0;
   color: var(--color-text);
 
   display: -webkit-box;
@@ -943,7 +944,7 @@ footer {
   max-height: calc(2 * 1.18em);
 }
 
-/* Tags: show ALL via internal scroll if too many */
+/* Tags: show ALL, but keep card height identical via scroll */
 .research-row-tags{
   width: 100%;
   display: flex;
@@ -952,9 +953,15 @@ footer {
   margin: 0 0 0.55rem 0;
   box-sizing: border-box;
 
-  max-height: 3.2rem;                /* visible rows, rest scroll */
+  flex: 1 1 auto;                      /* take remaining middle space */
+  min-height: 0;                       /* IMPORTANT for flex + overflow */
   overflow: auto;
-  padding-right: 4px;
+  padding-right: 6px;
+}
+
+/* optional, nicer scrollbar (works in modern browsers) */
+.research-row-tags{
+  scrollbar-width: thin;
 }
 
 .research-row-tag{
@@ -977,18 +984,18 @@ footer {
 .research-row-tag:nth-child(6n+5){ background: rgba(168,85,247,0.12); border-color: rgba(168,85,247,0.20); }
 .research-row-tag:nth-child(6n+6){ background: rgba(20,184,166,0.12); border-color: rgba(20,184,166,0.20); }
 
-/* Summary: contained box, always fits */
+/* Summary: fixed, always fits, never overflows */
 .research-row-summary{
-  margin: 0;
-  margin-top: auto;                  /* sits at bottom */
   width: 100%;
   box-sizing: border-box;
+  margin: 0;
+  flex: 0 0 auto;                      /* keep it at bottom */
 
-  font-size: 0.8rem;
+  font-size: 0.80rem;
   line-height: 1.35;
   color: var(--color-text-muted);
 
-  padding: 0.6rem 0.75rem;
+  padding: 0.55rem 0.70rem;
   border-radius: 10px;
   background: rgba(0,0,0,0.03);
   border: 1px solid rgba(0,0,0,0.06);
@@ -1003,24 +1010,23 @@ footer {
 @media (max-width: 992px){
   .research-row{
     grid-template-columns: 1fr;
+    height: auto;                      /* allow natural height on mobile */
     padding: 0.95rem;
-    min-height: auto;
   }
+
   .research-row-thumb,
   .research-row-thumb-placeholder{
     height: 240px;
   }
+
   .research-row-body{
-    min-height: auto;
+    height: auto;
     overflow: visible;
   }
+
   .research-row-tags{
-    max-height: none;
     overflow: visible;
     padding-right: 0;
-  }
-  .research-row-summary{
-    margin-top: 0.25rem;
   }
 }
 
