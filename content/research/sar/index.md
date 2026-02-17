@@ -16,7 +16,7 @@ tags:
   - Privacy-by-Design
 
 
-project_style: "sar"
+project_style: "Funded"
 
 image:
   main: "/media/projects/AR.png"
