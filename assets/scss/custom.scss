@@ -1048,16 +1048,17 @@ footer {
 
 .research-grid-4{
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  /* 4 columns when there’s room, but never skinny */
+  grid-template-columns: repeat(4, minmax(240px, 1fr));
   gap: 1rem;
   margin-top: 0.85rem;
 }
 
 @media (max-width: 1400px){
-  .research-grid-4{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .research-grid-4{ grid-template-columns: repeat(3, minmax(240px, 1fr)); }
 }
 @media (max-width: 992px){
-  .research-grid-4{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .research-grid-4{ grid-template-columns: repeat(2, minmax(240px, 1fr)); }
 }
 @media (max-width: 576px){
   .research-grid-4{ grid-template-columns: 1fr; }
@@ -1077,9 +1078,10 @@ footer {
   border-color: rgba(0,0,0,0.28);
 }
 
+/* Make cards “thick small rectangles”, not tall */
 .research-thumb{
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 140px;              /* adjust 120–160 */
   overflow: hidden;
   background: rgba(0,0,0,0.03);
 }
@@ -1092,29 +1094,37 @@ footer {
 }
 
 .research-body{
-  padding: 0.75rem 0.85rem;
+  padding: 0.75rem 0.85rem 0.85rem;
 }
 
 .research-title{
-  font-size: 1.05rem;   /* larger title */
+  font-size: 1.08rem;
   line-height: 1.25;
   font-weight: 650;
   margin: 0 0 0.55rem 0;
+
+  /* prevent tall cards from long titles */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;      /* max 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .research-tags{
   display: flex;
   flex-wrap: wrap;
   gap: 0.35rem;
+
+  /* prevent tall cards from lots of tags */
+  max-height: 2.25rem;        /* ~2 rows */
+  overflow: hidden;
 }
 
 .research-tag{
-  font-size: 0.75rem;   /* smaller tags */
+  font-size: 0.75rem;
   line-height: 1;
   padding: 0.22rem 0.5rem;
   border-radius: 999px;
   border: 1px solid rgba(0,0,0,0.14);
   white-space: nowrap;
 }
-
-
